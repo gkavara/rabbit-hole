@@ -1052,8 +1052,8 @@
       "Το Lightning"
     ],
     "why": "Π.χ. mempool.space. Ακόμα καλύτερα: δικός σου node με δικό σου explorer.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Block_chain_browser"
   },
   {
     "id": 66,
@@ -1068,8 +1068,8 @@
       "€/block"
     ],
     "why": "Sats ανά virtual byte. Πληρώνεις για χώρο στο block, όχι για το ποσό που στέλνεις.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Transaction_fees"
   },
   {
     "id": 67,
@@ -1084,24 +1084,24 @@
       "1.050.000"
     ],
     "why": "Block 840.000, στις 20 Απριλίου 2024. Το τέταρτο halving.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
   },
   {
     "id": 68,
     "hex": "0x44",
     "weight": 3,
     "level": "cypherpunk",
-    "question": "Ποια εταιρεία συνδέθηκε με την αντίσταση στο SegWit λόγω του ASICBoost;",
-    "answer": "Η Bitmain",
+    "question": "Ποιο BIP ορίζει το Pay-to-Script-Hash (P2SH);",
+    "answer": "BIP16",
     "wrong": [
-      "Η Blockstream",
-      "Η Coinbase",
-      "Η Bitfury"
+      "BIP65",
+      "BIP32",
+      "BIP141"
     ],
-    "why": "Το SegWit δυσκόλευε το κρυφό ASICBoost, που έδινε πλεονέκτημα στα μηχανήματά της.",
-    "verified": false,
-    "source": ""
+    "why": "Του Gavin Andresen: ο παραλήπτης δίνει τις συνθήκες ξοδέματος, ο αποστολέας ένα hash 20 bytes.",
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki"
   },
   {
     "id": 69,
@@ -1116,24 +1116,24 @@
       "CSV"
     ],
     "why": "SegWit: έλυσε το transaction malleability και άνοιξε τον δρόμο για το Lightning.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/SegWit"
   },
   {
     "id": 70,
     "hex": "0x46",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποια είναι η «αρχή» του Satoshi για τον έλεγχο των κανόνων;",
-    "answer": "Οι full nodes επιβάλλουν τους κανόνες, όχι οι miners",
+    "question": "Ποιοι επιβάλλουν τελικά τους κανόνες συναίνεσης του δικτύου;",
+    "answer": "Οι full nodes, που απορρίπτουν τα άκυρα blocks",
     "wrong": [
       "Οι miners ψηφίζουν τους κανόνες",
       "Οι developers αποφασίζουν",
       "Τα exchanges αποφασίζουν"
     ],
     "why": "Οι miners προτείνουν blocks. Οι nodes αποφασίζουν αν είναι έγκυρα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/bitcoin-core/"
   },
   {
     "id": 71,
@@ -1148,8 +1148,8 @@
       "Δεν έχεις κλειδιά"
     ],
     "why": "Be your own bank. Με ευθύνη και χωρίς «ξέχασα τον κωδικό».",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://regional-front.cointelegraph.com/news/antonopoulos-your-keys-your-bitcoin-not-your-keys-not-your-bitcoin"
   },
   {
     "id": 72,
@@ -1164,8 +1164,8 @@
       "Το 2012"
     ],
     "why": "Στις 12 Δεκεμβρίου 2010. Τα emails συνεχίστηκαν μέχρι τον Απρίλιο του 2011.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://forklog.com/en/thirteen-years-since-satoshi-nakamotos-last-post/"
   },
   {
     "id": 73,
@@ -1180,8 +1180,8 @@
       "secp384r1"
     ],
     "why": "secp256k1. Επιλογή του Satoshi που τότε θεωρήθηκε ασυνήθιστη.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Secp256k1"
   },
   {
     "id": 74,
@@ -1196,8 +1196,8 @@
       "1 $ = 21.000 BTC"
     ],
     "why": "Βασισμένη στο κόστος ρεύματος για το mining. Τον Οκτώβριο του 2009.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoinmagazine.com/culture/bitcoin-is-up-6-5-billion-percent-since-it-was-first-priced-in-usd"
   },
   {
     "id": 75,
@@ -1212,24 +1212,24 @@
       "Τίποτα, και θα σταματήσει το mining"
     ],
     "why": "Το security budget θα στηρίζεται αποκλειστικά στα fees.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/bitcoin.pdf"
   },
   {
     "id": 76,
     "hex": "0x4C",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιο είναι το καθιερωμένο μήνυμα όταν βγαίνει νέο block;",
-    "answer": "Tick tock, next block",
+    "question": "Ποιο BIP ορίζει τον Median Time-Past για τα locktimes;",
+    "answer": "BIP113",
     "wrong": [
-      "Gm",
-      "Wen moon",
-      "Number go up"
+      "BIP65",
+      "BIP39",
+      "BIP9"
     ],
-    "why": "Ο χρόνος του Bitcoin μετριέται σε blocks.",
-    "verified": false,
-    "source": ""
+    "why": "Αντί για το timestamp του block, χρησιμοποιείται η διάμεσος των 11 προηγούμενων blocks.",
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki"
   },
   {
     "id": 77,
@@ -1244,8 +1244,8 @@
       "Ελέγχουν τα wallets"
     ],
     "why": "Δεν «κάνουν τους κανόνες». Τους ακολουθούν, αλλιώς τα blocks τους απορρίπτονται.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/vocabulary"
   },
   {
     "id": 78,
@@ -1260,8 +1260,8 @@
       "Δεν αποφάνθηκε"
     ],
     "why": "Στην υπόθεση COPA v Wright, τον Μάρτιο του 2024: δεν είναι ο Satoshi.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Craig_Steven_Wright"
   },
   {
     "id": 79,
@@ -1276,8 +1276,8 @@
       "Το timestamp του genesis + 10 λεπτά"
     ],
     "why": "Median Time Past. Γι' αυτό τα timestamps δεν είναι πάντα σε σειρά.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki"
   },
   {
     "id": 80,
@@ -1292,8 +1292,8 @@
       "Σε email στον Satoshi"
     ],
     "why": "Στο φόρουμ BitcoinTalk, τον Μάιο του 2010.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/"
   },
   {
     "id": 81,
@@ -1308,24 +1308,24 @@
       "Περίπου 2,5 λεπτά"
     ],
     "why": "Ο στόχος είναι 10 λεπτά. Τα 2,5 λεπτά είναι του Litecoin, NGMI.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Litecoin"
   },
   {
     "id": 82,
     "hex": "0x52",
     "weight": 2,
     "level": "maxi",
-    "question": "Συμπλήρωσε τη γνωστή φράση των maxis: «There is no …»",
-    "answer": "second best",
+    "question": "Ποιο BIP ορίζει το opcode CHECKSEQUENCEVERIFY (CSV);",
+    "answer": "BIP112",
     "wrong": [
-      "other way",
-      "safe haven",
-      "plan B"
+      "BIP65",
+      "BIP141",
+      "BIP340"
     ],
-    "why": "«There is no second best». Τα υπόλοιπα είναι, ας πούμε, πειράματα.",
-    "verified": false,
-    "source": ""
+    "why": "Το CSV (BIP112) δίνει σχετικό timelock, δηλαδή βάσει της ηλικίας του output.",
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki"
   },
   {
     "id": 83,
@@ -1356,8 +1356,8 @@
       "Τίποτα απολύτως"
     ],
     "why": "Το xpub είναι extended public key: δεν κλέβει, αλλά αποκαλύπτει όλο το ιστορικό σου.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
   },
   {
     "id": 85,
@@ -1372,8 +1372,8 @@
       "Fear Of Mining Operations"
     ],
     "why": "Ο φόβος ότι θα χάσεις την άνοδο. Οδηγεί σε αγορές στην κορυφή.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Fear_of_missing_out"
   },
   {
     "id": 86,
@@ -1404,8 +1404,8 @@
       "Satoshi fingerprint"
     ],
     "why": "Χαρακτηριστικό μοτίβο στα nonces και στα extraNonce των πρώτων blocks.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://cointelegraph.com/news/mysterious-bitcoin-mining-pattern-solved-after-seven-years"
   },
   {
     "id": 88,
@@ -1435,9 +1435,9 @@
       "Το whitepaper",
       "Χαρτονόμισμα με QR"
     ],
-    "why": "Παλιά μέθοδος cold storage. Σήμερα τα hardware wallets είναι πιο ασφαλή στη χρήση.",
-    "verified": false,
-    "source": ""
+    "why": "Ξεπερασμένη και ανασφαλής μέθοδος (δημοφιλής 2011–2016). Σήμερα προτιμάται το seed phrase.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Paper_wallet"
   },
   {
     "id": 90,
@@ -1452,8 +1452,8 @@
       "144"
     ],
     "why": "Κάθε 2.016 blocks, δηλαδή περίπου κάθε 2 εβδομάδες, ώστε ο μέσος χρόνος να μένει στα 10 λεπτά.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Difficulty"
   },
   {
     "id": 91,
@@ -1468,8 +1468,8 @@
       "2017"
     ],
     "why": "Τον Νοέμβριο του 2013. Τον επόμενο μήνα γεννήθηκε το HODL.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://techcrunch.com/2013/11/27/bitcoin-crosses-the-1000-mark-on-the-mt-gox-exchange"
   },
   {
     "id": 92,
@@ -1484,8 +1484,8 @@
       "Ο Julian Assange"
     ],
     "why": "Ένα από τα ιδρυτικά κείμενα των cypherpunks.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://reason.com/2018/12/16/tim-may-influential-writer-on-crypto-ana/"
   },
   {
     "id": 93,
@@ -1500,8 +1500,8 @@
       "not your crypto"
     ],
     "why": "«Not your keys, not your coins». Αν τα κλειδιά τα έχει το exchange, τα coins είναι δικά του.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://regional-front.cointelegraph.com/news/antonopoulos-your-keys-your-bitcoin-not-your-keys-not-your-bitcoin"
   },
   {
     "id": 94,
@@ -1516,8 +1516,8 @@
       "Ένα altcoin"
     ],
     "why": "Από το λατινικό «ας γίνει». Τυπώνεται όσο αποφασίσει η κεντρική τράπεζα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Fiat_money"
   },
   {
     "id": 95,
@@ -1532,8 +1532,8 @@
       "Αλλαγή στο logo"
     ],
     "why": "Οι παλιοί nodes συνεχίζουν να δέχονται τα νέα blocks ως έγκυρα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Softfork"
   },
   {
     "id": 96,
@@ -1547,25 +1547,25 @@
       "2013",
       "2016"
     ],
-    "why": "Νοέμβριος 2012: το reward έπεσε από 50 σε 25 BTC.",
-    "verified": false,
-    "source": ""
+    "why": "Τέλη του 2012: το reward έπεσε από 50 σε 25 BTC.",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
   },
   {
     "id": 97,
     "hex": "0x61",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι ένας «nocoiner»;",
-    "answer": "Κάποιος που δεν έχει bitcoin",
+    "question": "Τι είναι μια διεύθυνση (address) στο Bitcoin;",
+    "answer": "Αυτό που δίνεις σε κάποιον για να σου στείλει bitcoin",
     "wrong": [
-      "Κάποιος που έχασε το seed του",
-      "Miner χωρίς reward",
-      "Wallet με μηδέν υπόλοιπο"
+      "Το μυστικό κλειδί του wallet",
+      "Η τοποθεσία του miner",
+      "Το όνομα του node"
     ],
-    "why": "Συνήθως ο ίδιος που έλεγε «φούσκα» στα 100$.",
-    "verified": false,
-    "source": ""
+    "why": "Μοιάζει με διεύθυνση email. Ιδανικά τη χρησιμοποιείς μία φορά, για λόγους privacy.",
+    "verified": true,
+    "source": "https://bitcoin.org/en/vocabulary"
   },
   {
     "id": 98,
@@ -1580,8 +1580,8 @@
       "Η πρώτη συμφωνία για Bitcoin ETF"
     ],
     "why": "Το SegWit ενεργοποιήθηκε, αλλά το «2x» ακυρώθηκε τον Νοέμβριο του 2017 λόγω έλλειψης υποστήριξης.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/SegWit"
   },
   {
     "id": 99,
@@ -1612,8 +1612,8 @@
       "Το μέγεθος του block"
     ],
     "why": "Όσο ψηλότερο, τόσο ακριβότερη μια επίθεση.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/vocabulary"
   },
   {
     "id": 101,
