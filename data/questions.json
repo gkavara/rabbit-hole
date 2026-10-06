@@ -2684,8 +2684,8 @@
       "478.558"
     ],
     "why": "Στις 24 Αυγούστου 2017. Το 478.558 ήταν το τελευταίο κοινό block πριν το Bitcoin Cash.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Segregated_Witness"
   },
   {
     "id": 168,
@@ -2700,8 +2700,8 @@
       "12,5 BTC"
     ],
     "why": "50 → 25 → 12,5 → 6,25 → 3,125. Το επόμενο halving το κατεβάζει στα 1,5625.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 169,
@@ -2716,8 +2716,8 @@
       "2023"
     ],
     "why": "Νοέμβριο του 2021. Η πιο πρόσφατη μεγάλη αναβάθμιση του πρωτοκόλλου.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Taproot"
   },
   {
     "id": 170,
@@ -2732,8 +2732,8 @@
       "Ο Jameson Lopp"
     ],
     "why": "Αρίθμηση των sats που επέτρεψε τα «inscriptions» στο witness.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://docs.ordinals.com/"
   },
   {
     "id": 171,
@@ -2748,8 +2748,8 @@
       "Hybrid Transaction Layer Channel"
     ],
     "why": "Η πληρωμή ξεκλειδώνει με αποκάλυψη ενός preimage, αλλιώς επιστρέφει μετά από timelock.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/lightning/bolts/blob/master/03-transactions.md"
   },
   {
     "id": 172,
@@ -2764,8 +2764,8 @@
       "2025"
     ],
     "why": "Τον Ιανουάριο του 2024, μετά από πάνω από δέκα χρόνια απορρίψεων.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023"
   },
   {
     "id": 173,
@@ -2796,8 +2796,8 @@
       "Και τα 3 συν PIN"
     ],
     "why": "Δύο από τα τρία. Το τρίτο είναι backup.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki"
   },
   {
     "id": 175,
@@ -2812,8 +2812,8 @@
       "btc.org"
     ],
     "why": "Το bitcoin.org, τον Αύγουστο του 2008. Το .com είναι άλλη υπόθεση.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin"
   },
   {
     "id": 176,
@@ -2828,8 +2828,8 @@
       "1.000"
     ],
     "why": "1 sat = 0,00000001 BTC. Stay humble, stack sats.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)"
   },
   {
     "id": 177,
@@ -2844,8 +2844,8 @@
       "2019"
     ],
     "why": "Με την έκδοση 0.9.0, το 2014.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/release/v0.9.0"
   },
   {
     "id": 178,
@@ -2860,8 +2860,8 @@
       "2004"
     ],
     "why": "Ιδρύθηκε από τους Eric Hughes, Timothy May και John Gilmore.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Cypherpunk"
   },
   {
     "id": 179,
@@ -2876,8 +2876,8 @@
       "Μια επίθεση 51%"
     ],
     "why": "Όποιος δεν αναβαθμίσει μένει σε άλλη αλυσίδα. Έτσι γεννήθηκε το Bitcoin Cash.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Hardfork"
   },
   {
     "id": 180,
@@ -2885,15 +2885,15 @@
     "weight": 2,
     "level": "maxi",
     "question": "Τι πρότεινε το Bitcoin XT το 2015;",
-    "answer": "Blocks έως 8 MB",
+    "answer": "Blocks 8 MB (που διπλασιάζονταν κάθε δύο χρόνια)",
     "wrong": [
       "Αύξηση του supply",
       "Κατάργηση του mining",
       "Proof of Stake"
     ],
-    "why": "Από τους Gavin Andresen και Mike Hearn. Δεν πέρασε.",
-    "verified": false,
-    "source": ""
+    "why": "Το BIP101, από τους Gavin Andresen και Mike Hearn. Δεν πέρασε.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Bitcoin_XT"
   },
   {
     "id": 181,
@@ -2908,15 +2908,15 @@
       "After The Halving"
     ],
     "why": "Η υψηλότερη τιμή όλων των εποχών.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.investopedia.com/terms/a/all-time-high-ath.asp"
   },
   {
     "id": 182,
     "hex": "0xB6",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιος συνίδρυσε το Bitcoin Magazine το 2012, πριν φτιάξει… κάτι άλλο;",
+    "question": "Ποιος συνίδρυσε το Bitcoin Magazine, πριν φτιάξει… κάτι άλλο;",
     "answer": "Ο Vitalik Buterin",
     "wrong": [
       "Ο Charlie Lee",
@@ -2924,8 +2924,8 @@
       "Ο Andreas Antonopoulos"
     ],
     "why": "Μαζί με τον Mihai Alisie. Μετά πήρε άλλο δρόμο. Δεν θα πούμε ποιον 😏",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoinmagazine.com/about"
   },
   {
     "id": 183,
@@ -2940,8 +2940,8 @@
       "1.024"
     ],
     "why": "80 bytes: version, previous hash, merkle root, time, bits, nonce.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://developer.bitcoin.org/reference/block_chain.html#block-headers"
   },
   {
     "id": 184,
@@ -2956,8 +2956,8 @@
       "1 Αυγούστου"
     ],
     "why": "Η μέρα που δημοσιεύτηκε το whitepaper, το 2008. Ναι, ανήμερα του Halloween.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/"
   },
   {
     "id": 185,
@@ -2972,24 +2972,24 @@
       "Κάνω mining στο σπίτι"
     ],
     "why": "Αγόρασε, κράτα, ξέχνα τα charts.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcointalk.org/index.php?topic=375.0"
   },
   {
     "id": 186,
     "hex": "0xBA",
     "weight": 1,
     "level": "pleb",
-    "question": "Ποια χρονιά αναμένεται το επόμενο halving;",
+    "question": "Ποια χρονιά αναμένεται το halving που ακολουθεί αυτό του 2024;",
     "answer": "2028",
     "wrong": [
       "2026",
       "2027",
       "2030"
     ],
-    "why": "Στο block 1.050.000, γύρω στην άνοιξη του 2028.",
-    "verified": false,
-    "source": ""
+    "why": "Στο block 1.050.000, γύρω στον Απρίλιο του 2028.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 187,
@@ -3004,8 +3004,8 @@
       "Bitcoin Insurance Policy"
     ],
     "why": "Οι αλλαγές ξεκινούν ως BIP και περνούν από μακρά δημόσια συζήτηση.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
   },
   {
     "id": 188,
@@ -3020,8 +3020,8 @@
       "Block με λάθος υπογραφή"
     ],
     "why": "Συμβαίνει όταν δύο miners βρίσκουν block σχεδόν ταυτόχρονα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Orphan_Block"
   },
   {
     "id": 189,
@@ -3052,8 +3052,8 @@
       "00000000a3f9c1…"
     ],
     "why": "000000000019d6689c085ae165831e93… Το 00000000839a8e… είναι του block 1.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Genesis_block"
   },
   {
     "id": 191,
@@ -3068,8 +3068,8 @@
       "Να βγάζει άδεια blocks"
     ],
     "why": "Χωρίς τα private keys δεν ξοδεύει ξένα coins. Ούτε μπορεί να αλλάξει το supply.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Majority_attack"
   },
   {
     "id": 192,
@@ -3084,8 +3084,8 @@
       "Το PIN του hardware wallet"
     ],
     "why": "Συνήθως 12 ή 24 λέξεις (BIP39). Όποιος το έχει, έχει τα bitcoin σου. Ποτέ σε φωτογραφία, ποτέ online.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
   },
   {
     "id": 193,
@@ -3095,13 +3095,13 @@
     "question": "Τι σημαίνει «Have fun staying poor»;",
     "answer": "Πειραχτική απάντηση των bitcoiners σε όσους το κοροϊδεύουν",
     "wrong": [
-      "Συμβουλή του Satoshi για εξοικονόμηση",
+      "Διαφήμιση ενός exchange",
       "Σύνθημα κατά των τραπεζών από το 2008",
       "Όνομα ενός wallet"
     ],
     "why": "Η κλασική απάντηση σε κάθε «το Bitcoin είναι φούσκα». Συνήθως με laser eyes.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://knowyourmeme.com/memes/have-fun-staying-poor"
   },
   {
     "id": 194,
@@ -3116,8 +3116,8 @@
       "2.099.999.999.999.999"
     ],
     "why": "Λόγω της ακέραιας στρογγυλοποίησης στα halvings, λίγο κάτω από 21 εκατ. BTC.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 195,
@@ -3132,8 +3132,8 @@
       "Ένα Lightning wallet"
     ],
     "why": "Βασίζεται στο Bitcoin Core με διαφορετικές προεπιλογές και επιπλέον ρυθμίσεις.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoinknots.org/"
   },
   {
     "id": 196,
@@ -3148,8 +3148,8 @@
       "Vitalik Buterin"
     ],
     "why": "Satoshi Nakamoto. Η ταυτότητά του παραμένει άγνωστη. Ο τέταρτος είναι… άλλη ιστορία 😏",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Satoshi_Nakamoto"
   },
   {
     "id": 197,
@@ -3164,8 +3164,8 @@
       "Hal Finney"
     ],
     "why": "Adam Back, το 1997. Proof of Work για την καταπολέμηση του spam, η βάση του mining.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Hashcash"
   },
   {
     "id": 198,
@@ -3180,8 +3180,8 @@
       "Μην μιλάς για Bitcoin"
     ],
     "why": "Η φιλοσοφία του Bitcoin: ο καθένας μπορεί να επαληθεύσει τα πάντα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Full_node"
   },
   {
     "id": 199,
