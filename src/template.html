@@ -1,0 +1,453 @@
+<title>Rabbit Hole</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+/* Layout: one narrow column like a node's terminal; a 16x16 "hash" grid is the signature element. Single deliberate dark look. */
+:root{
+  --bg:#0c0b09;
+  --panel:#15130f;
+  --line:#2a251d;
+  --ink:#f4efe6;
+  --mute:#9a9184;
+  --orange:#f7931a;
+  --w1:#7a4a12;
+  --w2:#f7931a;
+  --w3:#ffd27a;
+  --ok:#3ddc84;
+  --no:#ff4d4d;
+  --text:"Commissioner", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "Courier New", monospace;
+  color-scheme:dark;
+}
+html,body{background:var(--bg);color:var(--ink);min-height:100%}
+body{font-family:var(--text);font-size:16px;line-height:1.5;
+  background-image:linear-gradient(rgba(247,147,26,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(247,147,26,.035) 1px,transparent 1px);
+  background-size:24px 24px;background-color:var(--bg)}
+.wrap{max-width:520px;margin:0 auto;padding-inline:16px;padding-block:20px 40px;display:flex;flex-direction:column;gap:16px}
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.logo{margin:0;font-weight:800;font-size:28px;line-height:1.05;letter-spacing:-.02em}
+.logo b{color:var(--orange);font-weight:800}
+.sub{margin:0;font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.06em}
+main{display:flex;flex-direction:column;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:16px}
+h2{margin:0;font-weight:800;font-size:20px;text-wrap:balance}
+.label{margin:0;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.note{margin:0;font-size:14px;color:var(--mute)}
+.err{margin:0;font-size:14px;color:var(--no)}
+.field{display:flex;flex-direction:column;gap:8px}
+input{font:inherit;color:var(--ink);background:#0000004d;border:1px solid var(--line);border-radius:10px;padding:11px 12px;min-width:0}
+input:focus{outline:2px solid var(--orange);outline-offset:1px}
+.players{display:flex;flex-direction:column;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-family:var(--mono);font-weight:700;font-size:13px;padding:8px 13px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--mute);cursor:pointer}
+.chip[aria-pressed="true"]{color:var(--bg);background:var(--orange);border-color:var(--orange)}
+.btn{font:inherit;font-weight:800;font-size:17px;padding:14px 18px;border-radius:10px;border:0;cursor:pointer;color:#1a0f00;background:var(--orange);box-shadow:0 5px 0 #8a4f07}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #8a4f07}
+.btn.ghost{background:transparent;border:1px solid var(--line);box-shadow:none;color:var(--ink)}
+.link{font:inherit;font-size:14px;color:var(--orange);background:none;border:0;padding:2px 0;cursor:pointer;align-self:flex-start;text-decoration:underline;text-underline-offset:3px}
+button:focus-visible{outline:2px solid var(--w3);outline-offset:2px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;border-radius:12px;background:var(--panel);border:1px solid var(--line)}
+.tab{font:inherit;font-weight:800;font-size:14px;padding:11px 8px;border-radius:8px;border:0;background:transparent;color:var(--mute);cursor:pointer}
+.tab[aria-pressed="true"]{color:#1a0f00;background:var(--orange)}
+.tab .mono{font-family:var(--mono)}
+
+/* question */
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--mute);font-variant-numeric:tabular-nums}
+.badges{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.hex{font-family:var(--mono);font-weight:700;color:var(--ink);background:#ffffff0f;border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.wt{font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:.06em;padding:4px 8px;border-radius:6px;color:#1a0f00}
+.wt.w1{background:var(--w1);color:var(--ink)}
+.wt.w2{background:var(--w2)}
+.wt.w3{background:var(--w3)}
+.timer{height:6px;border-radius:999px;background:#ffffff12;overflow:hidden}
+.timer i{display:block;height:100%;width:100%;background:var(--orange);transform-origin:left}
+.q{margin:0;font-weight:800;font-size:clamp(19px,5.2vw,23px);line-height:1.35;text-wrap:balance}
+.answers{display:grid;gap:10px}
+.ans{font:inherit;font-weight:600;text-align:left;padding:13px 14px;border-radius:10px;border:1px solid var(--line);background:#0000003a;color:var(--ink);cursor:pointer;display:flex;gap:12px;align-items:center;min-height:54px}
+.ans b{font-family:var(--mono);flex:none;width:26px;height:26px;border-radius:6px;display:grid;place-items:center;background:#ffffff12;font-size:13px}
+.ans:hover:not(:disabled){border-color:var(--orange)}
+.ans:disabled{cursor:default}
+.ans.right{border-color:var(--ok);background:rgba(61,220,132,.13)}
+.ans.right b{background:var(--ok);color:var(--bg)}
+.ans.wrong{border-color:var(--no);background:rgba(255,77,77,.12)}
+.ans.dim{opacity:.4}
+.verdict{margin:0;font-family:var(--mono);font-weight:700;font-size:16px;text-align:center}
+.why{margin:0;padding:12px 14px;border-left:3px solid var(--orange);background:#ffffff08;border-radius:0 10px 10px 0;font-size:15px}
+
+/* pass + results */
+.pass{text-align:center;align-items:center;padding-block:34px}
+.who{font-weight:800;font-size:clamp(28px,8vw,40px);line-height:1.1;overflow-wrap:anywhere}
+.big{font-family:var(--mono);font-weight:700;font-size:40px;line-height:1.1;text-align:center;font-variant-numeric:tabular-nums}
+.big small{font-size:15px;color:var(--mute)}
+.strip{margin:0;font-size:20px;letter-spacing:2px;text-align:center;overflow-wrap:anywhere}
+.result{display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center}
+.title{font-family:var(--mono);font-weight:700;color:var(--orange);letter-spacing:.1em;font-size:14px;text-transform:uppercase}
+.rows{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none}
+.rows li{display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 12px;border-radius:10px;background:#0000003a;border:1px solid var(--line);font-variant-numeric:tabular-nums}
+.rows li.new{border-color:var(--orange);background:rgba(247,147,26,.08)}
+.rows .rk{font-family:var(--mono);font-weight:700;text-align:center}
+.rows .nm{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rows .nm small{display:block;color:var(--mute);font-weight:400;font-size:12px}
+.rows .pt{font-family:var(--mono);font-weight:700}
+.sharebox{font:inherit;font-family:var(--mono);font-size:13px;width:100%;box-sizing:border-box;color:var(--ink);background:#0000004d;border:1px solid var(--line);border-radius:10px;padding:10px;resize:none}
+
+/* hash grid */
+.gridwrap{display:flex;flex-direction:column;gap:10px}
+.hashgrid{display:grid;grid-template-columns:repeat(16,1fr);gap:3px;max-width:100%}
+.hashgrid span{aspect-ratio:1;border-radius:2px;background:#ffffff06}
+.hashgrid span.av{background:#ffffff26}
+.hashgrid span.m1{background:var(--w1)}
+.hashgrid span.m2{background:var(--w2)}
+.hashgrid span.m3{background:var(--w3);box-shadow:0 0 6px rgba(255,210,122,.6)}
+.stats{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:12px;color:var(--mute);flex-wrap:wrap}
+.stats b{color:var(--ink)}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--mute)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+@media (prefers-reduced-motion:reduce){.btn:active{transform:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1 class="logo"><b>₿</b> Rabbit Hole</h1>
+    <p class="sub">Proof of Knowledge · SHA-256 · 0x00–0xFF</p>
+  </header>
+  <main id="app"></main>
+</div>
+
+<script>
+(() => {
+"use strict";
+const LINK = "__LINK__";
+// [id, weight, question, correct, wrong1, wrong2, wrong3, why]
+const BANK = __BANK__; // generated from data/questions.json by build.py
+const W = {1: {name: "PLEB", sats: 100}, 2: {name: "MAXI", sats: 210}, 3: {name: "CYPHERPUNK", sats: 500}};
+const TIME = 12;
+const MIX = {5: [2, 2, 1], 10: [3, 5, 2], 21: [6, 10, 5]};
+
+/* ---------- helpers ---------- */
+const $ = (s, r = document) => r.querySelector(s);
+const app = document.getElementById("app");
+const hex = n => "0x" + n.toString(16).toUpperCase().padStart(2, "0");
+const fmt = n => n.toLocaleString("el-GR");
+const shuffleR = (a, r) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = r() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const shuffle = a => shuffleR(a, Math.random);
+function mulberry(a) { return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function seedFrom(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") n.className = v; else if (k === "style") n.style.cssText = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v); else n.setAttribute(k, v === true ? "" : v);
+  }
+  for (const k of kids.flat()) if (k != null && k !== false) n.append(k.nodeType ? k : document.createTextNode(String(k)));
+  return n;
+}
+const pad = n => String(n).padStart(2, "0");
+function todayKey() { const d = new Date(); return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`; }
+function blockNo() { const d = new Date(), t = new Date(d.getFullYear(), d.getMonth(), d.getDate()); return Math.round((t - new Date(2026, 9, 6)) / 864e5) + 1; }
+const shortDate = k => { const [, m, d] = k.split("-"); return `${+d}/${+m}`; };
+
+/* ---------- sound ---------- */
+let actx = null;
+function tone(f, d, type = "square", v = .05, delay = 0) {
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const t = actx.currentTime + delay, o = actx.createOscillator(), g = actx.createGain();
+    o.type = type; o.frequency.setValueAtTime(f, t);
+    g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(.0001, t + d);
+    o.connect(g).connect(actx.destination); o.start(t); o.stop(t + d + .02);
+  } catch (e) {}
+}
+const sfx = {
+  ok: () => { tone(880, .07, "square", .05); tone(1320, .12, "square", .05, .07); },
+  no: () => { tone(160, .3, "sawtooth", .06); },
+  tick: () => tone(1500, .03, "square", .02),
+  win: () => [523, 659, 784, 1047].forEach((f, i) => tone(f, .14, "square", .05, i * .09))
+};
+
+/* ---------- saved data (this phone only) ---------- */
+let names = store.get("pok-names", []);
+let cfg = store.get("pok-cfg", {n: 1, rounds: 10});
+let mode = store.get("pok-mode", "daily");
+const mined = new Set(store.get("pok-mined", []));
+const seen = new Set(store.get("pok-seen", []));
+const saveSets = () => { store.set("pok-mined", [...mined]); store.set("pok-seen", [...seen]); };
+const getRecords = () => store.get("pok-records", []);
+function addRecord(rec) {
+  if (!rec.s) return;
+  store.set("pok-records", getRecords().concat([rec]).sort((a, b) => b.s - a.s || b.at - a.at).slice(0, 10));
+}
+
+/* ---------- picking ---------- */
+function pick(rounds, rng, preferFresh) {
+  const [a, b, c] = MIX[rounds] || MIX[10];
+  const take = (w, k) => {
+    let pool = shuffleR(BANK.filter(q => q[1] === w), rng);
+    if (preferFresh) {
+      const fresh = pool.filter(q => !seen.has(q[0]));
+      if (fresh.length < k) { pool.forEach(q => seen.delete(q[0])); saveSets(); }
+      else pool = fresh.concat(pool.filter(q => seen.has(q[0])));
+    }
+    let out = pool.slice(0, k);
+    while (out.length < k) out = out.concat(shuffleR(BANK.filter(q => q[1] === w), rng)).slice(0, k);
+    return out;
+  };
+  return shuffleR([...take(1, a), ...take(2, b), ...take(3, c)], rng);
+}
+const maxScore = qs => qs.reduce((s, q) => s + W[q[1]].sats * 2, 0);
+
+/* ---------- game ---------- */
+let game = null, raf = 0;
+function startDaily(name) {
+  const rng = mulberry(seedFrom("pok-" + todayKey()));
+  game = {daily: true, rng, rounds: 10, i: 0, players: [mk(name)], qs: pick(10, rng, false)};
+  next();
+}
+function startFree(list) {
+  game = {daily: false, rng: Math.random, rounds: cfg.rounds, i: 0, players: list.map(mk), qs: []};
+  list.forEach(() => game.qs.push(pick(cfg.rounds, Math.random, true)));
+  // interleave: player k answers game.qs[k][round]
+  const flat = [];
+  for (let r = 0; r < cfg.rounds; r++) for (let p = 0; p < list.length; p++) flat.push(game.qs[p][r]);
+  game.qs = flat;
+  next();
+}
+function mk(name) { return {name, score: 0, right: 0, streak: 0, log: []}; }
+const current = () => game.players[game.i % game.players.length];
+function next() {
+  if (game.i >= game.qs.length) return final();
+  game.players.length > 1 ? pass() : question();
+}
+
+/* ---------- blocks of UI ---------- */
+function hashGrid() {
+  const byId = new Map(BANK.map(q => [q[0], q[1]]));
+  const cells = [];
+  for (let i = 0; i < 256; i++) {
+    const w = byId.get(i);
+    const cls = w == null ? "" : mined.has(i) ? "m" + w : "av";
+    cells.push(el("span", {class: cls || null, title: hex(i)}));
+  }
+  const m = [...mined].filter(id => byId.has(id)).length;
+  return el("section", {class: "card gridwrap"},
+    el("div", {class: "stats"}, el("span", {}, "ΒΑΘΟΣ ", el("b", {}, hex(m)), " / 0x100"), el("span", {}, el("b", {}, m), " / 256 ερωτήσεις")),
+    el("div", {class: "hashgrid", role: "img", "aria-label": `Έχεις κάνει mine ${m} από ${BANK.length} ερωτήσεις`}, cells),
+    el("div", {class: "legend"},
+      el("span", {}, el("i", {style: "background:var(--w1)"}), "Pleb"),
+      el("span", {}, el("i", {style: "background:var(--w2)"}), "Maxi"),
+      el("span", {}, el("i", {style: "background:var(--w3)"}), "Cypherpunk"),
+      el("span", {}, el("i", {style: "background:#ffffff26"}), "Όχι ακόμα")),
+    el("p", {class: "note"}, "Κάθε σωστή απάντηση κάνει mine ένα κουτί και σε κατεβάζει πιο βαθιά. Στόχος: ο πάτος, και τα 256."));
+}
+function recordsCard() {
+  const recs = getRecords();
+  return el("section", {class: "card"},
+    el("h2", {}, "🏆 Τα ρεκόρ (sats)"),
+    recs.length ? el("ol", {class: "rows"}, recs.map((r, i) => el("li", {"data-at": r.at},
+      el("span", {class: "rk"}, ["🥇", "🥈", "🥉"][i] || i + 1),
+      el("span", {class: "nm"}, r.n, el("small", {}, `${r.r}/${r.t} σωστές · ${r.m === "d" ? "Block #" + r.b : "Ελεύθερο"} · ${shortDate(r.d)}`)),
+      el("span", {class: "pt"}, fmt(r.s)))))
+      : el("p", {class: "note"}, "Κανένα ρεκόρ ακόμα. Τα 10 καλύτερα σε αυτό το κινητό θα εμφανίζονται εδώ."));
+}
+function tabs() {
+  const t = (m, ...label) => el("button", {class: "tab", type: "button", "aria-pressed": String(mode === m), onclick: () => { mode = m; store.set("pok-mode", m); home(); }}, ...label);
+  return el("div", {class: "tabs", role: "group", "aria-label": "Τρόπος παιχνιδιού"},
+    t("daily", "⛏ Block ", el("span", {class: "mono"}, "#" + blockNo())), t("free", "Ελεύθερο"));
+}
+function home(error) {
+  cancelAnimationFrame(raf);
+  app.replaceChildren(tabs(), mode === "daily" ? dailyCard(error) : freeCard(error), hashGrid(), recordsCard());
+}
+
+function dailyCard(error) {
+  const done = store.get("pok-daily", null);
+  if (done && done.date === todayKey()) return el("section", {class: "card"},
+    el("p", {class: "label"}, `Block της ημέρας #${blockNo()}`),
+    el("h2", {}, "Το έκανες mine σήμερα ✅"),
+    el("div", {class: "big"}, fmt(done.score), el("small", {}, " sats")),
+    el("p", {class: "strip"}, done.strip),
+    shareRow(dailyText(done)),
+    el("p", {class: "note"}, "Tick tock, next block: νέο αύριο. Μέχρι τότε, Ελεύθερο."));
+  const input = el("input", {id: "dname", value: names[0] || "", maxlength: "18", placeholder: "Το nickname σου", autocomplete: "off"});
+  const go = () => {
+    const n = input.value.trim();
+    if (!n) return home("Γράψε πρώτα nickname.");
+    names[0] = n; store.set("pok-names", names); startDaily(n);
+  };
+  input.addEventListener("keydown", e => { if (e.key === "Enter") go(); });
+  return el("section", {class: "card"},
+    el("p", {class: "label"}, `Block της ημέρας #${blockNo()}`),
+    el("h2", {}, "10 ερωτήσεις, ίδιες για όλους σήμερα"),
+    el("p", {class: "note"}, "Μία προσπάθεια τη μέρα: 3 Pleb, 5 Maxi, 2 Cypherpunk. Μετά στέλνεις το σκορ στην ομάδα σου."),
+    el("div", {class: "field"}, el("label", {class: "label", for: "dname"}, "Nickname"), input),
+    error ? el("p", {class: "err", role: "alert"}, error) : null,
+    el("button", {class: "btn", type: "button", onclick: go}, "Κάνε mine το block ⛏"));
+}
+
+function freeCard(error) {
+  let n = cfg.n;
+  const vals = Array.from({length: 6}, (_, i) => names[i] || "");
+  const list = el("div", {class: "players"});
+  const draw = () => list.replaceChildren(...vals.slice(0, n).map((v, i) =>
+    el("input", {id: "p" + i, value: v, maxlength: "18", autocomplete: "off", placeholder: n === 1 ? "Το nickname σου" : `Nickname ${i + 1}ου παίκτη`, "aria-label": `Nickname παίκτη ${i + 1}`, oninput: e => { vals[i] = e.target.value; }})));
+  const counts = el("div", {class: "chips"}, [1, 2, 3, 4, 5, 6].map(k => {
+    const b = el("button", {class: "chip", type: "button", "aria-pressed": String(k === n), onclick: () => { n = k; counts.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === b))); draw(); }}, String(k));
+    return b;
+  }));
+  draw();
+  let rounds = cfg.rounds;
+  const rc = el("div", {class: "chips"}, [5, 10, 21].map(r => {
+    const b = el("button", {class: "chip", type: "button", "aria-pressed": String(r === rounds), onclick: () => { rounds = r; rc.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === b))); }}, r + " ερωτήσεις");
+    return b;
+  }));
+  const start = () => {
+    cfg = {n, rounds}; store.set("pok-cfg", cfg);
+    vals.forEach((v, i) => { if (v.trim()) names[i] = v.trim(); }); store.set("pok-names", names);
+    const chosen = vals.slice(0, n).map(v => v.trim());
+    if (chosen.some(v => !v)) return home(n === 1 ? "Γράψε πρώτα nickname." : "Γράψε nickname για κάθε παίκτη.");
+    startFree(chosen);
+  };
+  return el("section", {class: "card"},
+    el("h2", {}, "Ποιοι παίζουν;"),
+    el("div", {class: "field"}, el("p", {class: "label"}, "Παίκτες"), counts),
+    list,
+    el("div", {class: "field"}, el("p", {class: "label"}, "Ερωτήσεις ανά παίκτη"), rc),
+    error ? el("p", {class: "err", role: "alert"}, error) : null,
+    el("button", {class: "btn", type: "button", onclick: start}, "Start ⛏"),
+    el("p", {class: "note"}, "Random ερωτήσεις με βαρύτητα: Pleb 100, Maxi 210, Cypherpunk 500 sats. Όσο πιο γρήγορα απαντάς, τόσο περισσότερα, έως και διπλά."));
+}
+
+function pass() {
+  const p = current(), r = Math.floor(game.i / game.players.length) + 1;
+  app.replaceChildren(el("section", {class: "card pass"},
+    el("p", {class: "label"}, `Γύρος ${r} από ${game.rounds}`),
+    el("p", {class: "note"}, "Δώσε το κινητό στον/στην"),
+    el("div", {class: "who"}, p.name),
+    el("p", {class: "note"}, `${fmt(p.score)} sats`),
+    el("button", {class: "btn", type: "button", onclick: question}, "Έτοιμος ⛏")));
+  $(".btn", app).focus();
+}
+
+const OK = ["Few understand ✅", "WAGMI ✅", "Verified ✅", "Based ✅"];
+const NO = ["NGMI ❌", "Have fun staying poor ❌", "Paper hands ❌", "Ser… ❌"];
+function question() {
+  const p = current(), q = game.qs[game.i], [id, w, text, right, ...rest] = q, why = rest[3], wrong = rest.slice(0, 3);
+  seen.add(id); saveSets();
+  const opts = shuffleR([right, ...wrong], game.rng);
+  const bar = el("i"), verdict = el("p", {class: "verdict", "aria-live": "polite"}), whyEl = el("p", {class: "why", hidden: true}, why);
+  const last = game.i + 1 >= game.qs.length;
+  const nextBtn = el("button", {class: "btn", type: "button", hidden: true, onclick: () => { game.i++; next(); }}, last ? "Αποτελέσματα" : "Next block →");
+  let done = false;
+  const answers = el("div", {class: "answers"}, opts.map((o, k) => el("button", {class: "ans", type: "button", onclick: e => choose(o, e.currentTarget)}, el("b", {}, "ABCD"[k]), o)));
+  const t0 = performance.now(); let lastSec = TIME;
+  function choose(c, btn) {
+    if (done) return; done = true; cancelAnimationFrame(raf);
+    const left = Math.max(0, TIME - (performance.now() - t0) / 1000);
+    answers.querySelectorAll(".ans").forEach(b => {
+      b.disabled = true; const v = b.lastChild.textContent;
+      b.classList.add(v === right ? "right" : b === btn ? "wrong" : "dim");
+    });
+    const ok = c === right; p.log.push(ok);
+    if (ok) {
+      p.streak++; p.right++; mined.add(id); saveSets();
+      const bonus = p.streak >= 3 ? 21 : 0, pts = Math.round(W[w].sats * (1 + left / TIME)) + bonus;
+      p.score += pts;
+      verdict.textContent = `${OK[Math.random() * OK.length | 0]} +${fmt(pts)} sats` + (bonus ? " · tick tock 🔥" : "");
+      verdict.style.color = "var(--ok)"; sfx.ok();
+    } else {
+      p.streak = 0;
+      verdict.textContent = c === null ? "Το block έφυγε χωρίς εσένα ⏱" : NO[Math.random() * NO.length | 0];
+      verdict.style.color = "var(--no)"; sfx.no();
+    }
+    whyEl.hidden = false; nextBtn.hidden = false; nextBtn.focus();
+  }
+  function tick(now) {
+    const left = TIME - (now - t0) / 1000;
+    bar.style.transform = `scaleX(${Math.max(0, left / TIME)})`;
+    if (left < 4) bar.style.background = "var(--no)";
+    if (left < 4 && Math.ceil(left) < lastSec) { lastSec = Math.ceil(left); sfx.tick(); }
+    if (left <= 0) return choose(null, null);
+    raf = requestAnimationFrame(tick);
+  }
+  app.replaceChildren(el("section", {class: "card"},
+    el("div", {class: "qtop"},
+      el("span", {class: "badges"}, el("span", {class: "hex"}, hex(id)), el("span", {class: "wt w" + w}, `${W[w].name} · ${W[w].sats}`)),
+      el("span", {}, `${game.daily ? "#" + blockNo() + " · " : ""}${(game.i % game.qs.length) + 1}/${game.qs.length} · ${fmt(p.score)}`)),
+    el("div", {class: "timer"}, bar),
+    el("p", {class: "q"}, text),
+    answers, verdict, whyEl, nextBtn));
+  raf = requestAnimationFrame(tick);
+}
+
+/* ---------- share ---------- */
+const stripOf = log => log.map(ok => ok ? "🟧" : "⬛").join("");
+function titleFor(p, total, maxS) {
+  if (p.right === total) return "Satoshi · βρήκες τον πάτο 🕳️";
+  const r = p.score / maxS;
+  return r < .2 ? "Nocoiner" : r < .4 ? "Pleb" : r < .6 ? "HODLer" : r < .8 ? "Maxi" : "Cypherpunk";
+}
+const dailyText = d => `🐇 Rabbit Hole · Block #${d.no}\n${d.name}: ${fmt(d.score)} sats (${d.right}/10) · ${d.title}\n${d.strip}\nFew understand 👉 ${LINK}`;
+const soloText = (p, total, t) => `🐇 Rabbit Hole\n${p.name}: ${fmt(p.score)} sats (${p.right}/${total}) · ${t}\n${stripOf(p.log)}\nDon't trust, verify 👉 ${LINK}`;
+const partyText = ranked => `🐇 Rabbit Hole\n` + ranked.map((p, i) => `${["🥇", "🥈", "🥉"][i] || (i + 1) + "."} ${p.name}: ${fmt(p.score)} sats`).join("\n") + `\nFew understand 👉 ${LINK}`;
+function shareRow(text) {
+  const msg = el("p", {class: "note", "aria-live": "polite"});
+  const box = el("textarea", {class: "sharebox", readonly: true, rows: "5", hidden: true, "aria-label": "Κείμενο για αποστολή"}, text);
+  const btn = el("button", {class: "btn", type: "button", onclick: async () => {
+    try { await navigator.clipboard.writeText(text); box.hidden = true; msg.textContent = "Αντιγράφηκε. Κάνε επικόλληση στο Telegram ή στο X."; }
+    catch (e) { box.hidden = false; box.focus(); box.select(); msg.textContent = "Κράτα πατημένο το κείμενο και πάτα «Αντιγραφή»."; }
+  }}, "📤 Στείλε το σκορ");
+  return el("div", {class: "field"}, btn, box, msg);
+}
+
+/* ---------- final ---------- */
+function final() {
+  const now = Date.now(), dk = todayKey(); sfx.win();
+  const perPlayer = game.qs.filter((_, i) => i % game.players.length === 0);
+  const maxS = maxScore(perPlayer), total = game.rounds;
+  if (game.daily) {
+    const p = game.players[0], t = titleFor(p, 10, maxS);
+    const res = {date: dk, no: blockNo(), name: p.name, score: p.score, right: p.right, strip: stripOf(p.log), title: t};
+    store.set("pok-daily", res);
+    addRecord({n: p.name, s: p.score, r: p.right, t: 10, m: "d", b: res.no, d: dk, at: now});
+    app.replaceChildren(el("section", {class: "card"},
+      el("div", {class: "result"},
+        el("p", {class: "label"}, `Block της ημέρας #${res.no}`),
+        el("div", {class: "who"}, p.name),
+        el("div", {class: "big"}, fmt(p.score), el("small", {}, " sats")),
+        el("p", {class: "strip"}, res.strip),
+        el("span", {class: "title"}, t)),
+      shareRow(dailyText(res)),
+      el("button", {class: "btn ghost", type: "button", onclick: () => { mode = "free"; store.set("pok-mode", mode); home(); }}, "Παίξε Ελεύθερο")),
+      hashGrid(), recordsCard());
+  } else {
+    const ranked = game.players.slice().sort((a, b) => b.score - a.score);
+    ranked.forEach((p, i) => addRecord({n: p.name, s: p.score, r: p.right, t: total, m: "f", d: dk, at: now + i}));
+    const solo = ranked.length === 1, top = ranked[0], t = titleFor(top, total, maxS);
+    const tie = ranked.filter(p => p.score === top.score);
+    app.replaceChildren(el("section", {class: "card"},
+      el("div", {class: "result"},
+        el("p", {class: "label"}, solo ? "Τέλος" : tie.length > 1 ? "Ισοπαλία" : "Νικητής"),
+        el("div", {class: "who"}, tie.map(p => p.name).join(" & ")),
+        solo ? el("div", {class: "big"}, fmt(top.score), el("small", {}, " sats")) : null,
+        solo ? el("p", {class: "strip"}, stripOf(top.log)) : null,
+        el("span", {class: "title"}, t)),
+      solo ? null : el("ol", {class: "rows"}, ranked.map((p, i) => el("li", {},
+        el("span", {class: "rk"}, ["🥇", "🥈", "🥉"][i] || i + 1),
+        el("span", {class: "nm"}, p.name, el("small", {}, `${p.right}/${total} σωστές`)),
+        el("span", {class: "pt"}, fmt(p.score))))),
+      shareRow(solo ? soloText(top, total, t) : partyText(ranked)),
+      el("button", {class: "btn ghost", type: "button", onclick: () => startFree(game.players.map(p => p.name))}, "Ξανά 🔁"),
+      el("button", {class: "link", type: "button", onclick: () => home()}, "← Αρχική")),
+      hashGrid(), recordsCard());
+  }
+  app.querySelectorAll(".rows li[data-at]").forEach(li => { if (+li.dataset.at >= now) li.classList.add("new"); });
+}
+
+home();
+})();
+</script>

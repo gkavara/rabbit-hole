@@ -1,0 +1,4098 @@
+[
+  {
+    "id": 0,
+    "hex": "0x00",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσα BTC έστειλε ο Satoshi στον Hal Finney στην πρώτη συναλλαγή;",
+    "answer": "10",
+    "wrong": [
+      "1",
+      "50",
+      "21"
+    ],
+    "why": "10 BTC, στο block 170.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 1,
+    "hex": "0x01",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσα bitcoin θα υπάρξουν ποτέ, το πολύ;",
+    "answer": "21 εκατομμύρια",
+    "wrong": [
+      "18 εκατομμύρια",
+      "100 εκατομμύρια",
+      "Απεριόριστα, όπως το ευρώ"
+    ],
+    "why": "Το supply cap είναι λίγο κάτω από 21.000.000 BTC. Κανείς δεν μπορεί να «τυπώσει» παραπάνω.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 2,
+    "hex": "0x02",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο exchange κατέρρευσε τον Νοέμβριο του 2022;",
+    "answer": "Το FTX",
+    "wrong": [
+      "Το Mt. Gox",
+      "Το Bitstamp",
+      "Το Kraken"
+    ],
+    "why": "Άλλη μια υπενθύμιση: not your keys, not your coins.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 3,
+    "hex": "0x03",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος δημιούργησε τα RPOW (Reusable Proofs of Work) το 2004;",
+    "answer": "Ο Hal Finney",
+    "wrong": [
+      "Ο Adam Back",
+      "Ο Nick Szabo",
+      "Ο Wei Dai"
+    ],
+    "why": "Πρόγονος του Bitcoin, βασισμένος στο Hashcash.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 4,
+    "hex": "0x04",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πόσα BTC δημιουργήθηκαν από το value overflow bug του 2010;",
+    "answer": "Περίπου 184 δισεκατομμύρια",
+    "wrong": [
+      "21 εκατομμύρια",
+      "1 δισεκατομμύριο",
+      "92 εκατομμύρια"
+    ],
+    "why": "Αύγουστος 2010, block 74.638. Διορθώθηκε με soft fork μέσα σε λίγες ώρες και η αλυσίδα «ξαναγράφτηκε».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 5,
+    "hex": "0x05",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «rekt»;",
+    "answer": "Τεράστια απώλεια, συνήθως από leverage",
+    "wrong": [
+      "Επιβεβαιωμένη συναλλαγή",
+      "Νέο ATH",
+      "Επιτυχές mining"
+    ],
+    "why": "Από το «wrecked». Το leverage είναι ο πιο γρήγορος δρόμος εκεί.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 6,
+    "hex": "0x06",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος έγραψε το «Digital Gold» (2015);",
+    "answer": "Ο Nathaniel Popper",
+    "wrong": [
+      "Ο Jonathan Bier",
+      "Ο Saifedean Ammous",
+      "Ο Jeff Booth"
+    ],
+    "why": "Δημοσιογράφος των New York Times. Από τα πρώτα βιβλία για την ιστορία του Bitcoin.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 7,
+    "hex": "0x07",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το Bitcoin Core;",
+    "answer": "Το κύριο λογισμικό node του Bitcoin",
+    "wrong": [
+      "Η εταιρεία που ελέγχει το Bitcoin",
+      "Ένα hardware wallet",
+      "Το exchange του Satoshi"
+    ],
+    "why": "Είναι η reference implementation, ο απόγονος του κώδικα του Satoshi.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 8,
+    "hex": "0x08",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Σε ποιο λειτουργικό έτρεχε το Bitcoin v0.1;",
+    "answer": "Μόνο Windows",
+    "wrong": [
+      "Μόνο Linux",
+      "Μόνο macOS",
+      "Σε όλα"
+    ],
+    "why": "Οι εκδόσεις για Linux και Mac ήρθαν αργότερα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 9,
+    "hex": "0x09",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι γίνεται αν κάποιος στο Lightning εκπέμψει παλιά κατάσταση του channel;",
+    "answer": "Ο άλλος μπορεί να πάρει όλα τα κεφάλαια του channel ως ποινή",
+    "wrong": [
+      "Τίποτα, απλώς κλείνει το channel",
+      "Το channel παγώνει για ένα χρόνο",
+      "Η συναλλαγή ακυρώνεται αυτόματα"
+    ],
+    "why": "Ο μηχανισμός ποινής κάνει την απάτη πολύ ακριβή.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 10,
+    "hex": "0x0A",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος Ελληνοβρετανός έγραψε το «Mastering Bitcoin»;",
+    "answer": "Ο Andreas Antonopoulos",
+    "wrong": [
+      "Ο Saifedean Ammous",
+      "Ο Jimmy Song",
+      "Ο Nic Carter"
+    ],
+    "why": "Ο Ανδρέας Αντωνόπουλος. Έγραψε επίσης το «The Internet of Money».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 11,
+    "hex": "0x0B",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο BIP εισήγαγε το SegWit;",
+    "answer": "BIP141",
+    "wrong": [
+      "BIP39",
+      "BIP148",
+      "BIP340"
+    ],
+    "why": "BIP141. Το BIP148 ήταν το UASF και το BIP340 οι υπογραφές Schnorr.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 12,
+    "hex": "0x0C",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι η coinbase συναλλαγή;",
+    "answer": "Η πρώτη συναλλαγή κάθε block, που πληρώνει τον miner",
+    "wrong": [
+      "Συναλλαγή προς το exchange Coinbase",
+      "Η πρώτη συναλλαγή του Satoshi",
+      "Μια συναλλαγή χωρίς fee"
+    ],
+    "why": "Από εδώ πήρε το όνομά του και το exchange.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 13,
+    "hex": "0x0D",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια εταιρεία του Michael Saylor έγινε γνωστή για τις τεράστιες αγορές BTC;",
+    "answer": "Strategy (πρώην MicroStrategy)",
+    "wrong": [
+      "Tesla",
+      "Coinbase",
+      "BlackRock"
+    ],
+    "why": "Ξεκίνησε το 2020. Το 2025 άλλαξε όνομα σε Strategy.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 14,
+    "hex": "0x0E",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα hot wallet;",
+    "answer": "Wallet συνδεδεμένο στο internet, π.χ. app στο κινητό",
+    "wrong": [
+      "Wallet που έχει «καεί» από hack",
+      "Wallet με πολλά BTC",
+      "Wallet για mining"
+    ],
+    "why": "Βολικό για μικρά ποσά καθημερινής χρήσης. Τα μεγάλα ποσά πάνε σε cold storage.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 15,
+    "hex": "0x0F",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσες σελίδες έχει περίπου το whitepaper;",
+    "answer": "9",
+    "wrong": [
+      "3",
+      "50",
+      "120"
+    ],
+    "why": "Μόλις 9 σελίδες, μαζί με τις αναφορές.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 16,
+    "hex": "0x10",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το «Moscow time»;",
+    "answer": "Πόσα sats αγοράζει 1 δολάριο",
+    "wrong": [
+      "Η ώρα που βγαίνει το επόμενο block",
+      "Η ώρα Μόσχας στο genesis block",
+      "Ο χρόνος του difficulty adjustment"
+    ],
+    "why": "Τιμή αντεστραμμένη: sats ανά δολάριο. Όσο πέφτει, τόσο ανεβαίνει το BTC.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 17,
+    "hex": "0x11",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο είναι το μέγιστο block weight μετά το SegWit;",
+    "answer": "4.000.000 weight units",
+    "wrong": [
+      "1 MB",
+      "2 MB",
+      "8.000.000 weight units"
+    ],
+    "why": "4M WU. Γι' αυτό τα blocks σήμερα ξεπερνούν το 1 MB χωρίς hard fork.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 18,
+    "hex": "0x12",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε ποιο block θα γίνει το halving του 2028;",
+    "answer": "1.050.000",
+    "wrong": [
+      "1.000.000",
+      "1.040.000",
+      "1.260.000"
+    ],
+    "why": "840.000 + 210.000 = 1.050.000.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 19,
+    "hex": "0x13",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα inbound liquidity στο Lightning;",
+    "answer": "Η δυνατότητα του channel να λάβει πληρωμές",
+    "wrong": [
+      "Τα fees του channel",
+      "Ο αριθμός των channels",
+      "Τα BTC στο cold wallet"
+    ],
+    "why": "Για να λάβεις sats, πρέπει να υπάρχει χωρητικότητα στην πλευρά του άλλου.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 20,
+    "hex": "0x14",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι σημαίνει BOLT στο Lightning;",
+    "answer": "Basis of Lightning Technology",
+    "wrong": [
+      "Bitcoin Off-chain Lightning Transfer",
+      "Block Ordered Lightning Transaction",
+      "Base Layer Optimization Toolkit"
+    ],
+    "why": "Οι προδιαγραφές που επιτρέπουν σε διαφορετικές υλοποιήσεις να μιλούν μεταξύ τους.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 21,
+    "hex": "0x15",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο opcode απενεργοποίησε ο Satoshi το 2010, που συζητιέται ξανά σήμερα;",
+    "answer": "OP_CAT",
+    "wrong": [
+      "OP_RETURN",
+      "OP_CHECKSIG",
+      "OP_DUP"
+    ],
+    "why": "Απενεργοποιήθηκε για λόγους ασφαλείας. Το BIP347 προτείνει επαναφορά του στο Tapscript.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 22,
+    "hex": "0x16",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος σχεδίασε το bit gold;",
+    "answer": "Nick Szabo",
+    "wrong": [
+      "Hal Finney",
+      "Adam Back",
+      "Wei Dai"
+    ],
+    "why": "Ο Nick Szabo. Ένας από τους πιο κοντινούς προγόνους του Bitcoin.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 23,
+    "hex": "0x17",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιον υπέδειξε ως Satoshi το ντοκιμαντέρ του HBO «Money Electric» (2024);",
+    "answer": "Τον Peter Todd",
+    "wrong": [
+      "Τον Adam Back",
+      "Τον Hal Finney",
+      "Τον Len Sassaman"
+    ],
+    "why": "Ο ίδιος το διέψευσε. Ο Satoshi παραμένει άγνωστος.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 24,
+    "hex": "0x18",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος έγραψε το BIP1, που όρισε τη διαδικασία των BIP;",
+    "answer": "Ο Amir Taaki",
+    "wrong": [
+      "Ο Satoshi",
+      "Ο Gavin Andresen",
+      "Ο Luke Dashjr"
+    ],
+    "why": "Το 2011, με βάση τη διαδικασία των PEP της Python.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 25,
+    "hex": "0x19",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια χρονιά δημοσιεύτηκε το whitepaper του Bitcoin;",
+    "answer": "2008",
+    "wrong": [
+      "2007",
+      "2009",
+      "2010"
+    ],
+    "why": "Στις 31 Οκτωβρίου 2008. Το δίκτυο ξεκίνησε τον Ιανουάριο του 2009.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 26,
+    "hex": "0x1A",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο πεδίο του block header κωδικοποιεί τον στόχο δυσκολίας;",
+    "answer": "bits",
+    "wrong": [
+      "nonce",
+      "version",
+      "merkle root"
+    ],
+    "why": "Το «bits» είναι συμπιεσμένη μορφή του target.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 27,
+    "hex": "0x1B",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια χώρα δημιούργησε Strategic Bitcoin Reserve με εκτελεστικό διάταγμα τον Μάρτιο του 2025;",
+    "answer": "Οι ΗΠΑ",
+    "wrong": [
+      "Η Ελβετία",
+      "Το Ηνωμένο Βασίλειο",
+      "Η Ιαπωνία"
+    ],
+    "why": "Αρχικά με BTC που η κυβέρνηση είχε ήδη κατασχέσει.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 28,
+    "hex": "0x1C",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα «zap» στο Nostr;",
+    "answer": "Ένα tip σε sats μέσω Lightning",
+    "wrong": [
+      "Ένα like",
+      "Ένα block",
+      "Μια διαγραφή post"
+    ],
+    "why": "Αντί για likes, sats.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 29,
+    "hex": "0x1D",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο πρόβλημα της πληροφορικής λύνει πρακτικά το Bitcoin;",
+    "answer": "Των Βυζαντινών Στρατηγών",
+    "wrong": [
+      "Του πλανόδιου πωλητή",
+      "Του Monty Hall",
+      "Του φιλοσόφου που τρώει"
+    ],
+    "why": "Συμφωνία ανάμεσα σε αγνώστους, χωρίς εμπιστοσύνη, ακόμα και αν κάποιοι είναι κακόβουλοι.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 30,
+    "hex": "0x1E",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο BIP όρισε τη μορφή διευθύνσεων bech32 (bc1q…);",
+    "answer": "BIP173",
+    "wrong": [
+      "BIP350",
+      "BIP39",
+      "BIP141"
+    ],
+    "why": "Το BIP350 όρισε το bech32m για Taproot (bc1p…).",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 31,
+    "hex": "0x1F",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι υπολόγισε «για πλάκα» ο Hal Finney το 2009;",
+    "answer": "Ότι κάθε bitcoin μπορεί να αξίζει ~10 εκατ. $ αν γίνει παγκόσμιο χρήμα",
+    "wrong": [
+      "Ότι το Bitcoin θα αποτύχει μέσα σε 5 χρόνια",
+      "Ότι το Bitcoin θα αντικατασταθεί από altcoin",
+      "Ότι το mining θα γίνει με κινητά"
+    ],
+    "why": "Υπολογισμός «για πλάκα» το 2009, αν το Bitcoin γινόταν το κυρίαρχο παγκόσμιο σύστημα πληρωμών.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 32,
+    "hex": "0x20",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια χρονιά έφτασε για πρώτη φορά το BTC το 1 δολάριο;",
+    "answer": "2011",
+    "wrong": [
+      "2009",
+      "2010",
+      "2012"
+    ],
+    "why": "Τον Φεβρουάριο του 2011.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 33,
+    "hex": "0x21",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο fork δημιουργήθηκε την 1η Αυγούστου 2017 από όσους ήθελαν μεγαλύτερα blocks;",
+    "answer": "Bitcoin Cash",
+    "wrong": [
+      "Bitcoin SV",
+      "Bitcoin Gold",
+      "Litecoin"
+    ],
+    "why": "Το Bitcoin Cash. Το Bitcoin SV έγινε fork του Bitcoin Cash το 2018. Forks των forks…",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 34,
+    "hex": "0x22",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος επινόησε τα Merkle trees που χρησιμοποιεί το Bitcoin;",
+    "answer": "Ο Ralph Merkle",
+    "wrong": [
+      "Ο Satoshi",
+      "Ο Whitfield Diffie",
+      "Ο Adam Back"
+    ],
+    "why": "Ο Ralph Merkle τα πατεντάρισε το 1979.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 35,
+    "hex": "0x23",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο ήταν το nonce του genesis block;",
+    "answer": "2.083.236.893",
+    "wrong": [
+      "21.000.000",
+      "1.231.006.505",
+      "0"
+    ],
+    "why": "2.083.236.893. Το 1.231.006.505 είναι το timestamp του (Unix time).",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 36,
+    "hex": "0x24",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο σύνθημα χρησιμοποίησαν όσοι αντιτάχθηκαν στο SegWit2x;",
+    "answer": "NO2X",
+    "wrong": [
+      "HODL",
+      "UASF FOREVER",
+      "SMALL BLOCKS ONLY"
+    ],
+    "why": "Το «NO2X» έγινε σημαία της αντίστασης των χρηστών το 2017.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 37,
+    "hex": "0x25",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πότε στάλθηκαν τα τελευταία γνωστά μηνύματα του Satoshi προς developers;",
+    "answer": "2011",
+    "wrong": [
+      "2009",
+      "2010",
+      "2013"
+    ],
+    "why": "Τον Απρίλιο του 2011: «I've moved on to other things». Και εξαφανίστηκε.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 38,
+    "hex": "0x26",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι σημαίνει «21e6»;",
+    "answer": "21 εκατομμύρια, σε επιστημονική γραφή",
+    "wrong": [
+      "Το 21ο halving",
+      "Ένα BIP",
+      "Ένα hardware wallet"
+    ],
+    "why": "21 × 10^6 = 21.000.000. Συχνά σε μπλουζάκια.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 39,
+    "hex": "0x27",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποια αλυσίδα θεωρούν έγκυρη οι nodes;",
+    "answer": "Αυτή με τη μεγαλύτερη συσσωρευμένη δουλειά",
+    "wrong": [
+      "Αυτή με τα περισσότερα blocks",
+      "Την πιο πρόσφατη",
+      "Αυτή που προτείνουν οι developers"
+    ],
+    "why": "Το «longest chain» είναι απλοποίηση. Μετράει η συνολική δουλειά (most work).",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 40,
+    "hex": "0x28",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο BIP ορίζει το Tapscript;",
+    "answer": "BIP342",
+    "wrong": [
+      "BIP341",
+      "BIP340",
+      "BIP119"
+    ],
+    "why": "Οι κανόνες script για τα Taproot spends.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 41,
+    "hex": "0x29",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το testnet;",
+    "answer": "Δοκιμαστικό δίκτυο με bitcoin χωρίς αξία",
+    "wrong": [
+      "Η πρώτη έκδοση του Bitcoin",
+      "Δίκτυο για VIP χρήστες",
+      "Το Lightning"
+    ],
+    "why": "Εκεί δοκιμάζουν οι developers χωρίς να ρισκάρουν πραγματικά sats.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 42,
+    "hex": "0x2A",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο BIP ορίζει το derivation path για native SegWit (bc1q);",
+    "answer": "BIP84",
+    "wrong": [
+      "BIP44",
+      "BIP49",
+      "BIP86"
+    ],
+    "why": "BIP44: legacy · BIP49: nested SegWit · BIP84: native SegWit · BIP86: Taproot.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 43,
+    "hex": "0x2B",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Από ποια εφημερίδα είναι ο τίτλος στο genesis block;",
+    "answer": "The Times",
+    "wrong": [
+      "Financial Times",
+      "The Wall Street Journal",
+      "The Guardian"
+    ],
+    "why": "The Times του Λονδίνου, φύλλο της 3ης Ιανουαρίου 2009.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 44,
+    "hex": "0x2C",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι έγινε με τον Hal Finney μετά τον θάνατό του το 2014;",
+    "answer": "Κρυοσυντηρήθηκε",
+    "wrong": [
+      "Τάφηκε με το hardware wallet του",
+      "Του αφιερώθηκε block",
+      "Έγινε ο νέος Satoshi"
+    ],
+    "why": "Κρυοσυντηρήθηκε στο Alcor, στην Αριζόνα. Running bitcoin, forever.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 45,
+    "hex": "0x2D",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Κάθε πόσα blocks γίνεται halving;",
+    "answer": "210.000",
+    "wrong": [
+      "100.000",
+      "2.016",
+      "21.000"
+    ],
+    "why": "Κάθε 210.000 blocks, δηλαδή περίπου κάθε 4 χρόνια, η νέα έκδοση BTC μειώνεται στο μισό.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 46,
+    "hex": "0x2E",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι ήταν το «alert key»;",
+    "answer": "Κλειδί για ειδοποιήσεις σε όλους τους nodes, που καταργήθηκε",
+    "wrong": [
+      "Το κλειδί του genesis block",
+      "Το PIN του Bitcoin Core",
+      "Το κλειδί του Lightning"
+    ],
+    "why": "Το σύστημα αποσύρθηκε το 2016 ως κίνδυνος κεντρικοποίησης.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 47,
+    "hex": "0x2F",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος πρότεινε το b-money, που επίσης αναφέρεται στο whitepaper;",
+    "answer": "Wei Dai",
+    "wrong": [
+      "Adam Back",
+      "David Chaum",
+      "Nick Szabo"
+    ],
+    "why": "Wei Dai, το 1998. Είναι η πρώτη αναφορά (reference [1]) του whitepaper.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 48,
+    "hex": "0x30",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι όρισε το BIP32;",
+    "answer": "Τα HD (ιεραρχικά ντετερμινιστικά) wallets",
+    "wrong": [
+      "Τις λέξεις του seed",
+      "Το SegWit",
+      "Τις υπογραφές Schnorr"
+    ],
+    "why": "Από ένα seed παράγεται ολόκληρο δέντρο κλειδιών.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 49,
+    "hex": "0x31",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο opcode επιτρέπει απόλυτο timelock (BIP65);",
+    "answer": "OP_CHECKLOCKTIMEVERIFY",
+    "wrong": [
+      "OP_CHECKSEQUENCEVERIFY",
+      "OP_RETURN",
+      "OP_CHECKSIG"
+    ],
+    "why": "CLTV (BIP65) για απόλυτο χρόνο. Το CSV (BIP112) είναι για σχετικό χρόνο.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 50,
+    "hex": "0x32",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Με ποια μέθοδο ενεργοποιήθηκε το Taproot;",
+    "answer": "Speedy Trial",
+    "wrong": [
+      "UASF",
+      "Flag day hard fork",
+      "BIP9 με 95% και χωρίς λήξη"
+    ],
+    "why": "Σύντομο παράθυρο σηματοδότησης από miners με κατώφλι 90%, μετά τις εμπειρίες του 2017.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 51,
+    "hex": "0x33",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα «whale»;",
+    "answer": "Κάποιος με τεράστια ποσότητα BTC",
+    "wrong": [
+      "Ένα μεγάλο mining pool",
+      "Ένα πολύ μεγάλο block",
+      "Ένα bug του 2010"
+    ],
+    "why": "Όταν κινείται ένα whale, όλοι κοιτάνε τα charts.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 52,
+    "hex": "0x34",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε ποιον έστειλε ο Satoshi την πρώτη συναλλαγή bitcoin;",
+    "answer": "Hal Finney",
+    "wrong": [
+      "Nick Szabo",
+      "Gavin Andresen",
+      "Laszlo Hanyecz"
+    ],
+    "why": "10 BTC στον Hal Finney, στο block 170, στις 12 Ιανουαρίου 2009.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 53,
+    "hex": "0x35",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «DYOR»;",
+    "answer": "Do Your Own Research",
+    "wrong": [
+      "Don't Yield On Returns",
+      "Double Your Online Rewards",
+      "Decentralize Your Own Router"
+    ],
+    "why": "Ψάξ' το μόνος σου. Don't trust, verify.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 54,
+    "hex": "0x36",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι σημαίνει «be your own bank»;",
+    "answer": "Κρατάς μόνος τα χρήματά σου χωρίς μεσάζοντα",
+    "wrong": [
+      "Ανοίγεις τράπεζα με BTC",
+      "Δανείζεις τα BTC σου",
+      "Παίρνεις δάνειο σε BTC"
+    ],
+    "why": "Self-custody: πλήρης έλεγχος, πλήρης ευθύνη.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 55,
+    "hex": "0x37",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο κράτος των Ιμαλαΐων κάνει mining με υδροηλεκτρική ενέργεια;",
+    "answer": "Το Μπουτάν",
+    "wrong": [
+      "Το Νεπάλ",
+      "Το Θιβέτ",
+      "Η Ινδία"
+    ],
+    "why": "Το Μπουτάν συσσώρευσε BTC κάνοντας mining με το πλεόνασμα των φραγμάτων του.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 56,
+    "hex": "0x38",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος έγραψε το «The Price of Tomorrow»;",
+    "answer": "Ο Jeff Booth",
+    "wrong": [
+      "Η Lyn Alden",
+      "Ο Nik Bhatia",
+      "Ο Gigi"
+    ],
+    "why": "Το βιβλίο για τον αποπληθωρισμό που φέρνει η τεχνολογία.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 57,
+    "hex": "0x39",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «KYC»;",
+    "answer": "Know Your Customer, δηλαδή ταυτοποίηση",
+    "wrong": [
+      "Keep Your Coins",
+      "Key Your Crypto",
+      "Know Your Chain"
+    ],
+    "why": "Η ταυτοποίηση που ζητούν τα exchanges. Τα δεδομένα σου μένουν σε κάποιον server.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 58,
+    "hex": "0x3A",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι έγραψε ο Hal Finney στο Twitter στις 10 Ιανουαρίου 2009;",
+    "answer": "Running bitcoin",
+    "wrong": [
+      "Bitcoin is the future",
+      "Just received 10 BTC",
+      "Hello, Satoshi"
+    ],
+    "why": "«Running bitcoin». Από τα πιο ιστορικά tweets που γράφτηκαν ποτέ.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 59,
+    "hex": "0x3B",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι είναι ένα OP_RETURN output;",
+    "answer": "Output που αποθηκεύει δεδομένα και δεν μπορεί να ξοδευτεί",
+    "wrong": [
+      "Output που επιστρέφει τα coins στον αποστολέα",
+      "Το reward του miner",
+      "Ένα timelock"
+    ],
+    "why": "Αποδεδειγμένα unspendable. Έτσι δεν φουσκώνει το UTXO set.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 60,
+    "hex": "0x3C",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το double spend;",
+    "answer": "Να ξοδέψεις τα ίδια coins δύο φορές",
+    "wrong": [
+      "Να πληρώσεις διπλό fee",
+      "Συναλλαγή προς δύο διευθύνσεις",
+      "Διπλό halving"
+    ],
+    "why": "Το πρόβλημα που έλυσε ο Satoshi χωρίς κεντρικό διαχειριστή.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 61,
+    "hex": "0x3D",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι συμβόλιζαν τα laser eyes στα προφίλ το 2021;",
+    "answer": "Υποστήριξη του Bitcoin, «μέχρι τα 100k»",
+    "wrong": [
+      "Πένθος για το Mt. Gox",
+      "Διαμαρτυρία κατά του mining",
+      "Fans του Star Wars"
+    ],
+    "why": "Η καμπάνια ήταν να μείνουν τα laser eyes μέχρι το BTC να φτάσει τα 100.000$.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 62,
+    "hex": "0x3E",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πώς λέγεται η διαδικασία που προσθέτει νέα blocks και εκδίδει νέα BTC;",
+    "answer": "Mining",
+    "wrong": [
+      "Staking",
+      "Minting",
+      "Yield farming"
+    ],
+    "why": "Mining, με Proof of Work. Το staking είναι για άλλα δίκτυα… που δεν θα αναφέρουμε.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 63,
+    "hex": "0x3F",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι δεν πρέπει να δώσεις ΠΟΤΕ σε κανέναν;",
+    "answer": "Το seed phrase",
+    "wrong": [
+      "Τη διεύθυνση λήψης",
+      "Το transaction ID",
+      "Το ύψος του block"
+    ],
+    "why": "Όποιος έχει το seed phrase έχει τα bitcoin σου. Τέλος.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 64,
+    "hex": "0x40",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος ίδρυσε το φόρουμ που έγινε αργότερα το BitcoinTalk;",
+    "answer": "Satoshi Nakamoto",
+    "wrong": [
+      "Hal Finney",
+      "Gavin Andresen",
+      "Theymos"
+    ],
+    "why": "Ο ίδιος ο Satoshi, τον Νοέμβριο του 2009.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 65,
+    "hex": "0x41",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα block explorer;",
+    "answer": "Ιστοσελίδα που δείχνει blocks και συναλλαγές",
+    "wrong": [
+      "Wallet για εξερεύνηση",
+      "Miner",
+      "Το Lightning"
+    ],
+    "why": "Π.χ. mempool.space. Ακόμα καλύτερα: δικός σου node με δικό σου explorer.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 66,
+    "hex": "0x42",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε τι μονάδα μετριούνται συνήθως τα fees;",
+    "answer": "sat/vB",
+    "wrong": [
+      "BTC/MB",
+      "sats/λεπτό",
+      "€/block"
+    ],
+    "why": "Sats ανά virtual byte. Πληρώνεις για χώρο στο block, όχι για το ποσό που στέλνεις.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 67,
+    "hex": "0x43",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε ποιο block έγινε το halving του 2024;",
+    "answer": "840.000",
+    "wrong": [
+      "630.000",
+      "800.000",
+      "1.050.000"
+    ],
+    "why": "Block 840.000, στις 20 Απριλίου 2024. Το τέταρτο halving.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 68,
+    "hex": "0x44",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποια εταιρεία συνδέθηκε με την αντίσταση στο SegWit λόγω του ASICBoost;",
+    "answer": "Η Bitmain",
+    "wrong": [
+      "Η Blockstream",
+      "Η Coinbase",
+      "Η Bitfury"
+    ],
+    "why": "Το SegWit δυσκόλευε το κρυφό ASICBoost, που έδινε πλεονέκτημα στα μηχανήματά της.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 69,
+    "hex": "0x45",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο soft fork ενεργοποιήθηκε τον Αύγουστο του 2017;",
+    "answer": "SegWit",
+    "wrong": [
+      "Taproot",
+      "P2SH",
+      "CSV"
+    ],
+    "why": "SegWit: έλυσε το transaction malleability και άνοιξε τον δρόμο για το Lightning.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 70,
+    "hex": "0x46",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια είναι η «αρχή» του Satoshi για τον έλεγχο των κανόνων;",
+    "answer": "Οι full nodes επιβάλλουν τους κανόνες, όχι οι miners",
+    "wrong": [
+      "Οι miners ψηφίζουν τους κανόνες",
+      "Οι developers αποφασίζουν",
+      "Τα exchanges αποφασίζουν"
+    ],
+    "why": "Οι miners προτείνουν blocks. Οι nodes αποφασίζουν αν είναι έγκυρα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 71,
+    "hex": "0x47",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «self-custody»;",
+    "answer": "Κρατάς μόνος σου τα κλειδιά σου",
+    "wrong": [
+      "Το exchange κρατάει τα κλειδιά σου",
+      "Η τράπεζα φυλάει το seed σου",
+      "Δεν έχεις κλειδιά"
+    ],
+    "why": "Be your own bank. Με ευθύνη και χωρίς «ξέχασα τον κωδικό».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 72,
+    "hex": "0x48",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πότε έγραψε ο Satoshi το τελευταίο του post στο BitcoinTalk;",
+    "answer": "Δεκέμβριο του 2010",
+    "wrong": [
+      "Απρίλιο του 2011",
+      "Ιανουάριο του 2009",
+      "Το 2012"
+    ],
+    "why": "Στις 12 Δεκεμβρίου 2010. Τα emails συνεχίστηκαν μέχρι τον Απρίλιο του 2011.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 73,
+    "hex": "0x49",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποια elliptic curve χρησιμοποιεί το Bitcoin;",
+    "answer": "secp256k1",
+    "wrong": [
+      "P-256",
+      "Curve25519",
+      "secp384r1"
+    ],
+    "why": "secp256k1. Επιλογή του Satoshi που τότε θεωρήθηκε ασυνήθιστη.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 74,
+    "hex": "0x4A",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια ήταν η πρώτη ισοτιμία BTC/USD που δημοσιεύτηκε (New Liberty Standard, 2009);",
+    "answer": "1 $ = 1.309,03 BTC",
+    "wrong": [
+      "1 $ = 1 BTC",
+      "1 $ = 100 BTC",
+      "1 $ = 21.000 BTC"
+    ],
+    "why": "Βασισμένη στο κόστος ρεύματος για το mining. Τον Οκτώβριο του 2009.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 75,
+    "hex": "0x4B",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι θα πληρώνει τους miners όταν τελειώσει η νέα έκδοση BTC;",
+    "answer": "Τα fees των συναλλαγών",
+    "wrong": [
+      "Νέα bitcoin από το Bitcoin Foundation",
+      "Κρατικές επιδοτήσεις",
+      "Τίποτα, και θα σταματήσει το mining"
+    ],
+    "why": "Το security budget θα στηρίζεται αποκλειστικά στα fees.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 76,
+    "hex": "0x4C",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο είναι το καθιερωμένο μήνυμα όταν βγαίνει νέο block;",
+    "answer": "Tick tock, next block",
+    "wrong": [
+      "Gm",
+      "Wen moon",
+      "Number go up"
+    ],
+    "why": "Ο χρόνος του Bitcoin μετριέται σε blocks.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 77,
+    "hex": "0x4D",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος είναι ο ρόλος των miners;",
+    "answer": "Ταξινομούν συναλλαγές σε blocks και ασφαλίζουν την αλυσίδα",
+    "wrong": [
+      "Ορίζουν την τιμή",
+      "Εκδίδουν άδειες χρήσης",
+      "Ελέγχουν τα wallets"
+    ],
+    "why": "Δεν «κάνουν τους κανόνες». Τους ακολουθούν, αλλιώς τα blocks τους απορρίπτονται.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 78,
+    "hex": "0x4E",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι αποφάσισε το βρετανικό δικαστήριο το 2024 για τον Craig Wright;",
+    "answer": "Ότι δεν είναι ο Satoshi",
+    "wrong": [
+      "Ότι είναι ο Satoshi",
+      "Ότι συνέγραψε το whitepaper",
+      "Δεν αποφάνθηκε"
+    ],
+    "why": "Στην υπόθεση COPA v Wright, τον Μάρτιο του 2024: δεν είναι ο Satoshi.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 79,
+    "hex": "0x4F",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Το timestamp ενός block πρέπει να είναι μεγαλύτερο από…",
+    "answer": "Τη διάμεσο των 11 τελευταίων blocks",
+    "wrong": [
+      "Το timestamp του προηγούμενου block",
+      "Την ώρα του κάθε node ακριβώς",
+      "Το timestamp του genesis + 10 λεπτά"
+    ],
+    "why": "Median Time Past. Γι' αυτό τα timestamps δεν είναι πάντα σε σειρά.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 80,
+    "hex": "0x50",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πού δημοσίευσε ο Laszlo το αίτημα για τις πίτσες;",
+    "answer": "Στο BitcoinTalk",
+    "wrong": [
+      "Στο Twitter",
+      "Στο Reddit",
+      "Σε email στον Satoshi"
+    ],
+    "why": "Στο φόρουμ BitcoinTalk, τον Μάιο του 2010.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 81,
+    "hex": "0x51",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Κάθε πόσο βγαίνει, κατά μέσο όρο, ένα νέο block;",
+    "answer": "Περίπου 10 λεπτά",
+    "wrong": [
+      "Περίπου 1 λεπτό",
+      "Περίπου 1 ώρα",
+      "Περίπου 2,5 λεπτά"
+    ],
+    "why": "Ο στόχος είναι 10 λεπτά. Τα 2,5 λεπτά είναι του Litecoin, NGMI.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 82,
+    "hex": "0x52",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Συμπλήρωσε τη γνωστή φράση των maxis: «There is no …»",
+    "answer": "second best",
+    "wrong": [
+      "other way",
+      "safe haven",
+      "plan B"
+    ],
+    "why": "«There is no second best». Τα υπόλοιπα είναι, ας πούμε, πειράματα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 83,
+    "hex": "0x53",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το Lightning Network;",
+    "answer": "Δίκτυο πληρωμών πάνω από το Bitcoin για γρήγορες και φθηνές συναλλαγές",
+    "wrong": [
+      "Νέο κρυπτονόμισμα που αντικαθιστά το Bitcoin",
+      "Υπηρεσία mining του Satoshi",
+      "Ένα hard fork του 2017"
+    ],
+    "why": "Layer 2: οι πληρωμές γίνονται μέσα σε channels και στο blockchain καταγράφεται μόνο το άνοιγμα και το κλείσιμο.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 84,
+    "hex": "0x54",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι μπορεί να κάνει κάποιος που έχει το xpub σου;",
+    "answer": "Να δει όλες τις διευθύνσεις και το υπόλοιπο, χωρίς να ξοδέψει",
+    "wrong": [
+      "Να κλέψει τα BTC σου",
+      "Να αλλάξει το seed σου",
+      "Τίποτα απολύτως"
+    ],
+    "why": "Το xpub είναι extended public key: δεν κλέβει, αλλά αποκαλύπτει όλο το ιστορικό σου.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 85,
+    "hex": "0x55",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «FOMO»;",
+    "answer": "Fear Of Missing Out",
+    "wrong": [
+      "Fund Of Money Online",
+      "First Order Market Offer",
+      "Fear Of Mining Operations"
+    ],
+    "why": "Ο φόβος ότι θα χάσεις την άνοδο. Οδηγεί σε αγορές στην κορυφή.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 86,
+    "hex": "0x56",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Μετά από πόσα halvings το block subsidy γίνεται μηδέν;",
+    "answer": "33",
+    "wrong": [
+      "21",
+      "32",
+      "64"
+    ],
+    "why": "Το subsidy μετριέται σε sats και κόβεται στο μισό με ακέραια διαίρεση. Στο 33ο halving μηδενίζεται.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 87,
+    "hex": "0x57",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πώς λέγεται το μοτίβο στα πρώτα blocks που αποδίδεται στον Satoshi;",
+    "answer": "Patoshi pattern",
+    "wrong": [
+      "Genesis signature",
+      "Nakamoto nonce",
+      "Satoshi fingerprint"
+    ],
+    "why": "Χαρακτηριστικό μοτίβο στα nonces και στα extraNonce των πρώτων blocks.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 88,
+    "hex": "0x58",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιον όρο έγραφε ο Satoshi στον κώδικα για το blockchain;",
+    "answer": "Timechain",
+    "wrong": [
+      "Hashchain",
+      "Blockledger",
+      "Coinchain"
+    ],
+    "why": "Σε σχόλιο του αρχικού κώδικα. Πολλοί maxis τον προτιμούν ακόμα.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 89,
+    "hex": "0x59",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα paper wallet;",
+    "answer": "Κλειδιά τυπωμένα σε χαρτί",
+    "wrong": [
+      "Απόδειξη από Bitcoin ATM",
+      "Το whitepaper",
+      "Χαρτονόμισμα με QR"
+    ],
+    "why": "Παλιά μέθοδος cold storage. Σήμερα τα hardware wallets είναι πιο ασφαλή στη χρήση.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 90,
+    "hex": "0x5A",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Κάθε πόσα blocks γίνεται difficulty adjustment;",
+    "answer": "2.016",
+    "wrong": [
+      "210.000",
+      "1.000",
+      "144"
+    ],
+    "why": "Κάθε 2.016 blocks, δηλαδή περίπου κάθε 2 εβδομάδες, ώστε ο μέσος χρόνος να μένει στα 10 λεπτά.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 91,
+    "hex": "0x5B",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια χρονιά ξεπέρασε για πρώτη φορά το BTC τα 1.000$;",
+    "answer": "2013",
+    "wrong": [
+      "2011",
+      "2015",
+      "2017"
+    ],
+    "why": "Τον Νοέμβριο του 2013. Τον επόμενο μήνα γεννήθηκε το HODL.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 92,
+    "hex": "0x5C",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος έγραψε το «Crypto Anarchist Manifesto» (1988);",
+    "answer": "Ο Timothy May",
+    "wrong": [
+      "Ο Eric Hughes",
+      "Ο John Perry Barlow",
+      "Ο Julian Assange"
+    ],
+    "why": "Ένα από τα ιδρυτικά κείμενα των cypherpunks.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 93,
+    "hex": "0x5D",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Συμπλήρωσε: «Not your keys, …»",
+    "answer": "not your coins",
+    "wrong": [
+      "not your problem",
+      "not your money",
+      "not your crypto"
+    ],
+    "why": "«Not your keys, not your coins». Αν τα κλειδιά τα έχει το exchange, τα coins είναι δικά του.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 94,
+    "hex": "0x5E",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι σημαίνει «fiat»;",
+    "answer": "Χρήμα που ισχύει με κρατική απόφαση",
+    "wrong": [
+      "Χρήμα από χρυσό",
+      "Ιταλικό αυτοκίνητο",
+      "Ένα altcoin"
+    ],
+    "why": "Από το λατινικό «ας γίνει». Τυπώνεται όσο αποφασίσει η κεντρική τράπεζα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 95,
+    "hex": "0x5F",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα soft fork;",
+    "answer": "Αλλαγή που κάνει τους κανόνες αυστηρότερους και μένει συμβατή",
+    "wrong": [
+      "Αλλαγή που χωρίζει το δίκτυο στα δύο",
+      "Νέο altcoin",
+      "Αλλαγή στο logo"
+    ],
+    "why": "Οι παλιοί nodes συνεχίζουν να δέχονται τα νέα blocks ως έγκυρα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 96,
+    "hex": "0x60",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια χρονιά έγινε το πρώτο halving;",
+    "answer": "2012",
+    "wrong": [
+      "2010",
+      "2013",
+      "2016"
+    ],
+    "why": "Νοέμβριος 2012: το reward έπεσε από 50 σε 25 BTC.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 97,
+    "hex": "0x61",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένας «nocoiner»;",
+    "answer": "Κάποιος που δεν έχει bitcoin",
+    "wrong": [
+      "Κάποιος που έχασε το seed του",
+      "Miner χωρίς reward",
+      "Wallet με μηδέν υπόλοιπο"
+    ],
+    "why": "Συνήθως ο ίδιος που έλεγε «φούσκα» στα 100$.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 98,
+    "hex": "0x62",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι ήταν η New York Agreement (SegWit2x) του 2017;",
+    "answer": "Συμφωνία εταιρειών για SegWit και μετά διπλασιασμό του block",
+    "wrong": [
+      "Η συμφωνία που δημιούργησε το Lightning",
+      "Νόμος της Νέας Υόρκης για τα crypto",
+      "Η πρώτη συμφωνία για Bitcoin ETF"
+    ],
+    "why": "Το SegWit ενεργοποιήθηκε, αλλά το «2x» ακυρώθηκε τον Νοέμβριο του 2017 λόγω έλλειψης υποστήριξης.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 99,
+    "hex": "0x63",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Σε ποιο block ενεργοποιήθηκε το Taproot;",
+    "answer": "709.632",
+    "wrong": [
+      "700.000",
+      "709.000",
+      "721.000"
+    ],
+    "why": "Block 709.632, στις 14 Νοεμβρίου 2021.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 100,
+    "hex": "0x64",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το hashrate;",
+    "answer": "Η συνολική υπολογιστική ισχύς του δικτύου",
+    "wrong": [
+      "Η τιμή του BTC",
+      "Ο αριθμός των nodes",
+      "Το μέγεθος του block"
+    ],
+    "why": "Όσο ψηλότερο, τόσο ακριβότερη μια επίθεση.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 101,
+    "hex": "0x65",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πόσο μπορεί να αλλάξει το difficulty σε ένα μόνο adjustment, το πολύ;",
+    "answer": "Έως ×4 ή ÷4",
+    "wrong": [
+      "Έως ×2 ή ÷2",
+      "Έως ×10 ή ÷10",
+      "Χωρίς όριο"
+    ],
+    "why": "Ο κανόνας περιορίζει την αλλαγή σε συντελεστή 4 προς κάθε κατεύθυνση.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 102,
+    "hex": "0x66",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι σημαίνει CPFP;",
+    "answer": "Child Pays For Parent",
+    "wrong": [
+      "Coin Pays Full Price",
+      "Chain Proof For Payment",
+      "Confirmed Payment First Priority"
+    ],
+    "why": "Ξοδεύεις ένα output μιας κολλημένης συναλλαγής με υψηλό fee, και οι miners παίρνουν και τις δύο.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 103,
+    "hex": "0x67",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος χρήστης έγραψε το θρυλικό «I AM HODLING» το 2013;",
+    "answer": "Ο GameKyuubi",
+    "wrong": [
+      "Ο Satoshi",
+      "Ο Roger Ver",
+      "Ο Laszlo"
+    ],
+    "why": "Στο BitcoinTalk, με ομολογημένο αλκοόλ και πολλά ορθογραφικά λάθη.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 104,
+    "hex": "0x68",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιον τύπο υπογραφών έφερε το Taproot;",
+    "answer": "Schnorr",
+    "wrong": [
+      "ECDSA",
+      "BLS",
+      "Lamport"
+    ],
+    "why": "Schnorr (BIP340). Πριν, το Bitcoin χρησιμοποιούσε μόνο ECDSA.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 105,
+    "hex": "0x69",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το «Proof of Keys» κάθε 3 Ιανουαρίου;",
+    "answer": "Μέρα που αποσύρεις τα BTC από τα exchanges σε self-custody",
+    "wrong": [
+      "Γιορτή για το πρώτο hardware wallet",
+      "Διαγωνισμός mining",
+      "Μέρα που αλλάζεις όλα τα passwords"
+    ],
+    "why": "Ξεκίνησε το 2019, ανήμερα της επετείου του genesis block.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 106,
+    "hex": "0x6A",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια λέξη ΔΕΝ εμφανίζεται πουθενά στο whitepaper;",
+    "answer": "blockchain",
+    "wrong": [
+      "proof-of-work",
+      "peer-to-peer",
+      "timestamp"
+    ],
+    "why": "Ο Satoshi γράφει «chain of blocks». Η λέξη blockchain ήρθε αργότερα.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 107,
+    "hex": "0x6B",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Γιατί δεν ξαναχρησιμοποιούμε την ίδια διεύθυνση;",
+    "answer": "Για ιδιωτικότητα",
+    "wrong": [
+      "Γιατί λήγει μετά από 1 χρήση",
+      "Γιατί αυξάνει το fee κατά 50%",
+      "Γιατί το απαγορεύει το πρωτόκολλο"
+    ],
+    "why": "Η επαναχρησιμοποίηση συνδέει όλες τις πληρωμές σου μεταξύ τους.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 108,
+    "hex": "0x6C",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «NGMI»;",
+    "answer": "Not Gonna Make It",
+    "wrong": [
+      "New Generation Mining Index",
+      "No Gain, More Interest",
+      "Next Gen Monetary Instrument"
+    ],
+    "why": "Ό,τι λέμε σε όποιον πουλάει στον πάτο. Το αντίθετο: WAGMI.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 109,
+    "hex": "0x6D",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Από πού βγήκε η λέξη «HODL»;",
+    "answer": "Από ορθογραφικό λάθος σε post στο BitcoinTalk το 2013",
+    "wrong": [
+      "Είναι αρχικά του «Hold On for Dear Life» που επινόησε ο Satoshi",
+      "Από όρο της Wall Street",
+      "Από το όνομα του πρώτου wallet"
+    ],
+    "why": "Τον Δεκέμβριο του 2013 ένας χρήστης έγραψε μεθυσμένος «I AM HODLING». Το «Hold On for Dear Life» προστέθηκε αργότερα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 110,
+    "hex": "0x6E",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος πρόσθεσε το όριο του 1 MB στο μέγεθος του block;",
+    "answer": "Ο Satoshi, το 2010",
+    "wrong": [
+      "Ο Gavin Andresen, το 2012",
+      "Οι miners, το 2015",
+      "Το SegWit, το 2017"
+    ],
+    "why": "Το πρόσθεσε σιωπηλά ως μέτρο κατά του spam.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 111,
+    "hex": "0x6F",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το leverage στο trading;",
+    "answer": "Δανεικά για μεγαλύτερη θέση από τα χρήματά σου",
+    "wrong": [
+      "Αποθήκευση σε cold wallet",
+      "Αγορά με DCA",
+      "Mining με κάρτες γραφικών"
+    ],
+    "why": "Ο πιο γρήγορος δρόμος για «rekt». Οι maxis απλώς κάνουν stack.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 112,
+    "hex": "0x70",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πώς ξεκίνησε το Mt. Gox;",
+    "answer": "Ως ανταλλακτήριο καρτών Magic: The Gathering",
+    "wrong": [
+      "Ως τράπεζα στην Ιαπωνία",
+      "Ως φόρουμ για bitcoin",
+      "Ως εταιρεία mining"
+    ],
+    "why": "Magic: The Gathering Online eXchange. Ναι, σοβαρά.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 113,
+    "hex": "0x71",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Είναι το Bitcoin open source;",
+    "answer": "Ναι, ο κώδικας είναι δημόσιος",
+    "wrong": [
+      "Όχι, είναι μυστικός",
+      "Μόνο για miners",
+      "Μόνο για κυβερνήσεις"
+    ],
+    "why": "Ο καθένας μπορεί να τον διαβάσει, να τον ελέγξει και να τρέξει node.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 114,
+    "hex": "0x72",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι σημαίνει UTXO;",
+    "answer": "Unspent Transaction Output",
+    "wrong": [
+      "Universal Transaction Exchange Order",
+      "Unconfirmed Transfer Of Tokens",
+      "Unique Token Exchange Output"
+    ],
+    "why": "Unspent Transaction Output. Το Bitcoin δεν έχει «υπόλοιπα λογαριασμών», μόνο ανεξόδευτα outputs.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 115,
+    "hex": "0x73",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσα confirmations θεωρούνται παραδοσιακά ασφαλή για μεγάλα ποσά;",
+    "answer": "6",
+    "wrong": [
+      "1",
+      "21",
+      "100"
+    ],
+    "why": "Περίπου μία ώρα. Είναι σύμβαση, όχι κανόνας του πρωτοκόλλου.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 116,
+    "hex": "0x74",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Από ποια αλυσίδα ήταν οι δύο πίτσες του Bitcoin Pizza Day;",
+    "answer": "Papa John's",
+    "wrong": [
+      "Domino's",
+      "Pizza Hut",
+      "Little Caesars"
+    ],
+    "why": "Από Papa John's. Ο Laszlo πλήρωσε τα BTC σε κάποιον που τις παρήγγειλε για λογαριασμό του.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 117,
+    "hex": "0x75",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το Proof of Work;",
+    "answer": "Απόδειξη ότι ξοδεύτηκε πραγματική ενέργεια για να βρεθεί ένα block",
+    "wrong": [
+      "Απόδειξη ότι έχεις δουλειά για KYC",
+      "Ψηφοφορία των κατόχων",
+      "Υπογραφή του Satoshi"
+    ],
+    "why": "Κάνει πανάκριβο το να ξαναγράψεις την ιστορία. Γι' αυτό είναι ασφαλές.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 118,
+    "hex": "0x76",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια hash function χρησιμοποιεί το Proof of Work του Bitcoin;",
+    "answer": "SHA-256 (διπλό)",
+    "wrong": [
+      "Scrypt",
+      "Ethash",
+      "Keccak"
+    ],
+    "why": "Διπλό SHA-256. Το Scrypt είναι του Litecoin 😏",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 119,
+    "hex": "0x77",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα Bitcoin ATM;",
+    "answer": "Μηχάνημα για αγορά ή πώληση BTC με μετρητά",
+    "wrong": [
+      "ATM της τράπεζας που δίνει sats",
+      "Ο πρώτος Bitcoin υπολογιστής",
+      "Ένα hardware wallet"
+    ],
+    "why": "Βολικό, αλλά συνήθως με υψηλές χρεώσεις και KYC.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 120,
+    "hex": "0x78",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιον «αποκάλυψε» το Newsweek ως Satoshi το 2014;",
+    "answer": "Τον Dorian Nakamoto",
+    "wrong": [
+      "Τον Hal Finney",
+      "Τον Nick Szabo",
+      "Τον Craig Wright"
+    ],
+    "why": "Έναν ηλικιωμένο μηχανικό που δεν είχε καμία σχέση. Ο πραγματικός Satoshi έγραψε τότε «I am not Dorian Nakamoto».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 121,
+    "hex": "0x79",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσα halvings έχουν γίνει μέχρι το 2026;",
+    "answer": "4",
+    "wrong": [
+      "3",
+      "5",
+      "6"
+    ],
+    "why": "2012, 2016, 2020, 2024.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 122,
+    "hex": "0x7A",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «bear market»;",
+    "answer": "Παρατεταμένη πτωτική αγορά",
+    "wrong": [
+      "Αγορά μόνο για whales",
+      "Αγορά χωρίς fees",
+      "Η αγορά της Ρωσίας"
+    ],
+    "why": "Η καλύτερη εποχή για να μαζεύεις sats σε χαμηλότερες τιμές.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 123,
+    "hex": "0x7B",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το «vbyte»;",
+    "answer": "Το weight διαιρεμένο με 4",
+    "wrong": [
+      "Ένα byte του Lightning",
+      "1/8 του byte",
+      "Ένα byte witness"
+    ],
+    "why": "Οι fees υπολογίζονται σε sat ανά vbyte.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 124,
+    "hex": "0x7C",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι ήταν το UASF (BIP148);",
+    "answer": "Οι κόμβοι των χρηστών πίεσαν για την ενεργοποίηση του SegWit",
+    "wrong": [
+      "Συμφωνία των miners για μεγαλύτερα blocks",
+      "Ένα hard fork για αύξηση του supply",
+      "Νέα μέθοδος mining"
+    ],
+    "why": "User Activated Soft Fork: οι κόμβοι θα απέρριπταν blocks χωρίς σήμα για SegWit. Έδειξε ποιος κάνει κουμάντο: οι nodes.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 125,
+    "hex": "0x7D",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πού μεταφέρθηκε το μεγαλύτερο μέρος του hashrate μετά την απαγόρευση στην Κίνα;",
+    "answer": "Στις ΗΠΑ",
+    "wrong": [
+      "Στην Ιαπωνία",
+      "Στην Ελλάδα",
+      "Στη Βραζιλία"
+    ],
+    "why": "Οι ΗΠΑ έγιναν η μεγαλύτερη χώρα σε hashrate.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 126,
+    "hex": "0x7E",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος έγραψε το «Layered Money»;",
+    "answer": "Ο Nik Bhatia",
+    "wrong": [
+      "Ο Jeff Booth",
+      "Ο Nathaniel Popper",
+      "Η Lyn Alden"
+    ],
+    "why": "Το χρήμα ως στρώματα: από τον χρυσό στις τράπεζες και στο Bitcoin.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 127,
+    "hex": "0x7F",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ο mempool;",
+    "answer": "Ο «χώρος αναμονής» των ανεπιβεβαίωτων συναλλαγών",
+    "wrong": [
+      "Ένα mining pool",
+      "Το συνολικό supply",
+      "Αρχείο με τα παλιά blocks"
+    ],
+    "why": "Εκεί περιμένουν οι συναλλαγές μέχρι να μπουν σε block. Όσο μεγαλύτερο fee, τόσο πιο γρήγορα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 128,
+    "hex": "0x80",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το «dust»;",
+    "answer": "Τόσο μικρά outputs που κοστίζουν περισσότερο να ξοδευτούν",
+    "wrong": [
+      "Χαμένα bitcoin",
+      "Τα πρώτα blocks",
+      "Τα sats του Satoshi"
+    ],
+    "why": "Αν το fee για να το ξοδέψεις ξεπερνά την αξία του, είναι πρακτικά άχρηστο.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 129,
+    "hex": "0x81",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πόσες λέξεις έχει η λίστα του BIP39;",
+    "answer": "2.048",
+    "wrong": [
+      "1.024",
+      "4.096",
+      "21.000"
+    ],
+    "why": "2.048 = 2^11. Κάθε λέξη κωδικοποιεί 11 bits.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 130,
+    "hex": "0x82",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος τίτλος εφημερίδας είναι γραμμένος στο genesis block;",
+    "answer": "Chancellor on brink of second bailout for banks",
+    "wrong": [
+      "Banks collapse as crisis deepens",
+      "Lehman Brothers files for bankruptcy",
+      "Fed cuts rates to zero"
+    ],
+    "why": "«The Times 03/Jan/2009 Chancellor on brink of second bailout for banks». Χρονοσφραγίδα και δήλωση μαζί.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 131,
+    "hex": "0x83",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Περίπου πόσα BTC εκτιμάται ότι έκανε mine ο Satoshi;",
+    "answer": "Περίπου 1 εκατομμύριο",
+    "wrong": [
+      "Περίπου 21.000",
+      "Περίπου 100.000",
+      "Περίπου 5 εκατομμύρια"
+    ],
+    "why": "Εκτίμηση από το Patoshi pattern. Δεν έχουν κινηθεί ποτέ.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 132,
+    "hex": "0x84",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το RBF;",
+    "answer": "Replace-By-Fee: αντικαθιστάς συναλλαγή με άλλη με μεγαλύτερο fee",
+    "wrong": [
+      "Return Bitcoin Fast",
+      "Recursive Block Fork",
+      "Reduce Block Footprint"
+    ],
+    "why": "Χρήσιμο όταν η συναλλαγή σου «κόλλησε» στον mempool.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 133,
+    "hex": "0x85",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποιο είναι το βασικό «καύσιμο» του mining;",
+    "answer": "Ηλεκτρική ενέργεια",
+    "wrong": [
+      "Νερό",
+      "Χρυσός",
+      "Δεδομένα κινητής"
+    ],
+    "why": "Ενέργεια μετατρέπεται σε ασφάλεια. Γι' αυτό λέγεται συχνά «digital energy».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 134,
+    "hex": "0x86",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο BIP όρισε τα mnemonic seed phrases;",
+    "answer": "BIP39",
+    "wrong": [
+      "BIP32",
+      "BIP44",
+      "BIP141"
+    ],
+    "why": "BIP39. Το BIP32 όρισε τα HD wallets, το BIP44 τα derivation paths και το BIP141 το SegWit.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 135,
+    "hex": "0x87",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι έκανε ο Hal Finney αφού διαγνώστηκε με ALS;",
+    "answer": "Συνέχισε να γράφει κώδικα με eye-tracking",
+    "wrong": [
+      "Έκανε mining από το νοσοκομείο",
+      "Έγραψε το Lightning",
+      "Ίδρυσε exchange"
+    ],
+    "why": "Έγραφε κώδικα κοιτάζοντας την οθόνη, ενώ είχε σχεδόν παραλύσει.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 136,
+    "hex": "0x88",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα mining pool;",
+    "answer": "Miners που ενώνουν hashrate και μοιράζονται τις αμοιβές",
+    "wrong": [
+      "Πισίνα για ψύξη μηχανημάτων",
+      "Το σύνολο των bitcoin",
+      "Ένα exchange"
+    ],
+    "why": "Έτσι ένας μικρός miner έχει σταθερό εισόδημα αντί για λαχείο.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 137,
+    "hex": "0x89",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε ποιο block έγινε η πρώτη συναλλαγή μεταξύ δύο ανθρώπων;",
+    "answer": "170",
+    "wrong": [
+      "1",
+      "100",
+      "210"
+    ],
+    "why": "Block 170: Satoshi → Hal Finney, 10 BTC.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 138,
+    "hex": "0x8A",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το mempool.space;",
+    "answer": "Δημοφιλής block explorer και mempool visualizer",
+    "wrong": [
+      "Ένα mining pool",
+      "Ένα exchange",
+      "Ένα altcoin"
+    ],
+    "why": "Open source. Μπορείς να το τρέξεις και στον δικό σου node.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 139,
+    "hex": "0x8B",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πώς ονομάστηκε η διαμάχη του 2015–2017 για το μέγεθος του block;",
+    "answer": "Blocksize War",
+    "wrong": [
+      "Hash War",
+      "Fork Wars",
+      "Fee War"
+    ],
+    "why": "Το Blocksize War. Το κέρδισαν οι χρήστες και οι full nodes, όχι οι μεγάλοι miners και οι εταιρείες.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 140,
+    "hex": "0x8C",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποιος ελέγχει το Bitcoin;",
+    "answer": "Κανείς. Τους κανόνες τούς επιβάλλουν χιλιάδες nodes",
+    "wrong": [
+      "Ο Satoshi",
+      "Το Bitcoin Foundation",
+      "Οι μεγάλοι miners"
+    ],
+    "why": "Δεν υπάρχει CEO, ούτε κουμπί «παύση». Κάθε node ελέγχει μόνος του τους κανόνες.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 141,
+    "hex": "0x8D",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πώς ανοίγει ένα Lightning channel;",
+    "answer": "Με μια on-chain συναλλαγή",
+    "wrong": [
+      "Με email στον άλλο",
+      "Με αίτημα στο Bitcoin Core",
+      "Αυτόματα με κάθε wallet"
+    ],
+    "why": "Η συναλλαγή «κλειδώνει» BTC σε multisig. Από εκεί και πέρα, πληρωμές off-chain.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 142,
+    "hex": "0x8E",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια χώρα έκανε πρώτη το Bitcoin νόμιμο χρήμα (legal tender);",
+    "answer": "Ελ Σαλβαδόρ",
+    "wrong": [
+      "Ελβετία",
+      "Παναμάς",
+      "Αργεντινή"
+    ],
+    "why": "Το Ελ Σαλβαδόρ, τον Σεπτέμβριο του 2021. Το 2025 ο νόμος άλλαξε και η αποδοχή έγινε προαιρετική.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 143,
+    "hex": "0x8F",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος έγραψε το «The Bitcoin Standard»;",
+    "answer": "Ο Saifedean Ammous",
+    "wrong": [
+      "Ο Andreas Antonopoulos",
+      "Η Lyn Alden",
+      "Ο Jeff Booth"
+    ],
+    "why": "Κυκλοφόρησε το 2018 και έστειλε πολύ κόσμο στο rabbit hole.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 144,
+    "hex": "0x90",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο exchange κατέρρευσε το 2014, χάνοντας περίπου 850.000 BTC;",
+    "answer": "Mt. Gox",
+    "wrong": [
+      "FTX",
+      "Bitfinex",
+      "QuadrigaCX"
+    ],
+    "why": "Mt. Gox, στο Τόκιο. Το FTX ήρθε το 2022. Not your keys…",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 145,
+    "hex": "0x91",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το multisig;",
+    "answer": "Wallet που θέλει πολλές υπογραφές, π.χ. 2 από 3",
+    "wrong": [
+      "Wallet με πολλά νομίσματα",
+      "Ένα κλειδί σε πολλές συσκευές",
+      "Συναλλαγή προς πολλούς παραλήπτες"
+    ],
+    "why": "Αν χάσεις ή σου κλέψουν ένα κλειδί, τα coins είναι ακόμα ασφαλή.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 146,
+    "hex": "0x92",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια εταιρεία ίδρυσε ο Adam Back;",
+    "answer": "Blockstream",
+    "wrong": [
+      "Chaincode Labs",
+      "Lightning Labs",
+      "Casa"
+    ],
+    "why": "Η Blockstream, το 2014. Πίσω από το Liquid και τους δορυφόρους Bitcoin.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 147,
+    "hex": "0x93",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια χρονιά η Κίνα απαγόρευσε το mining;",
+    "answer": "2021",
+    "wrong": [
+      "2017",
+      "2019",
+      "2023"
+    ],
+    "why": "Το 2021. Το hashrate έπεσε απότομα και μετά ανέκαμψε, με νέες χώρες να το απορροφούν.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 148,
+    "hex": "0x94",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πόσες αναφορές (references) έχει το whitepaper;",
+    "answer": "8",
+    "wrong": [
+      "3",
+      "12",
+      "21"
+    ],
+    "why": "Από b-money και Hashcash μέχρι Merkle και timestamping.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 149,
+    "hex": "0x95",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποιο ζώο συμβολίζει την ανοδική αγορά;",
+    "answer": "Ο ταύρος",
+    "wrong": [
+      "Η αρκούδα",
+      "Ο λαγός",
+      "Το γεράκι"
+    ],
+    "why": "Bull = άνοδος, bear = πτώση.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 150,
+    "hex": "0x96",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το Liquid;",
+    "answer": "Federated sidechain του Bitcoin",
+    "wrong": [
+      "Ένα stablecoin",
+      "Ένα Lightning wallet",
+      "Ένα altcoin με Proof of Stake"
+    ],
+    "why": "Γρήγορες μεταφορές L-BTC μεταξύ exchanges, με ομοσπονδία μελών.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 151,
+    "hex": "0x97",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος ανακάλυψε το Patoshi pattern;",
+    "answer": "Ο Sergio Demian Lerner",
+    "wrong": [
+      "Ο Andreas Antonopoulos",
+      "Ο Jameson Lopp",
+      "Ο Peter Todd"
+    ],
+    "why": "Το 2013, αναλύοντας τα extraNonce των πρώτων blocks.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 152,
+    "hex": "0x98",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια μέρα βγήκε το block 1;",
+    "answer": "9 Ιανουαρίου 2009",
+    "wrong": [
+      "3 Ιανουαρίου 2009",
+      "4 Ιανουαρίου 2009",
+      "1 Φεβρουαρίου 2009"
+    ],
+    "why": "Έξι μέρες μετά το genesis block.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 153,
+    "hex": "0x99",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πώς λέγεται το πρωτόκολλο για συνάθροιση κλειδιών σε μία υπογραφή Schnorr;",
+    "answer": "MuSig2",
+    "wrong": [
+      "ECDH",
+      "BLS12",
+      "Bulletproofs"
+    ],
+    "why": "Πολλά κλειδιά, μία υπογραφή on-chain. Φαίνεται σαν απλό single-sig.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 154,
+    "hex": "0x9A",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Με τι ξεκινούν οι P2SH διευθύνσεις;",
+    "answer": "3",
+    "wrong": [
+      "1",
+      "bc1q",
+      "bc1p"
+    ],
+    "why": "Το 1 είναι για P2PKH (legacy), το bc1q για SegWit v0 και το bc1p για Taproot.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 155,
+    "hex": "0x9B",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα hardware wallet;",
+    "answer": "Συσκευή που κρατά τα ιδιωτικά κλειδιά offline",
+    "wrong": [
+      "Λογαριασμός σε exchange",
+      "Bitcoin ATM",
+      "Ένα USB με αντίγραφο του blockchain"
+    ],
+    "why": "Τα κλειδιά δεν αγγίζουν ποτέ υπολογιστή με internet. Η συσκευή απλώς υπογράφει συναλλαγές.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 156,
+    "hex": "0x9C",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποιο είναι το σύμβολο του bitcoin;",
+    "answer": "₿",
+    "wrong": [
+      "Ξ",
+      "Ł",
+      "€"
+    ],
+    "why": "Το ₿ μπήκε επίσημα στο Unicode το 2017.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 157,
+    "hex": "0x9D",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε ποια γλώσσα γράφτηκε ο αρχικός κώδικας του Bitcoin;",
+    "answer": "C++",
+    "wrong": [
+      "Python",
+      "Java",
+      "Go"
+    ],
+    "why": "Ο Satoshi έγραψε το v0.1 σε C++. Το Bitcoin Core παραμένει σε C++.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 158,
+    "hex": "0x9E",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το «stack» σου;",
+    "answer": "Τα bitcoin που έχεις μαζέψει",
+    "wrong": [
+      "Ο κωδικός σου",
+      "Το mining rig σου",
+      "Τα fees σου"
+    ],
+    "why": "Γι' αυτό λέμε «stack sats».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 159,
+    "hex": "0x9F",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Με τι ξεκινούν οι Taproot διευθύνσεις;",
+    "answer": "bc1p",
+    "wrong": [
+      "bc1q",
+      "3",
+      "1"
+    ],
+    "why": "bc1p: SegWit v1 (Taproot), σε κωδικοποίηση bech32m.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 160,
+    "hex": "0xA0",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το DCA για έναν bitcoiner;",
+    "answer": "Αγοράζω σταθερά, ό,τι κι αν κάνει η τιμή",
+    "wrong": [
+      "Πουλάω σε κάθε άνοδο",
+      "Κάνω trading με leverage",
+      "Περιμένω τον πάτο"
+    ],
+    "why": "Χωρίς άγχος για timing. Το κλασικό «stay humble, stack sats».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 161,
+    "hex": "0xA1",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Μπορεί μια τράπεζα να ακυρώσει μια επιβεβαιωμένη συναλλαγή bitcoin;",
+    "answer": "Όχι",
+    "wrong": [
+      "Ναι, μέσα σε 24 ώρες",
+      "Ναι, με εντολή εισαγγελέα",
+      "Μόνο αν είναι πάνω από 1 BTC"
+    ],
+    "why": "Οι επιβεβαιωμένες συναλλαγές δεν αντιστρέφονται. Δεν υπάρχει chargeback.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 162,
+    "hex": "0xA2",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος ίδρυσε την DigiCash, πρωτοπόρο του ψηφιακού χρήματος;",
+    "answer": "Ο David Chaum",
+    "wrong": [
+      "Ο Adam Back",
+      "Ο Phil Zimmermann",
+      "Ο Hal Finney"
+    ],
+    "why": "Το ecash του Chaum (1989) είχε ιδιωτικότητα αλλά κεντρικό εκδότη. Χρεοκόπησε το 1998.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 163,
+    "hex": "0xA3",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι κάνει το BIP9;",
+    "answer": "Μηχανισμό σηματοδότησης από miners για ενεργοποίηση soft forks",
+    "wrong": [
+      "Ορίζει τις διευθύνσεις bech32",
+      "Ορίζει το seed phrase",
+      "Αυξάνει το block size"
+    ],
+    "why": "Με version bits και κατώφλι. Το SegWit το χρησιμοποίησε, με «βοήθεια» από το UASF.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 164,
+    "hex": "0xA4",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Με ποιο πρόθεμα ξεκινούν τα Lightning invoices του mainnet;",
+    "answer": "lnbc",
+    "wrong": [
+      "bc1",
+      "lnurl",
+      "btc1"
+    ],
+    "why": "Κωδικοποίηση BOLT11 με bech32.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 165,
+    "hex": "0xA5",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια ημέρα «εξορύχτηκε» το genesis block;",
+    "answer": "3 Ιανουαρίου 2009",
+    "wrong": [
+      "31 Οκτωβρίου 2008",
+      "1 Ιανουαρίου 2009",
+      "22 Μαΐου 2010"
+    ],
+    "why": "3 Ιανουαρίου 2009. Το block 0, η αρχή όλων.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 166,
+    "hex": "0xA6",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα Lightning invoice;",
+    "answer": "Αίτημα πληρωμής με ποσό και προορισμό",
+    "wrong": [
+      "Απόδειξη από exchange",
+      "Ένα on-chain address",
+      "Λογαριασμός ρεύματος για mining"
+    ],
+    "why": "Κωδικοποιημένο αίτημα πληρωμής, συνήθως σε μορφή QR.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 167,
+    "hex": "0xA7",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Σε ποιο block ενεργοποιήθηκε το SegWit;",
+    "answer": "481.824",
+    "wrong": [
+      "420.000",
+      "500.000",
+      "478.558"
+    ],
+    "why": "Στις 24 Αυγούστου 2017. Το 478.558 ήταν το τελευταίο κοινό block πριν το Bitcoin Cash.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 168,
+    "hex": "0xA8",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο είναι το block subsidy μετά το halving του 2024;",
+    "answer": "3,125 BTC",
+    "wrong": [
+      "6,25 BTC",
+      "1,5625 BTC",
+      "12,5 BTC"
+    ],
+    "why": "50 → 25 → 12,5 → 6,25 → 3,125. Το επόμενο halving το κατεβάζει στα 1,5625.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 169,
+    "hex": "0xA9",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια χρονιά ενεργοποιήθηκε το Taproot;",
+    "answer": "2021",
+    "wrong": [
+      "2017",
+      "2019",
+      "2023"
+    ],
+    "why": "Νοέμβριο του 2021. Η πιο πρόσφατη μεγάλη αναβάθμιση του πρωτοκόλλου.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 170,
+    "hex": "0xAA",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος δημιούργησε το Ordinals protocol (2023);",
+    "answer": "Ο Casey Rodarmor",
+    "wrong": [
+      "Ο Luke Dashjr",
+      "Ο Peter Todd",
+      "Ο Jameson Lopp"
+    ],
+    "why": "Αρίθμηση των sats που επέτρεψε τα «inscriptions» στο witness.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 171,
+    "hex": "0xAB",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι σημαίνει HTLC;",
+    "answer": "Hashed Time-Locked Contract",
+    "wrong": [
+      "High Throughput Lightning Channel",
+      "Hash Tree Lock Commitment",
+      "Hybrid Transaction Layer Channel"
+    ],
+    "why": "Η πληρωμή ξεκλειδώνει με αποκάλυψη ενός preimage, αλλιώς επιστρέφει μετά από timelock.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 172,
+    "hex": "0xAC",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια χρονιά εγκρίθηκαν τα πρώτα spot Bitcoin ETF στις ΗΠΑ;",
+    "answer": "2024",
+    "wrong": [
+      "2017",
+      "2021",
+      "2025"
+    ],
+    "why": "Τον Ιανουάριο του 2024, μετά από πάνω από δέκα χρόνια απορρίψεων.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 173,
+    "hex": "0xAD",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το blockchain του Bitcoin;",
+    "answer": "Αλυσίδα από blocks που καταγράφει όλες τις συναλλαγές",
+    "wrong": [
+      "Μια εταιρεία στην Ελβετία",
+      "Ένα wallet",
+      "Ο server του Satoshi"
+    ],
+    "why": "Ένα δημόσιο βιβλίο συναλλαγών που κρατούν ταυτόχρονα χιλιάδες nodes.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 174,
+    "hex": "0xAE",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε ένα multisig 2-of-3, πόσα κλειδιά χρειάζεσαι για να ξοδέψεις;",
+    "answer": "2",
+    "wrong": [
+      "1",
+      "3",
+      "Και τα 3 συν PIN"
+    ],
+    "why": "Δύο από τα τρία. Το τρίτο είναι backup.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 175,
+    "hex": "0xAF",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο domain κατοχύρωσε ο Satoshi το 2008;",
+    "answer": "bitcoin.org",
+    "wrong": [
+      "bitcoin.com",
+      "satoshi.com",
+      "btc.org"
+    ],
+    "why": "Το bitcoin.org, τον Αύγουστο του 2008. Το .com είναι άλλη υπόθεση.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 176,
+    "hex": "0xB0",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσα sats κάνουν 1 bitcoin;",
+    "answer": "100.000.000",
+    "wrong": [
+      "1.000.000",
+      "21.000.000",
+      "1.000"
+    ],
+    "why": "1 sat = 0,00000001 BTC. Stay humble, stack sats.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 177,
+    "hex": "0xB1",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποια χρονιά το Bitcoin-Qt μετονομάστηκε σε Bitcoin Core;",
+    "answer": "2014",
+    "wrong": [
+      "2011",
+      "2016",
+      "2019"
+    ],
+    "why": "Με την έκδοση 0.9.0, το 2014.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 178,
+    "hex": "0xB2",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποια χρονιά ξεκίνησε η Cypherpunks mailing list;",
+    "answer": "1992",
+    "wrong": [
+      "1985",
+      "1999",
+      "2004"
+    ],
+    "why": "Ιδρύθηκε από τους Eric Hughes, Timothy May και John Gilmore.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 179,
+    "hex": "0xB3",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα hard fork;",
+    "answer": "Αλλαγή που χαλαρώνει τους κανόνες, ασύμβατη με τους παλιούς nodes",
+    "wrong": [
+      "Αλλαγή που κάνει τους κανόνες αυστηρότερους",
+      "Ένα δύσκολο block",
+      "Μια επίθεση 51%"
+    ],
+    "why": "Όποιος δεν αναβαθμίσει μένει σε άλλη αλυσίδα. Έτσι γεννήθηκε το Bitcoin Cash.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 180,
+    "hex": "0xB4",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι πρότεινε το Bitcoin XT το 2015;",
+    "answer": "Blocks έως 8 MB",
+    "wrong": [
+      "Αύξηση του supply",
+      "Κατάργηση του mining",
+      "Proof of Stake"
+    ],
+    "why": "Από τους Gavin Andresen και Mike Hearn. Δεν πέρασε.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 181,
+    "hex": "0xB5",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «ATH»;",
+    "answer": "All-Time High",
+    "wrong": [
+      "Average Transaction Hash",
+      "Automated Trading Hub",
+      "After The Halving"
+    ],
+    "why": "Η υψηλότερη τιμή όλων των εποχών.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 182,
+    "hex": "0xB6",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος συνίδρυσε το Bitcoin Magazine το 2012, πριν φτιάξει… κάτι άλλο;",
+    "answer": "Ο Vitalik Buterin",
+    "wrong": [
+      "Ο Charlie Lee",
+      "Ο Roger Ver",
+      "Ο Andreas Antonopoulos"
+    ],
+    "why": "Μαζί με τον Mihai Alisie. Μετά πήρε άλλο δρόμο. Δεν θα πούμε ποιον 😏",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 183,
+    "hex": "0xB7",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πόσα bytes είναι ένα block header;",
+    "answer": "80",
+    "wrong": [
+      "32",
+      "256",
+      "1.024"
+    ],
+    "why": "80 bytes: version, previous hash, merkle root, time, bits, nonce.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 184,
+    "hex": "0xB8",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια μέρα γιορτάζεται το Bitcoin Whitepaper Day;",
+    "answer": "31 Οκτωβρίου",
+    "wrong": [
+      "3 Ιανουαρίου",
+      "22 Μαΐου",
+      "1 Αυγούστου"
+    ],
+    "why": "Η μέρα που δημοσιεύτηκε το whitepaper, το 2008. Ναι, ανήμερα του Halloween.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 185,
+    "hex": "0xB9",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει HODL ως στρατηγική;",
+    "answer": "Κρατάω μακροπρόθεσμα χωρίς να πουλάω",
+    "wrong": [
+      "Αγοράζω και πουλάω καθημερινά",
+      "Δανείζω τα BTC μου για τόκο",
+      "Κάνω mining στο σπίτι"
+    ],
+    "why": "Αγόρασε, κράτα, ξέχνα τα charts.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 186,
+    "hex": "0xBA",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια χρονιά αναμένεται το επόμενο halving;",
+    "answer": "2028",
+    "wrong": [
+      "2026",
+      "2027",
+      "2030"
+    ],
+    "why": "Στο block 1.050.000, γύρω στην άνοιξη του 2028.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 187,
+    "hex": "0xBB",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα BIP;",
+    "answer": "Bitcoin Improvement Proposal, δηλαδή πρόταση αλλαγής",
+    "wrong": [
+      "Bitcoin Investment Plan",
+      "Block Index Pointer",
+      "Bitcoin Insurance Policy"
+    ],
+    "why": "Οι αλλαγές ξεκινούν ως BIP και περνούν από μακρά δημόσια συζήτηση.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 188,
+    "hex": "0xBC",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα stale (ή orphan) block;",
+    "answer": "Έγκυρο block που δεν έμεινε στην κύρια αλυσίδα",
+    "wrong": [
+      "Block χωρίς συναλλαγές",
+      "Το genesis block",
+      "Block με λάθος υπογραφή"
+    ],
+    "why": "Συμβαίνει όταν δύο miners βρίσκουν block σχεδόν ταυτόχρονα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 189,
+    "hex": "0xBD",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποιος είναι ο τίτλος του whitepaper;",
+    "answer": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+    "wrong": [
+      "Bitcoin: The Digital Gold Standard",
+      "Blockchain: A Distributed Ledger for Everyone",
+      "Bitcoin: Decentralized Money for the Internet"
+    ],
+    "why": "«A Peer-to-Peer Electronic Cash System», 9 σελίδες που άλλαξαν το χρήμα. Η λέξη «blockchain» δεν υπάρχει καν μέσα.",
+    "verified": true,
+    "source": ""
+  },
+  {
+    "id": 190,
+    "hex": "0xBE",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Με ποια ψηφία ξεκινά το hash του genesis block;",
+    "answer": "000000000019d6…",
+    "wrong": [
+      "00000000839a8e…",
+      "000000000000000000…",
+      "00000000a3f9c1…"
+    ],
+    "why": "000000000019d6689c085ae165831e93… Το 00000000839a8e… είναι του block 1.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 191,
+    "hex": "0xBF",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι ΔΕΝ μπορεί να κάνει κάποιος με 51% του hashrate;",
+    "answer": "Να κλέψει bitcoin από διευθύνσεις άλλων",
+    "wrong": [
+      "Να κάνει double spend των δικών του",
+      "Να λογοκρίνει συναλλαγές",
+      "Να βγάζει άδεια blocks"
+    ],
+    "why": "Χωρίς τα private keys δεν ξοδεύει ξένα coins. Ούτε μπορεί να αλλάξει το supply.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 192,
+    "hex": "0xC0",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το seed phrase;",
+    "answer": "Λίστα λέξεων που επαναφέρει το wallet σου",
+    "wrong": [
+      "Ο κωδικός σύνδεσης στο exchange",
+      "Η διεύθυνση για να λάβεις BTC",
+      "Το PIN του hardware wallet"
+    ],
+    "why": "Συνήθως 12 ή 24 λέξεις (BIP39). Όποιος το έχει, έχει τα bitcoin σου. Ποτέ σε φωτογραφία, ποτέ online.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 193,
+    "hex": "0xC1",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «Have fun staying poor»;",
+    "answer": "Πειραχτική απάντηση των bitcoiners σε όσους το κοροϊδεύουν",
+    "wrong": [
+      "Συμβουλή του Satoshi για εξοικονόμηση",
+      "Σύνθημα κατά των τραπεζών από το 2008",
+      "Όνομα ενός wallet"
+    ],
+    "why": "Η κλασική απάντηση σε κάθε «το Bitcoin είναι φούσκα». Συνήθως με laser eyes.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 194,
+    "hex": "0xC2",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πόσα sats θα υπάρξουν το πολύ;",
+    "answer": "2.099.999.997.690.000",
+    "wrong": [
+      "2.100.000.000.000.000",
+      "21.000.000.000.000",
+      "2.099.999.999.999.999"
+    ],
+    "why": "Λόγω της ακέραιας στρογγυλοποίησης στα halvings, λίγο κάτω από 21 εκατ. BTC.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 195,
+    "hex": "0xC3",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το Bitcoin Knots;",
+    "answer": "Εναλλακτική υλοποίηση node, από τον Luke Dashjr",
+    "wrong": [
+      "Ένα fork με μεγαλύτερα blocks",
+      "Ένα hardware wallet",
+      "Ένα Lightning wallet"
+    ],
+    "why": "Βασίζεται στο Bitcoin Core με διαφορετικές προεπιλογές και επιπλέον ρυθμίσεις.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 196,
+    "hex": "0xC4",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποιο είναι το ψευδώνυμο του δημιουργού του Bitcoin;",
+    "answer": "Satoshi Nakamoto",
+    "wrong": [
+      "Hal Finney",
+      "Nick Szabo",
+      "Vitalik Buterin"
+    ],
+    "why": "Satoshi Nakamoto. Η ταυτότητά του παραμένει άγνωστη. Ο τέταρτος είναι… άλλη ιστορία 😏",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 197,
+    "hex": "0xC5",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος δημιούργησε το Hashcash, που αναφέρεται στο whitepaper;",
+    "answer": "Adam Back",
+    "wrong": [
+      "Nick Szabo",
+      "Wei Dai",
+      "Hal Finney"
+    ],
+    "why": "Adam Back, το 1997. Proof of Work για την καταπολέμηση του spam, η βάση του mining.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 198,
+    "hex": "0xC6",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι σημαίνει «Don't trust, verify»;",
+    "answer": "Μην εμπιστεύεσαι, έλεγξε μόνος σου, π.χ. με δικό σου node",
+    "wrong": [
+      "Μην αγοράζεις χωρίς KYC",
+      "Πάντα να χρησιμοποιείς exchange",
+      "Μην μιλάς για Bitcoin"
+    ],
+    "why": "Η φιλοσοφία του Bitcoin: ο καθένας μπορεί να επαληθεύσει τα πάντα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 199,
+    "hex": "0xC7",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιοι έγραψαν το whitepaper του Lightning Network;",
+    "answer": "Joseph Poon & Thaddeus Dryja",
+    "wrong": [
+      "Adam Back & Gregory Maxwell",
+      "Hal Finney & Nick Szabo",
+      "Gavin Andresen & Mike Hearn"
+    ],
+    "why": "Το 2015/2016. Το Lightning έγινε πραγματικότητα μετά το SegWit.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 200,
+    "hex": "0xC8",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος έγραψε το «A Cypherpunk's Manifesto» (1993);",
+    "answer": "Ο Eric Hughes",
+    "wrong": [
+      "Ο Timothy May",
+      "Ο Adam Back",
+      "Ο Hal Finney"
+    ],
+    "why": "«Privacy is necessary for an open society in the electronic age…» Cypherpunks write code.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 201,
+    "hex": "0xC9",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος έγραψε το «Broken Money» (2023);",
+    "answer": "Η Lyn Alden",
+    "wrong": [
+      "Ο Saifedean Ammous",
+      "Ο Jeff Booth",
+      "Ο Michael Saylor"
+    ],
+    "why": "Ιστορία του χρήματος και της τεχνολογίας, μέχρι το Bitcoin.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 202,
+    "hex": "0xCA",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «Bitcoin fixes this»;",
+    "answer": "Meme ότι το καλό χρήμα λύνει πολλά προβλήματα",
+    "wrong": [
+      "Τεχνικό patch του Bitcoin Core",
+      "Εγγύηση επιστροφής χρημάτων",
+      "Το σύνθημα του Mt. Gox"
+    ],
+    "why": "Πληθωρισμός; Bitcoin fixes this. Ακριβό σπίτι; Bitcoin fixes this. Και ούτω καθεξής.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 203,
+    "hex": "0xCB",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ποια χρονιά ξεπέρασε για πρώτη φορά το BTC τα 100.000$;",
+    "answer": "2024",
+    "wrong": [
+      "2021",
+      "2023",
+      "2025"
+    ],
+    "why": "Τον Δεκέμβριο του 2024. Τα laser eyes επιτέλους κατέβηκαν.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 204,
+    "hex": "0xCC",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι αφορούσε το σοβαρό bug CVE-2018-17144;",
+    "answer": "Πιθανό double spend μέσα σε block, άρα πληθωρισμό",
+    "wrong": [
+      "Διαρροή private keys",
+      "Λάθος στο SHA-256",
+      "Bug στο Lightning"
+    ],
+    "why": "Διορθώθηκε γρήγορα και δεν εκμεταλλεύτηκε ποτέ στο mainnet.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 205,
+    "hex": "0xCD",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «orange pill»;",
+    "answer": "Πείθεις κάποιον να καταλάβει το Bitcoin",
+    "wrong": [
+      "Φάρμακο για το άγχος των bear markets",
+      "Πορτοκαλί hardware wallet",
+      "Ένα altcoin"
+    ],
+    "why": "Από το Matrix: παίρνεις το πορτοκαλί χάπι και πέφτεις στο rabbit hole.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 206,
+    "hex": "0xCE",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι κάνει ένας watchtower στο Lightning;",
+    "answer": "Σε προστατεύει από παλιά κατάσταση του channel όσο είσαι offline",
+    "wrong": [
+      "Κάνει mining για το channel",
+      "Υπολογίζει τα fees",
+      "Κρατάει backup του seed"
+    ],
+    "why": "Παρακολουθεί την αλυσίδα και αντιδρά αν ο αντισυμβαλλόμενος προσπαθήσει να κλέψει.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 207,
+    "hex": "0xCF",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το «BTC»;",
+    "answer": "Το ticker του bitcoin",
+    "wrong": [
+      "Bitcoin Trading Company",
+      "Blockchain Token Coin",
+      "Το exchange του Satoshi"
+    ],
+    "why": "BTC είναι η συντομογραφία, όπως EUR για το ευρώ.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 208,
+    "hex": "0xD0",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος έγραψε το «21 Lessons»;",
+    "answer": "Ο Gigi",
+    "wrong": [
+      "Ο Jimmy Song",
+      "Ο Nik Bhatia",
+      "Ο Saifedean Ammous"
+    ],
+    "why": "«What I've learned from falling down the Bitcoin rabbit hole». Ταιριαστό, έτσι;",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 209,
+    "hex": "0xD1",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Σε ποιον παρέδωσε ο Satoshi τον ρόλο του κύριου developer;",
+    "answer": "Gavin Andresen",
+    "wrong": [
+      "Hal Finney",
+      "Wladimir van der Laan",
+      "Adam Back"
+    ],
+    "why": "Στον Gavin Andresen, το 2010.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 210,
+    "hex": "0xD2",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο από αυτά ΔΕΝ μπορεί να αλλάξει ένας miner;",
+    "answer": "Το όριο των 21 εκατ.",
+    "wrong": [
+      "Ποιες συναλλαγές θα μπουν στο block του",
+      "Τη σειρά των συναλλαγών",
+      "Αν θα βγάλει άδειο block"
+    ],
+    "why": "Αν το block δημιουργεί περισσότερα BTC απ' όσα επιτρέπονται, οι nodes το απορρίπτουν.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 211,
+    "hex": "0xD3",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι μια διεύθυνση Bitcoin (address);",
+    "answer": "Ο «λογαριασμός» στον οποίο λαμβάνεις BTC",
+    "wrong": [
+      "Το seed phrase σου",
+      "Το private key σου",
+      "Το username σου στο exchange"
+    ],
+    "why": "Τη διεύθυνση τη δίνεις άφοβα για να πληρωθείς. Τα κλειδιά, ποτέ.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 212,
+    "hex": "0xD4",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Περίπου πόσα bitcoin έχουν ήδη γίνει mine (2026);",
+    "answer": "Περίπου 20 εκατομμύρια",
+    "wrong": [
+      "Περίπου 15 εκατομμύρια",
+      "Περίπου 10 εκατομμύρια",
+      "Και τα 21 εκατομμύρια"
+    ],
+    "why": "Πάνω από το 95% έχει ήδη εκδοθεί. Τα υπόλοιπα θα βγουν σιγά σιγά μέχρι το 2140.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 213,
+    "hex": "0xD5",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα cold wallet;",
+    "answer": "Wallet με κλειδιά που δεν αγγίζουν το internet",
+    "wrong": [
+      "Wallet αποθηκευμένο στο ψυγείο",
+      "Λογαριασμός σε exchange",
+      "Wallet χωρίς υπόλοιπο"
+    ],
+    "why": "Hardware wallet, paper wallet ή υπολογιστής που δεν συνδέεται ποτέ online.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 214,
+    "hex": "0xD6",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι σημαίνει «HODL» για την τάση πώλησης στην πτώση;",
+    "answer": "Δεν πουλάω στον πανικό",
+    "wrong": [
+      "Πουλάω αμέσως",
+      "Αγοράζω με leverage",
+      "Αλλάζω σε altcoins"
+    ],
+    "why": "Τα «weak hands» πουλάνε στον πάτο. Τα «diamond hands» κρατάνε.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 215,
+    "hex": "0xD7",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το DCA;",
+    "answer": "Αγορά σταθερού ποσού σε τακτά διαστήματα",
+    "wrong": [
+      "Αγορά με δανεικά (leverage)",
+      "Πώληση όταν πέφτει η τιμή",
+      "Ένα είδος hardware wallet"
+    ],
+    "why": "Dollar Cost Averaging: π.χ. 50€ κάθε εβδομάδα, ό,τι κι αν κάνει η τιμή.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 216,
+    "hex": "0xD8",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «stack sats»;",
+    "answer": "Μαζεύω σταδιακά bitcoin",
+    "wrong": [
+      "Κάνω trading καθημερινά",
+      "Κάνω mining στο σπίτι",
+      "Πουλάω στην κορυφή"
+    ],
+    "why": "Λίγα λίγα, σταθερά, για πάντα. «Stay humble, stack sats».",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 217,
+    "hex": "0xD9",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος έγραψε το «The Blocksize War»;",
+    "answer": "Ο Jonathan Bier",
+    "wrong": [
+      "Ο Nathaniel Popper",
+      "Ο Andreas Antonopoulos",
+      "Ο Gigi"
+    ],
+    "why": "Η ιστορία της μάχης 2015–2017, από την πλευρά των small blockers.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 218,
+    "hex": "0xDA",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το fee μιας συναλλαγής;",
+    "answer": "Αμοιβή στον miner για να μπει η συναλλαγή σε block",
+    "wrong": [
+      "Φόρος προς το κράτος",
+      "Προμήθεια του Satoshi",
+      "Χρέωση της τράπεζας"
+    ],
+    "why": "Το πληρώνεις στους miners. Όσο πιο γεμάτος ο mempool, τόσο ακριβότερο.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 219,
+    "hex": "0xDB",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποια ενότητα του whitepaper περιγράφει πώς επαληθεύεις πληρωμές χωρίς full node;",
+    "answer": "Simplified Payment Verification",
+    "wrong": [
+      "Lightweight Mode",
+      "Light Ledger Check",
+      "Fast Node Sync"
+    ],
+    "why": "Η ενότητα 8 του whitepaper.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 220,
+    "hex": "0xDC",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πόσα weight units «ζυγίζει» ένα byte witness δεδομένων;",
+    "answer": "1",
+    "wrong": [
+      "4",
+      "2",
+      "0"
+    ],
+    "why": "Τα non-witness bytes ζυγίζουν 4 WU. Αυτή είναι η «έκπτωση» του SegWit.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 221,
+    "hex": "0xDD",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι είναι το «extraNonce»;",
+    "answer": "Πεδίο στη coinbase που αλλάζουν οι miners όταν εξαντληθεί το nonce",
+    "wrong": [
+      "Δεύτερο nonce στο header",
+      "Μπόνους για τον miner",
+      "Το timestamp του block"
+    ],
+    "why": "Αλλάζοντάς το, αλλάζει το merkle root και ανοίγει νέος χώρος αναζήτησης.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 222,
+    "hex": "0xDE",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι σημαίνει «FUD»;",
+    "answer": "Fear, Uncertainty, Doubt",
+    "wrong": [
+      "Fast Unconfirmed Deposit",
+      "Federal Utility Dollar",
+      "Final Update Download"
+    ],
+    "why": "Φόβος, αβεβαιότητα, αμφιβολία. Συνήθως από άρθρα που «σκοτώνουν» το Bitcoin για εκατοστή φορά.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 223,
+    "hex": "0xDF",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Σε ποια mailing list ανακοίνωσε ο Satoshi το whitepaper;",
+    "answer": "Cryptography Mailing List (metzdowd.com)",
+    "wrong": [
+      "Cypherpunks mailing list",
+      "BitcoinTalk",
+      "Usenet sci.crypt"
+    ],
+    "why": "Στη Cryptography Mailing List, στις 31 Οκτωβρίου 2008. Το BitcoinTalk δεν υπήρχε ακόμα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 224,
+    "hex": "0xE0",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι είδους timelock δίνει το OP_CHECKSEQUENCEVERIFY;",
+    "answer": "Σχετικό, π.χ. μετά από Χ blocks από την επιβεβαίωση",
+    "wrong": [
+      "Απόλυτο, σε συγκεκριμένη ημερομηνία",
+      "Κανένα, ελέγχει υπογραφές",
+      "Μόνο για coinbase outputs"
+    ],
+    "why": "BIP112. Βασικό για τα Lightning channels.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 225,
+    "hex": "0xE1",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πότε κυκλοφόρησε το Bitcoin v0.1;",
+    "answer": "9 Ιανουαρίου 2009",
+    "wrong": [
+      "31 Οκτωβρίου 2008",
+      "3 Ιανουαρίου 2009",
+      "1 Μαρτίου 2009"
+    ],
+    "why": "Έξι μέρες μετά το genesis block, την ίδια μέρα που βγήκε το block 1.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 226,
+    "hex": "0xE2",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσα BTC πλήρωσε ο Laszlo Hanyecz για δύο πίτσες το 2010;",
+    "answer": "10.000 BTC",
+    "wrong": [
+      "100 BTC",
+      "1.000 BTC",
+      "50.000 BTC"
+    ],
+    "why": "22 Μαΐου 2010. Από τότε η μέρα γιορτάζεται ως Bitcoin Pizza Day.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 227,
+    "hex": "0xE3",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πόσα blocks βγαίνουν περίπου την ημέρα;",
+    "answer": "144",
+    "wrong": [
+      "100",
+      "210",
+      "1.440"
+    ],
+    "why": "24 ώρες × 6 blocks την ώρα = 144.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 228,
+    "hex": "0xE4",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι κάνει ακριβώς ένα halving;",
+    "answer": "Μειώνει στο μισό τα νέα BTC ανά block",
+    "wrong": [
+      "Μειώνει στο μισό την τιμή",
+      "Μειώνει στο μισό τα fees",
+      "Μειώνει στο μισό τον χρόνο του block"
+    ],
+    "why": "Η νέα προσφορά πέφτει στο μισό. Το τι κάνει η τιμή είναι άλλη ιστορία.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 229,
+    "hex": "0xE5",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι κάνει ένας full node;",
+    "answer": "Επαληθεύει ανεξάρτητα κάθε block και κάθε κανόνα",
+    "wrong": [
+      "Βγάζει νέα bitcoin",
+      "Κρατάει τα coins των χρηστών",
+      "Ορίζει την τιμή του BTC"
+    ],
+    "why": "Don't trust, verify. Ο full node δεν εμπιστεύεται κανέναν, ούτε τους miners.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 230,
+    "hex": "0xE6",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια είναι η φράση «Fix the money, fix the world»;",
+    "answer": "Σύνθημα ότι το καλό χρήμα διορθώνει τα κίνητρα της κοινωνίας",
+    "wrong": [
+      "Ο τίτλος του whitepaper",
+      "Το μήνυμα του genesis block",
+      "Το σύνθημα της Fed"
+    ],
+    "why": "Ένα από τα πιο γνωστά συνθήματα των bitcoiners.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 231,
+    "hex": "0xE7",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πώς λέγονται τα άρθρα που ανακοινώνουν τον «θάνατο» του Bitcoin;",
+    "answer": "Bitcoin obituaries",
+    "wrong": [
+      "Bitcoin funerals",
+      "Dead coin reports",
+      "Bear notes"
+    ],
+    "why": "Έχουν γραφτεί εκατοντάδες. Το Bitcoin είναι ακόμα εδώ.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 232,
+    "hex": "0xE8",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι σημαίνει «sound money»;",
+    "answer": "Χρήμα που δεν μπορεί να υποτιμηθεί αυθαίρετα",
+    "wrong": [
+      "Χρήμα με ήχο",
+      "Χρήμα της κυβέρνησης",
+      "Χρήμα με τόκο"
+    ],
+    "why": "Σταθερή, προβλέψιμη προσφορά. Το επιχείρημα των maxis.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 233,
+    "hex": "0xE9",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι το «stacking sats» σε σχέση με το trading;",
+    "answer": "Μαζεύω BTC μακροπρόθεσμα αντί για trading",
+    "wrong": [
+      "Το ίδιο με το day trading",
+      "Mining από το κινητό",
+      "Δανεισμός BTC"
+    ],
+    "why": "Ο στόχος είναι περισσότερα sats, όχι περισσότερα ευρώ.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 234,
+    "hex": "0xEA",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι γίνεται με τα bitcoin σε κλειδιά που χάθηκαν;",
+    "answer": "Χάνονται για πάντα",
+    "wrong": [
+      "Επιστρέφουν στον Satoshi",
+      "Ξαναμοιράζονται στους miners",
+      "Τα παίρνει το κράτος μετά από 10 χρόνια"
+    ],
+    "why": "Κανείς δεν μπορεί να τα ανακτήσει. Ουσιαστικά μειώνουν το supply που κυκλοφορεί.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 235,
+    "hex": "0xEB",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο BIP ορίζει το Taproot;",
+    "answer": "BIP341",
+    "wrong": [
+      "BIP340",
+      "BIP342",
+      "BIP148"
+    ],
+    "why": "BIP340: Schnorr · BIP341: Taproot · BIP342: Tapscript.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 236,
+    "hex": "0xEC",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Στο path m/44'/0'/0', τι δηλώνει το δεύτερο πεδίο (0');",
+    "answer": "Ότι το νόμισμα είναι Bitcoin (coin type)",
+    "wrong": [
+      "Τον αριθμό λογαριασμού",
+      "Ότι είναι testnet",
+      "Τη διεύθυνση change"
+    ],
+    "why": "purpose / coin_type / account. Το 0' είναι το Bitcoin.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 237,
+    "hex": "0xED",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το Nostr;",
+    "answer": "Αποκεντρωμένο πρωτόκολλο κοινωνικής δικτύωσης",
+    "wrong": [
+      "Ένα Bitcoin fork",
+      "Hardware wallet",
+      "Mining pool"
+    ],
+    "why": "Δημοφιλές στους bitcoiners, με πληρωμές μέσω Lightning.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 238,
+    "hex": "0xEE",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Πόσα BTC ήταν το αρχικό block reward;",
+    "answer": "50",
+    "wrong": [
+      "25",
+      "100",
+      "21"
+    ],
+    "why": "50 BTC ανά block μέχρι το πρώτο halving, το 2012.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 239,
+    "hex": "0xEF",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι είναι το nonce στο block header;",
+    "answer": "Αριθμός που αλλάζουν οι miners για να βρουν έγκυρο hash",
+    "wrong": [
+      "Ο αριθμός των συναλλαγών στο block",
+      "Η αμοιβή του miner",
+      "Το ύψος του block"
+    ],
+    "why": "Ένα πεδίο 32-bit που οι miners αλλάζουν δισεκατομμύρια φορές το δευτερόλεπτο.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 240,
+    "hex": "0xF0",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι ποσοστό των 21 εκατ. έχει ήδη εκδοθεί μέχρι το 2026;",
+    "answer": "Πάνω από 95%",
+    "wrong": [
+      "Περίπου 50%",
+      "Περίπου 75%",
+      "Περίπου 25%"
+    ],
+    "why": "Λόγω των halvings, το μεγαλύτερο μέρος βγήκε τα πρώτα χρόνια.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 241,
+    "hex": "0xF1",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα «confirmation»;",
+    "answer": "Κάθε block που μπαίνει μετά από τη συναλλαγή σου",
+    "wrong": [
+      "Email επιβεβαίωσης από το exchange",
+      "SMS από την τράπεζα",
+      "Η υπογραφή του παραλήπτη"
+    ],
+    "why": "1 confirmation = η συναλλαγή μπήκε σε block. Κάθε επόμενο block την «θάβει» πιο βαθιά.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 242,
+    "hex": "0xF2",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Περίπου ποια χρονιά θα γίνει mine το τελευταίο sat;",
+    "answer": "2140",
+    "wrong": [
+      "2050",
+      "2100",
+      "2240"
+    ],
+    "why": "Γύρω στο 2140. Μετά, οι miners θα πληρώνονται μόνο από fees.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 243,
+    "hex": "0xF3",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι ένα coinjoin;",
+    "answer": "Συναλλαγή όπου πολλοί ενώνουν inputs για ιδιωτικότητα",
+    "wrong": [
+      "Συγχώνευση δύο blockchains",
+      "Δύο miners που βρίσκουν block μαζί",
+      "Ένα altcoin"
+    ],
+    "why": "Δυσκολεύει την ανάλυση της αλυσίδας για το ποιος πλήρωσε ποιον.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 244,
+    "hex": "0xF4",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι είναι το passphrase («25η λέξη»);",
+    "answer": "Επιπλέον λέξη που φτιάχνει άλλο wallet από το ίδιο seed",
+    "wrong": [
+      "Το PIN της συσκευής",
+      "Η τελευταία λέξη του seed",
+      "Το όνομα του wallet"
+    ],
+    "why": "Χωρίς αυτήν, όποιος βρει το seed βλέπει άλλο (π.χ. άδειο) wallet.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 245,
+    "hex": "0xF5",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιο block subsidy θα έχουμε μετά το halving του 2028;",
+    "answer": "1,5625 BTC",
+    "wrong": [
+      "3,125 BTC",
+      "0,78125 BTC",
+      "2,5 BTC"
+    ],
+    "why": "3,125 / 2 = 1,5625 BTC ανά block.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 246,
+    "hex": "0xF6",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πώς αποκαλούν χαριτωμένα οι maxis τα περισσότερα altcoins;",
+    "answer": "Shitcoins",
+    "wrong": [
+      "Moonshots",
+      "Blue chips",
+      "Stablecoins"
+    ],
+    "why": "Shitcoins. «There is no second best.»",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 247,
+    "hex": "0xF7",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Ο «Crypto Support» σού ζητάει το seed phrase «για να σε βοηθήσει». Τι συμβαίνει;",
+    "answer": "Απάτη",
+    "wrong": [
+      "Κανονική διαδικασία επαλήθευσης",
+      "Αναβάθμιση ασφαλείας",
+      "Επιστροφή φόρου"
+    ],
+    "why": "Κανένα σοβαρό support δεν ζητάει ποτέ seed phrase. Ποτέ.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 248,
+    "hex": "0xF8",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πόσα blocks πρέπει να περάσουν πριν ξοδευτεί ένα coinbase output (coinbase maturity);",
+    "answer": "100",
+    "wrong": [
+      "6",
+      "144",
+      "2.016"
+    ],
+    "why": "100 blocks. Αν το block γίνει orphan, τα νέα coins δεν προλαβαίνουν να κυκλοφορήσουν.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 249,
+    "hex": "0xF9",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Μπορεί να ξοδευτεί το reward των 50 BTC του genesis block;",
+    "answer": "Όχι, δεν μπήκε ποτέ στο UTXO set",
+    "wrong": [
+      "Ναι, από όποιον έχει το κλειδί",
+      "Μόνο μετά από 100 blocks",
+      "Ναι, και ξοδεύτηκε το 2010"
+    ],
+    "why": "Λόγω του τρόπου που γράφτηκε ο κώδικας, το output του genesis block δεν μπορεί να ξοδευτεί.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 250,
+    "hex": "0xFA",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποια χρονιά έγινε η πρώτη γνωστή αγορά πραγματικού προϊόντος με BTC;",
+    "answer": "2010",
+    "wrong": [
+      "2009",
+      "2011",
+      "2012"
+    ],
+    "why": "Οι πίτσες του Laszlo, το 2010.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 251,
+    "hex": "0xFB",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Τι προκάλεσε την ακούσια διάσπαση της αλυσίδας τον Μάρτιο του 2013;",
+    "answer": "Ασυμβατότητα βάσης δεδομένων μεταξύ των v0.7 και v0.8",
+    "wrong": [
+      "Επίθεση 51%",
+      "Bug στο SHA-256",
+      "Ένα hard fork για μεγαλύτερα blocks"
+    ],
+    "why": "Οι miners γύρισαν στην v0.7 και η αλυσίδα ενοποιήθηκε μέσα σε ώρες.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 252,
+    "hex": "0xFC",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Ποιος δήλωσε το 2016 ότι «το πείραμα του Bitcoin απέτυχε» και έφυγε;",
+    "answer": "Ο Mike Hearn",
+    "wrong": [
+      "Ο Gavin Andresen",
+      "Ο Hal Finney",
+      "Ο Adam Back"
+    ],
+    "why": "Πούλησε τα BTC του τότε. Ουπς.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 253,
+    "hex": "0xFD",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Τι είναι ένα ASIC;",
+    "answer": "Μηχάνημα φτιαγμένο αποκλειστικά για mining",
+    "wrong": [
+      "Είδος wallet",
+      "Πρωτόκολλο του Lightning",
+      "Μονάδα μέτρησης fees"
+    ],
+    "why": "Application-Specific Integrated Circuit: κάνει μόνο SHA-256, αλλά ασύγκριτα γρήγορα.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 254,
+    "hex": "0xFE",
+    "weight": 1,
+    "level": "pleb",
+    "question": "Πόσο γρήγορες είναι οι πληρωμές στο Lightning;",
+    "answer": "Σχεδόν άμεσες",
+    "wrong": [
+      "Περίπου 10 λεπτά",
+      "Περίπου μία ώρα",
+      "Μία μέρα"
+    ],
+    "why": "Δευτερόλεπτα, με fees συχνά κάτω από 1 sat.",
+    "verified": false,
+    "source": ""
+  },
+  {
+    "id": 255,
+    "hex": "0xFF",
+    "weight": 2,
+    "level": "maxi",
+    "question": "Τι φορούσαν οι υποστηρικτές του UASF το 2017;",
+    "answer": "Καπέλα με γραμμένο «UASF»",
+    "wrong": [
+      "Πορτοκαλί γιλέκα",
+      "Laser γυαλιά",
+      "Μάσκες Guy Fawkes"
+    ],
+    "why": "Τα καπέλα UASF έγιναν σύμβολο του Blocksize War.",
+    "verified": false,
+    "source": ""
+  }
+]
