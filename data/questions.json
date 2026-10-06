@@ -2156,8 +2156,8 @@
       "BIP141"
     ],
     "why": "BIP39. Το BIP32 όρισε τα HD wallets, το BIP44 τα derivation paths και το BIP141 το SegWit.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
   },
   {
     "id": 135,
@@ -2172,8 +2172,8 @@
       "Ίδρυσε exchange"
     ],
     "why": "Έγραφε κώδικα κοιτάζοντας την οθόνη, ενώ είχε σχεδόν παραλύσει.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoinmagazine.com/culture/remembering-hal-finney-a-decade-since-his-passing-his-legacy-in-bitcoin-lives-on"
   },
   {
     "id": 136,
@@ -2188,8 +2188,8 @@
       "Ένα exchange"
     ],
     "why": "Έτσι ένας μικρός miner έχει σταθερό εισόδημα αντί για λαχείο.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Pooled_mining"
   },
   {
     "id": 137,
@@ -2204,8 +2204,8 @@
       "210"
     ],
     "why": "Block 170: Satoshi → Hal Finney, 10 BTC.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
   },
   {
     "id": 138,
@@ -2220,8 +2220,8 @@
       "Ένα altcoin"
     ],
     "why": "Open source. Μπορείς να το τρέξεις και στον δικό σου node.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/mempool/mempool"
   },
   {
     "id": 139,
@@ -2235,9 +2235,9 @@
       "Fork Wars",
       "Fee War"
     ],
-    "why": "Το Blocksize War. Το κέρδισαν οι χρήστες και οι full nodes, όχι οι μεγάλοι miners και οι εταιρείες.",
-    "verified": false,
-    "source": ""
+    "why": "Το Blocksize War (2015–2017). Έκλεισε με την ενεργοποίηση του SegWit τον Αύγουστο του 2017 και την ακύρωση του SegWit2x τον Νοέμβριο.",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_scalability_problem"
   },
   {
     "id": 140,
@@ -2252,8 +2252,8 @@
       "Οι μεγάλοι miners"
     ],
     "why": "Δεν υπάρχει CEO, ούτε κουμπί «παύση». Κάθε node ελέγχει μόνος του τους κανόνες.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/bitcoin-core/"
   },
   {
     "id": 141,
@@ -2268,8 +2268,8 @@
       "Αυτόματα με κάθε wallet"
     ],
     "why": "Η συναλλαγή «κλειδώνει» BTC σε multisig. Από εκεί και πέρα, πληρωμές off-chain.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/lightning/bolts"
   },
   {
     "id": 142,
@@ -2283,9 +2283,9 @@
       "Παναμάς",
       "Αργεντινή"
     ],
-    "why": "Το Ελ Σαλβαδόρ, τον Σεπτέμβριο του 2021. Το 2025 ο νόμος άλλαξε και η αποδοχή έγινε προαιρετική.",
-    "verified": false,
-    "source": ""
+    "why": "Το Ελ Σαλβαδόρ, τον Σεπτέμβριο του 2021. Το 2025 ο νόμος τροποποιήθηκε και η υποχρεωτική αποδοχή από τους εμπόρους καταργήθηκε.",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_in_El_Salvador"
   },
   {
     "id": 143,
@@ -2300,24 +2300,24 @@
       "Ο Jeff Booth"
     ],
     "why": "Κυκλοφόρησε το 2018 και έστειλε πολύ κόσμο στο rabbit hole.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/The_Bitcoin_Standard"
   },
   {
     "id": 144,
     "hex": "0x90",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιο exchange κατέρρευσε το 2014, χάνοντας περίπου 850.000 BTC;",
+    "question": "Ποιο exchange κατέρρευσε το 2014, δηλώνοντας αρχικά απώλεια περίπου 850.000 BTC;",
     "answer": "Mt. Gox",
     "wrong": [
       "FTX",
       "Bitfinex",
       "QuadrigaCX"
     ],
-    "why": "Mt. Gox, στο Τόκιο. Το FTX ήρθε το 2022. Not your keys…",
-    "verified": false,
-    "source": ""
+    "why": "Mt. Gox, στο Τόκιο. Αργότερα ανακτήθηκαν περίπου 200.000 BTC. Το FTX ήρθε το 2022. Not your keys…",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Mt._Gox"
   },
   {
     "id": 145,
@@ -2332,8 +2332,8 @@
       "Συναλλαγή προς πολλούς παραλήπτες"
     ],
     "why": "Αν χάσεις ή σου κλέψουν ένα κλειδί, τα coins είναι ακόμα ασφαλή.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Multi-signature"
   },
   {
     "id": 146,
@@ -2348,8 +2348,8 @@
       "Casa"
     ],
     "why": "Η Blockstream, το 2014. Πίσω από το Liquid και τους δορυφόρους Bitcoin.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Blockstream"
   },
   {
     "id": 147,
@@ -2364,8 +2364,8 @@
       "2023"
     ],
     "why": "Το 2021. Το hashrate έπεσε απότομα και μετά ανέκαμψε, με νέες χώρες να το απορροφούν.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.jbs.cam.ac.uk/2022/bitcoin-mining-new-data-reveal-a-surprising-resurgence/"
   },
   {
     "id": 148,
@@ -2396,8 +2396,8 @@
       "Το γεράκι"
     ],
     "why": "Bull = άνοδος, bear = πτώση.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Market_trend"
   },
   {
     "id": 150,
@@ -2412,8 +2412,8 @@
       "Ένα altcoin με Proof of Stake"
     ],
     "why": "Γρήγορες μεταφορές L-BTC μεταξύ exchanges, με ομοσπονδία μελών.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Blockstream"
   },
   {
     "id": 151,
@@ -2428,8 +2428,8 @@
       "Ο Peter Todd"
     ],
     "why": "Το 2013, αναλύοντας τα extraNonce των πρώτων blocks.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://cointelegraph.com/news/mysterious-bitcoin-mining-pattern-solved-after-seven-years"
   },
   {
     "id": 152,
@@ -2444,8 +2444,8 @@
       "1 Φεβρουαρίου 2009"
     ],
     "why": "Έξι μέρες μετά το genesis block.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.coindesk.com/learn/the-genesis-block"
   },
   {
     "id": 153,
@@ -2460,8 +2460,8 @@
       "Bulletproofs"
     ],
     "why": "Πολλά κλειδιά, μία υπογραφή on-chain. Φαίνεται σαν απλό single-sig.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0327.mediawiki"
   },
   {
     "id": 154,
@@ -2476,8 +2476,8 @@
       "bc1p"
     ],
     "why": "Το 1 είναι για P2PKH (legacy), το bc1q για SegWit v0 και το bc1p για Taproot.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Address"
   },
   {
     "id": 155,
@@ -2492,8 +2492,8 @@
       "Ένα USB με αντίγραφο του blockchain"
     ],
     "why": "Τα κλειδιά δεν αγγίζουν ποτέ υπολογιστή με internet. Η συσκευή απλώς υπογράφει συναλλαγές.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Hardware_wallet"
   },
   {
     "id": 156,
@@ -2508,8 +2508,8 @@
       "€"
     ],
     "why": "Το ₿ μπήκε επίσημα στο Unicode το 2017.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://codepoints.net/U+20BF"
   },
   {
     "id": 157,
@@ -2524,8 +2524,8 @@
       "Go"
     ],
     "why": "Ο Satoshi έγραψε το v0.1 σε C++. Το Bitcoin Core παραμένει σε C++.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_Core"
   },
   {
     "id": 158,
@@ -2540,8 +2540,8 @@
       "Τα fees σου"
     ],
     "why": "Γι' αυτό λέμε «stack sats».",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://ledger.com/academy/glossary/stack-the-sats"
   },
   {
     "id": 159,
@@ -2556,8 +2556,8 @@
       "1"
     ],
     "why": "bc1p: SegWit v1 (Taproot), σε κωδικοποίηση bech32m.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki"
   },
   {
     "id": 160,
@@ -2572,8 +2572,8 @@
       "Περιμένω τον πάτο"
     ],
     "why": "Χωρίς άγχος για timing. Το κλασικό «stay humble, stack sats».",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Dollar_cost_averaging"
   },
   {
     "id": 161,
@@ -2587,9 +2587,9 @@
       "Ναι, με εντολή εισαγγελέα",
       "Μόνο αν είναι πάνω από 1 BTC"
     ],
-    "why": "Οι επιβεβαιωμένες συναλλαγές δεν αντιστρέφονται. Δεν υπάρχει chargeback.",
-    "verified": false,
-    "source": ""
+    "why": "Δεν υπάρχει chargeback. Μετά από αρκετά confirmations, η αντιστροφή είναι πρακτικά αδύνατη.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Confirmation"
   },
   {
     "id": 162,
@@ -2604,8 +2604,8 @@
       "Ο Hal Finney"
     ],
     "why": "Το ecash του Chaum (1989) είχε ιδιωτικότητα αλλά κεντρικό εκδότη. Χρεοκόπησε το 1998.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/DigiCash"
   },
   {
     "id": 163,
@@ -2620,8 +2620,8 @@
       "Αυξάνει το block size"
     ],
     "why": "Με version bits και κατώφλι. Το SegWit το χρησιμοποίησε, με «βοήθεια» από το UASF.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki"
   },
   {
     "id": 164,
@@ -2636,8 +2636,8 @@
       "btc1"
     ],
     "why": "Κωδικοποίηση BOLT11 με bech32.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md"
   },
   {
     "id": 165,
@@ -2652,8 +2652,8 @@
       "22 Μαΐου 2010"
     ],
     "why": "3 Ιανουαρίου 2009. Το block 0, η αρχή όλων.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Genesis_block"
   },
   {
     "id": 166,
@@ -2668,8 +2668,8 @@
       "Λογαριασμός ρεύματος για mining"
     ],
     "why": "Κωδικοποιημένο αίτημα πληρωμής, συνήθως σε μορφή QR.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md"
   },
   {
     "id": 167,
@@ -3947,7 +3947,7 @@
       "Blue chips",
       "Stablecoins"
     ],
-    "why": "Shitcoins. «There is no second best.»",
+    "why": "Shitcoins. Ναι, το τρολάρισμα είναι θεσμός.",
     "verified": false,
     "source": ""
   },
