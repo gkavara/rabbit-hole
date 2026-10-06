@@ -84,16 +84,16 @@
     "hex": "0x05",
     "weight": 1,
     "level": "pleb",
-    "question": "Πόσα satoshi έχει 1 bitcoin;",
-    "answer": "100.000.000",
+    "question": "Τι σημαίνει «rekt»;",
+    "answer": "Τεράστια απώλεια, συνήθως από leverage",
     "wrong": [
-      "1.000.000",
-      "21.000.000",
-      "10.000"
+      "Επιβεβαιωμένη συναλλαγή",
+      "Νέο ATH",
+      "Επιτυχές mining"
     ],
-    "why": "1 satoshi = 0,00000001 BTC, το μικρότερο κομμάτι του bitcoin.",
+    "why": "Από το «wrecked». Το leverage είναι ο πιο γρήγορος δρόμος εκεί.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)"
+    "source": "https://www.ledger.com/academy/glossary/rekt"
   },
   {
     "id": 6,
@@ -260,16 +260,16 @@
     "hex": "0x10",
     "weight": 2,
     "level": "maxi",
-    "question": "Πόσα bitcoin παράγει κάθε νέο block (block subsidy) μετά το halving του Απριλίου 2024;",
-    "answer": "3,125",
+    "question": "Τι είναι το «Moscow time»;",
+    "answer": "Πόσα sats αγοράζει 1 δολάριο",
     "wrong": [
-      "6,25",
-      "1,5625",
-      "12,5"
+      "Η ώρα που βγαίνει το επόμενο block",
+      "Η ώρα Μόσχας στο genesis block",
+      "Ο χρόνος του difficulty adjustment"
     ],
-    "why": "Το halving στο block 840.000 μείωσε το subsidy από 6,25 σε 3,125 BTC.",
+    "why": "Τιμή αντεστραμμένη: sats ανά δολάριο. Όσο πέφτει, τόσο ανεβαίνει το BTC.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
+    "source": "https://decrypt.co/62929/jack-dorsey-shows-the-world-his-bitcoin-clock"
   },
   {
     "id": 17,
@@ -612,16 +612,16 @@
     "hex": "0x26",
     "weight": 2,
     "level": "maxi",
-    "question": "Σε ποιο block έγινε το fork του Bitcoin Cash την 1η Αυγούστου 2017;",
-    "answer": "478.559",
+    "question": "Τι σημαίνει «21e6»;",
+    "answer": "21 εκατομμύρια, σε επιστημονική γραφή",
     "wrong": [
-      "481.824",
-      "420.000",
-      "500.000"
+      "Το 21ο halving",
+      "Ένα BIP",
+      "Ένα hardware wallet"
     ],
-    "why": "Το Bitcoin Cash αποσχίστηκε στο block 478.559.",
+    "why": "21 × 10^6 = 21.000.000, το όριο του supply.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_Cash"
+    "source": "https://bitcointreasuries.net/glossary/21-million"
   },
   {
     "id": 39,
@@ -820,16 +820,16 @@
     "hex": "0x33",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι το private key;",
-    "answer": "Το μυστικό που αποδεικνύει ότι μπορείς να ξοδέψεις τα bitcoin σου",
+    "question": "Τι είναι ένα «whale»;",
+    "answer": "Κάποιος με τεράστια ποσότητα BTC",
     "wrong": [
-      "Η διεύθυνση όπου λαμβάνεις πληρωμές",
-      "Ο κωδικός πρόσβασης του exchange",
-      "Το αναγνωριστικό μιας συναλλαγής"
+      "Ένα μεγάλο mining pool",
+      "Ένα πολύ μεγάλο block",
+      "Ένα bug του 2010"
     ],
-    "why": "Όποιος το έχει, ελέγχει τα coins. Not your keys, not your coins.",
+    "why": "Όταν κινείται ένα whale, όλοι κοιτάνε τα charts.",
     "verified": true,
-    "source": "https://bitcoin.org/en/vocabulary"
+    "source": "https://www.coindesk.com/learn/bitcoin-whales-what-they-are-how-to-spot-them"
   },
   {
     "id": 52,
@@ -852,32 +852,32 @@
     "hex": "0x35",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι ένα confirmation;",
-    "answer": "Η συναλλαγή έχει επεξεργαστεί από το δίκτυο και είναι πολύ απίθανο να αντιστραφεί",
+    "question": "Τι σημαίνει «DYOR»;",
+    "answer": "Do Your Own Research",
     "wrong": [
-      "Το email από το exchange",
-      "Η υπογραφή του wallet",
-      "Το fee της συναλλαγής"
+      "Don't Yield On Returns",
+      "Double Your Online Rewards",
+      "Decentralize Your Own Router"
     ],
-    "why": "Κάθε επιπλέον confirmation μειώνει εκθετικά τον κίνδυνο αντιστροφής.",
+    "why": "Ψάξ' το μόνος σου. Don't trust, verify.",
     "verified": true,
-    "source": "https://bitcoin.org/en/vocabulary"
+    "source": "https://www.babypips.com/crypto/glossary/do-your-own-research-dyor"
   },
   {
     "id": 54,
     "hex": "0x36",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιο BIP ορίζει το derivation path για single-key Taproot (P2TR) outputs;",
-    "answer": "BIP86",
+    "question": "Τι σημαίνει «be your own bank»;",
+    "answer": "Κρατάς μόνος τα χρήματά σου χωρίς μεσάζοντα",
     "wrong": [
-      "BIP84",
-      "BIP341",
-      "BIP32"
+      "Ανοίγεις τράπεζα με BTC",
+      "Δανείζεις τα BTC σου",
+      "Παίρνεις δάνειο σε BTC"
     ],
-    "why": "Το BIP86 ακολουθεί τη δομή των BIP44/49/84 με purpose 86'.",
+    "why": "Self-custody: πλήρης έλεγχος, πλήρης ευθύνη.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki"
+    "source": "https://www.ledger.com/academy/what-it-means-to-be-your-own-bank"
   },
   {
     "id": 55,
@@ -1220,16 +1220,16 @@
     "hex": "0x4C",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιο BIP ορίζει τον Median Time-Past για τα locktimes;",
-    "answer": "BIP113",
+    "question": "Ποιο είναι το γνωστό σύνθημα για το «ρολόι» των blocks του Bitcoin;",
+    "answer": "Tick tock, next block",
     "wrong": [
-      "BIP65",
-      "BIP39",
-      "BIP9"
+      "Gm",
+      "Wen moon",
+      "Number go up"
     ],
-    "why": "Αντί για το timestamp του block, χρησιμοποιείται η διάμεσος των 11 προηγούμενων blocks.",
+    "why": "Ο χρόνος του Bitcoin μετριέται σε blocks.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki"
+    "source": "https://dailybitcoiner.substack.com/p/td-bitcoin-is-time"
   },
   {
     "id": 77,
@@ -1316,16 +1316,16 @@
     "hex": "0x52",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιο BIP ορίζει το opcode CHECKSEQUENCEVERIFY (CSV);",
-    "answer": "BIP112",
+    "question": "Συμπλήρωσε τη γνωστή φράση των maxis: «There is no …»",
+    "answer": "second best",
     "wrong": [
-      "BIP65",
-      "BIP141",
-      "BIP340"
+      "other way",
+      "safe haven",
+      "plan B"
     ],
-    "why": "Το CSV (BIP112) δίνει σχετικό timelock, δηλαδή βάσει της ηλικίας του output.",
+    "why": "«There is no second best». Τα υπόλοιπα είναι, ας πούμε, πειράματα.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki"
+    "source": "https://www.strategysoftware.com/video/bitcoin-there-is-no-second-best"
   },
   {
     "id": 83,
@@ -1556,16 +1556,16 @@
     "hex": "0x61",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι μια διεύθυνση (address) στο Bitcoin;",
-    "answer": "Αυτό που δίνεις σε κάποιον για να σου στείλει bitcoin",
+    "question": "Τι είναι ένας «nocoiner»;",
+    "answer": "Κάποιος που δεν έχει bitcoin (και συχνά το απορρίπτει)",
     "wrong": [
-      "Το μυστικό κλειδί του wallet",
-      "Η τοποθεσία του miner",
-      "Το όνομα του node"
+      "Κάποιος που έχασε το seed του",
+      "Miner χωρίς reward",
+      "Wallet με μηδέν υπόλοιπο"
     ],
-    "why": "Μοιάζει με διεύθυνση email. Ιδανικά τη χρησιμοποιείς μία φορά, για λόγους privacy.",
+    "why": "Συνήθως ο ίδιος που έλεγε «φούσκα» στα 100$.",
     "verified": true,
-    "source": "https://bitcoin.org/en/vocabulary"
+    "source": "https://www.coindesk.com/markets/2018/02/19/the-real-problem-with-nocoiners/"
   },
   {
     "id": 98,
