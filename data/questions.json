@@ -3740,8 +3740,8 @@
       "Δανεισμός BTC"
     ],
     "why": "Ο στόχος είναι περισσότερα sats, όχι περισσότερα ευρώ.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)"
   },
   {
     "id": 234,
@@ -3756,8 +3756,8 @@
       "Τα παίρνει το κράτος μετά από 10 χρόνια"
     ],
     "why": "Κανείς δεν μπορεί να τα ανακτήσει. Ουσιαστικά μειώνουν το supply που κυκλοφορεί.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 235,
@@ -3772,8 +3772,8 @@
       "BIP148"
     ],
     "why": "BIP340: Schnorr · BIP341: Taproot · BIP342: Tapscript.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki"
   },
   {
     "id": 236,
@@ -3788,8 +3788,8 @@
       "Τη διεύθυνση change"
     ],
     "why": "purpose / coin_type / account. Το 0' είναι το Bitcoin.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki"
   },
   {
     "id": 237,
@@ -3804,8 +3804,8 @@
       "Mining pool"
     ],
     "why": "Δημοφιλές στους bitcoiners, με πληρωμές μέσω Lightning.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/nostr-protocol/nips/blob/master/01.md"
   },
   {
     "id": 238,
@@ -3820,8 +3820,8 @@
       "21"
     ],
     "why": "50 BTC ανά block μέχρι το πρώτο halving, το 2012.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 239,
@@ -3836,8 +3836,8 @@
       "Το ύψος του block"
     ],
     "why": "Ένα πεδίο 32-bit που οι miners αλλάζουν δισεκατομμύρια φορές το δευτερόλεπτο.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://developer.bitcoin.org/reference/block_chain.html#block-headers"
   },
   {
     "id": 240,
@@ -3852,8 +3852,8 @@
       "Περίπου 25%"
     ],
     "why": "Λόγω των halvings, το μεγαλύτερο μέρος βγήκε τα πρώτα χρόνια.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.theblock.co/post/392660/bitcoin-mined-supply-hits-20-million-btc"
   },
   {
     "id": 241,
@@ -3861,15 +3861,15 @@
     "weight": 1,
     "level": "pleb",
     "question": "Τι είναι ένα «confirmation»;",
-    "answer": "Κάθε block που μπαίνει μετά από τη συναλλαγή σου",
+    "answer": "Κάθε block από αυτό που περιέχει τη συναλλαγή σου και μετά",
     "wrong": [
       "Email επιβεβαίωσης από το exchange",
       "SMS από την τράπεζα",
       "Η υπογραφή του παραλήπτη"
     ],
     "why": "1 confirmation = η συναλλαγή μπήκε σε block. Κάθε επόμενο block την «θάβει» πιο βαθιά.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Confirmation"
   },
   {
     "id": 242,
@@ -3884,8 +3884,8 @@
       "2240"
     ],
     "why": "Γύρω στο 2140. Μετά, οι miners θα πληρώνονται μόνο από fees.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 243,
@@ -3900,8 +3900,8 @@
       "Ένα altcoin"
     ],
     "why": "Δυσκολεύει την ανάλυση της αλυσίδας για το ποιος πλήρωσε ποιον.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/CoinJoin"
   },
   {
     "id": 244,
@@ -3916,8 +3916,8 @@
       "Το όνομα του wallet"
     ],
     "why": "Χωρίς αυτήν, όποιος βρει το seed βλέπει άλλο (π.χ. άδειο) wallet.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
   },
   {
     "id": 245,
@@ -3932,8 +3932,8 @@
       "2,5 BTC"
     ],
     "why": "3,125 / 2 = 1,5625 BTC ανά block.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 246,
@@ -3948,8 +3948,8 @@
       "Stablecoins"
     ],
     "why": "Shitcoins. Ναι, το τρολάρισμα είναι θεσμός.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Shitcoin"
   },
   {
     "id": 247,
@@ -3964,8 +3964,8 @@
       "Επιστροφή φόρου"
     ],
     "why": "Κανένα σοβαρό support δεν ζητάει ποτέ seed phrase. Ποτέ.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/scams"
   },
   {
     "id": 248,
@@ -3980,8 +3980,8 @@
       "2.016"
     ],
     "why": "100 blocks. Αν το block γίνει orphan, τα νέα coins δεν προλαβαίνουν να κυκλοφορήσουν.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://developer.bitcoin.org/reference/glossary.html"
   },
   {
     "id": 249,
@@ -3996,8 +3996,8 @@
       "Ναι, και ξοδεύτηκε το 2010"
     ],
     "why": "Λόγω του τρόπου που γράφτηκε ο κώδικας, το output του genesis block δεν μπορεί να ξοδευτεί.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Genesis_block"
   },
   {
     "id": 250,
@@ -4012,8 +4012,8 @@
       "2012"
     ],
     "why": "Οι πίτσες του Laszlo, το 2010.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Laszlo_Hanyecz"
   },
   {
     "id": 251,
@@ -4028,8 +4028,8 @@
       "Ένα hard fork για μεγαλύτερα blocks"
     ],
     "why": "Οι miners γύρισαν στην v0.7 και η αλυσίδα ενοποιήθηκε μέσα σε ώρες.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki"
   },
   {
     "id": 252,
@@ -4043,9 +4043,9 @@
       "Ο Hal Finney",
       "Ο Adam Back"
     ],
-    "why": "Πούλησε τα BTC του τότε. Ουπς.",
-    "verified": false,
-    "source": ""
+    "why": "Το έγραψε τον Ιανουάριο του 2016 και είπε ότι πούλησε όλα του τα BTC.",
+    "verified": true,
+    "source": "https://www.pcworld.com/article/419197/bitcoin-is-a-failed-experiment-says-major-bitcoin-developer.html"
   },
   {
     "id": 253,
@@ -4060,8 +4060,8 @@
       "Μονάδα μέτρησης fees"
     ],
     "why": "Application-Specific Integrated Circuit: κάνει μόνο SHA-256, αλλά ασύγκριτα γρήγορα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/ASIC"
   },
   {
     "id": 254,
@@ -4075,9 +4075,9 @@
       "Περίπου μία ώρα",
       "Μία μέρα"
     ],
-    "why": "Δευτερόλεπτα, με fees συχνά κάτω από 1 sat.",
-    "verified": false,
-    "source": ""
+    "why": "Δευτερόλεπτα, με fees συνήθως ελάχιστα.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Lightning_Network"
   },
   {
     "id": 255,
@@ -4085,14 +4085,14 @@
     "weight": 2,
     "level": "maxi",
     "question": "Τι φορούσαν οι υποστηρικτές του UASF το 2017;",
-    "answer": "Καπέλα με γραμμένο «UASF»",
+    "answer": "Γκρι καπέλα καμουφλάζ με κεντημένο «UASF»",
     "wrong": [
       "Πορτοκαλί γιλέκα",
       "Laser γυαλιά",
       "Μάσκες Guy Fawkes"
     ],
     "why": "Τα καπέλα UASF έγιναν σύμβολο του Blocksize War.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://dailybitcoiner.substack.com/p/td-the-blocksize-wars-cyber-soldier"
   }
 ]
