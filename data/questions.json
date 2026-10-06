@@ -540,8 +540,8 @@
       "Litecoin"
     ],
     "why": "Το Bitcoin Cash. Το Bitcoin SV έγινε fork του Bitcoin Cash το 2018. Forks των forks…",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_Cash"
   },
   {
     "id": 34,
@@ -555,9 +555,9 @@
       "Ο Whitfield Diffie",
       "Ο Adam Back"
     ],
-    "why": "Ο Ralph Merkle τα πατεντάρισε το 1979.",
-    "verified": false,
-    "source": ""
+    "why": "Ο Ralph Merkle κατέθεσε την πατέντα το 1979 (US 4309569).",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Merkle_tree"
   },
   {
     "id": 35,
@@ -572,8 +572,8 @@
       "0"
     ],
     "why": "2.083.236.893. Το 1.231.006.505 είναι το timestamp του (Unix time).",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Genesis_block"
   },
   {
     "id": 36,
@@ -588,8 +588,8 @@
       "SMALL BLOCKS ONLY"
     ],
     "why": "Το «NO2X» έγινε σημαία της αντίστασης των χρηστών το 2017.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://cointelegraph.com/news/litecoin-creator-charlie-lee-publicly-opposes-segwit2x"
   },
   {
     "id": 37,
@@ -604,24 +604,24 @@
       "2013"
     ],
     "why": "Τον Απρίλιο του 2011: «I've moved on to other things». Και εξαφανίστηκε.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
   },
   {
     "id": 38,
     "hex": "0x26",
     "weight": 2,
     "level": "maxi",
-    "question": "Τι σημαίνει «21e6»;",
-    "answer": "21 εκατομμύρια, σε επιστημονική γραφή",
+    "question": "Σε ποιο block έγινε το fork του Bitcoin Cash την 1η Αυγούστου 2017;",
+    "answer": "478.559",
     "wrong": [
-      "Το 21ο halving",
-      "Ένα BIP",
-      "Ένα hardware wallet"
+      "481.824",
+      "420.000",
+      "500.000"
     ],
-    "why": "21 × 10^6 = 21.000.000. Συχνά σε μπλουζάκια.",
-    "verified": false,
-    "source": ""
+    "why": "Το Bitcoin Cash αποσχίστηκε στο block 478.559.",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_Cash"
   },
   {
     "id": 39,
@@ -636,8 +636,8 @@
       "Αυτή που προτείνουν οι developers"
     ],
     "why": "Το «longest chain» είναι απλοποίηση. Μετράει η συνολική δουλειά (most work).",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://developer.bitcoin.org/devguide/block_chain.html"
   },
   {
     "id": 40,
@@ -652,8 +652,8 @@
       "BIP119"
     ],
     "why": "Οι κανόνες script για τα Taproot spends.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki"
   },
   {
     "id": 41,
@@ -668,8 +668,8 @@
       "Το Lightning"
     ],
     "why": "Εκεί δοκιμάζουν οι developers χωρίς να ρισκάρουν πραγματικά sats.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Testnet"
   },
   {
     "id": 42,
@@ -684,8 +684,8 @@
       "BIP86"
     ],
     "why": "BIP44: legacy · BIP49: nested SegWit · BIP84: native SegWit · BIP86: Taproot.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki"
   },
   {
     "id": 43,
@@ -700,8 +700,8 @@
       "The Guardian"
     ],
     "why": "The Times του Λονδίνου, φύλλο της 3ης Ιανουαρίου 2009.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Genesis_block"
   },
   {
     "id": 44,
@@ -715,9 +715,9 @@
       "Του αφιερώθηκε block",
       "Έγινε ο νέος Satoshi"
     ],
-    "why": "Κρυοσυντηρήθηκε στο Alcor, στην Αριζόνα. Running bitcoin, forever.",
-    "verified": false,
-    "source": ""
+    "why": "Κρυοσυντηρήθηκε στο Alcor, στην Αριζόνα, μετά τον θάνατό του στις 28 Αυγούστου 2014.",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
   },
   {
     "id": 45,
@@ -732,8 +732,8 @@
       "21.000"
     ],
     "why": "Κάθε 210.000 blocks, δηλαδή περίπου κάθε 4 χρόνια, η νέα έκδοση BTC μειώνεται στο μισό.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 46,
@@ -748,8 +748,8 @@
       "Το κλειδί του Lightning"
     ],
     "why": "Το σύστημα αποσύρθηκε το 2016 ως κίνδυνος κεντρικοποίησης.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/alert-retirement"
   },
   {
     "id": 47,
@@ -764,8 +764,8 @@
       "Nick Szabo"
     ],
     "why": "Wei Dai, το 1998. Είναι η πρώτη αναφορά (reference [1]) του whitepaper.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/B-money"
   },
   {
     "id": 48,
@@ -780,8 +780,8 @@
       "Τις υπογραφές Schnorr"
     ],
     "why": "Από ένα seed παράγεται ολόκληρο δέντρο κλειδιών.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
   },
   {
     "id": 49,
@@ -796,8 +796,8 @@
       "OP_CHECKSIG"
     ],
     "why": "CLTV (BIP65) για απόλυτο χρόνο. Το CSV (BIP112) είναι για σχετικό χρόνο.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki"
   },
   {
     "id": 50,
@@ -812,31 +812,31 @@
       "BIP9 με 95% και χωρίς λήξη"
     ],
     "why": "Σύντομο παράθυρο σηματοδότησης από miners με κατώφλι 90%, μετά τις εμπειρίες του 2017.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoincore.org/en/releases/0.21.1/"
   },
   {
     "id": 51,
     "hex": "0x33",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι ένα «whale»;",
-    "answer": "Κάποιος με τεράστια ποσότητα BTC",
+    "question": "Τι είναι το private key;",
+    "answer": "Το μυστικό που αποδεικνύει ότι μπορείς να ξοδέψεις τα bitcoin σου",
     "wrong": [
-      "Ένα μεγάλο mining pool",
-      "Ένα πολύ μεγάλο block",
-      "Ένα bug του 2010"
+      "Η διεύθυνση όπου λαμβάνεις πληρωμές",
+      "Ο κωδικός πρόσβασης του exchange",
+      "Το αναγνωριστικό μιας συναλλαγής"
     ],
-    "why": "Όταν κινείται ένα whale, όλοι κοιτάνε τα charts.",
-    "verified": false,
-    "source": ""
+    "why": "Όποιος το έχει, ελέγχει τα coins. Not your keys, not your coins.",
+    "verified": true,
+    "source": "https://bitcoin.org/en/vocabulary"
   },
   {
     "id": 52,
     "hex": "0x34",
     "weight": 2,
     "level": "maxi",
-    "question": "Σε ποιον έστειλε ο Satoshi την πρώτη συναλλαγή bitcoin;",
+    "question": "Σε ποιον έστειλε ο Satoshi bitcoin στην πρώτη συναλλαγή του δικτύου μεταξύ δύο χρηστών;",
     "answer": "Hal Finney",
     "wrong": [
       "Nick Szabo",
@@ -844,40 +844,40 @@
       "Laszlo Hanyecz"
     ],
     "why": "10 BTC στον Hal Finney, στο block 170, στις 12 Ιανουαρίου 2009.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
   },
   {
     "id": 53,
     "hex": "0x35",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι σημαίνει «DYOR»;",
-    "answer": "Do Your Own Research",
+    "question": "Τι είναι ένα confirmation;",
+    "answer": "Η συναλλαγή έχει επεξεργαστεί από το δίκτυο και είναι πολύ απίθανο να αντιστραφεί",
     "wrong": [
-      "Don't Yield On Returns",
-      "Double Your Online Rewards",
-      "Decentralize Your Own Router"
+      "Το email από το exchange",
+      "Η υπογραφή του wallet",
+      "Το fee της συναλλαγής"
     ],
-    "why": "Ψάξ' το μόνος σου. Don't trust, verify.",
-    "verified": false,
-    "source": ""
+    "why": "Κάθε επιπλέον confirmation μειώνει εκθετικά τον κίνδυνο αντιστροφής.",
+    "verified": true,
+    "source": "https://bitcoin.org/en/vocabulary"
   },
   {
     "id": 54,
     "hex": "0x36",
     "weight": 2,
     "level": "maxi",
-    "question": "Τι σημαίνει «be your own bank»;",
-    "answer": "Κρατάς μόνος τα χρήματά σου χωρίς μεσάζοντα",
+    "question": "Ποιο BIP ορίζει το derivation path για single-key Taproot (P2TR) outputs;",
+    "answer": "BIP86",
     "wrong": [
-      "Ανοίγεις τράπεζα με BTC",
-      "Δανείζεις τα BTC σου",
-      "Παίρνεις δάνειο σε BTC"
+      "BIP84",
+      "BIP341",
+      "BIP32"
     ],
-    "why": "Self-custody: πλήρης έλεγχος, πλήρης ευθύνη.",
-    "verified": false,
-    "source": ""
+    "why": "Το BIP86 ακολουθεί τη δομή των BIP44/49/84 με purpose 86'.",
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0086.mediawiki"
   },
   {
     "id": 55,
@@ -892,8 +892,8 @@
       "Η Ινδία"
     ],
     "why": "Το Μπουτάν συσσώρευσε BTC κάνοντας mining με το πλεόνασμα των φραγμάτων του.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://cointelegraph.com/news/how-bhutan-is-building-a-green-bitcoin-economy-from-the-ground-up"
   },
   {
     "id": 56,
@@ -908,8 +908,8 @@
       "Ο Gigi"
     ],
     "why": "Το βιβλίο για τον αποπληθωρισμό που φέρνει η τεχνολογία.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.businesswire.com/news/home/20200114005299/en/Jeff-Booth-BuildDirect-Co-Founder-Releases-Book-Titled"
   },
   {
     "id": 57,
@@ -924,8 +924,8 @@
       "Know Your Chain"
     ],
     "why": "Η ταυτοποίηση που ζητούν τα exchanges. Τα δεδομένα σου μένουν σε κάποιον server.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Know_your_customer"
   },
   {
     "id": 58,
@@ -940,8 +940,8 @@
       "Hello, Satoshi"
     ],
     "why": "«Running bitcoin». Από τα πιο ιστορικά tweets που γράφτηκαν ποτέ.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
   },
   {
     "id": 59,
@@ -956,8 +956,8 @@
       "Ένα timelock"
     ],
     "why": "Αποδεδειγμένα unspendable. Έτσι δεν φουσκώνει το UTXO set.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/OP_RETURN"
   },
   {
     "id": 60,
@@ -972,8 +972,8 @@
       "Διπλό halving"
     ],
     "why": "Το πρόβλημα που έλυσε ο Satoshi χωρίς κεντρικό διαχειριστή.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://developer.bitcoin.org/devguide/block_chain.html"
   },
   {
     "id": 61,
@@ -988,8 +988,8 @@
       "Fans του Star Wars"
     ],
     "why": "Η καμπάνια ήταν να μείνουν τα laser eyes μέχρι το BTC να φτάσει τα 100.000$.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://knowyourmeme.com/memes/laser-eyes-bitcoin-trend-laserrayuntil100k"
   },
   {
     "id": 62,
@@ -1004,8 +1004,8 @@
       "Yield farming"
     ],
     "why": "Mining, με Proof of Work. Το staking είναι για άλλα δίκτυα… που δεν θα αναφέρουμε.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/vocabulary"
   },
   {
     "id": 63,
@@ -1020,8 +1020,8 @@
       "Το ύψος του block"
     ],
     "why": "Όποιος έχει το seed phrase έχει τα bitcoin σου. Τέλος.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Seed_phrase"
   },
   {
     "id": 64,
@@ -1036,8 +1036,8 @@
       "Theymos"
     ],
     "why": "Ο ίδιος ο Satoshi, τον Νοέμβριο του 2009.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/BitcoinTalk"
   },
   {
     "id": 65,
