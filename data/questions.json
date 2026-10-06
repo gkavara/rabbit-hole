@@ -12,8 +12,8 @@
       "21"
     ],
     "why": "10 BTC, στο block 170.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
   },
   {
     "id": 1,
@@ -28,8 +28,8 @@
       "Απεριόριστα, όπως το ευρώ"
     ],
     "why": "Το supply cap είναι λίγο κάτω από 21.000.000 BTC. Κανείς δεν μπορεί να «τυπώσει» παραπάνω.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 2,
@@ -44,8 +44,8 @@
       "Το Kraken"
     ],
     "why": "Άλλη μια υπενθύμιση: not your keys, not your coins.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/FTX"
   },
   {
     "id": 3,
@@ -60,8 +60,8 @@
       "Ο Wei Dai"
     ],
     "why": "Πρόγονος του Bitcoin, βασισμένος στο Hashcash.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
   },
   {
     "id": 4,
@@ -76,24 +76,24 @@
       "92 εκατομμύρια"
     ],
     "why": "Αύγουστος 2010, block 74.638. Διορθώθηκε με soft fork μέσα σε λίγες ώρες και η αλυσίδα «ξαναγράφτηκε».",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Value_overflow_incident"
   },
   {
     "id": 5,
     "hex": "0x05",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι σημαίνει «rekt»;",
-    "answer": "Τεράστια απώλεια, συνήθως από leverage",
+    "question": "Πόσα satoshi έχει 1 bitcoin;",
+    "answer": "100.000.000",
     "wrong": [
-      "Επιβεβαιωμένη συναλλαγή",
-      "Νέο ATH",
-      "Επιτυχές mining"
+      "1.000.000",
+      "21.000.000",
+      "10.000"
     ],
-    "why": "Από το «wrecked». Το leverage είναι ο πιο γρήγορος δρόμος εκεί.",
-    "verified": false,
-    "source": ""
+    "why": "1 satoshi = 0,00000001 BTC, το μικρότερο κομμάτι του bitcoin.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)"
   },
   {
     "id": 6,
@@ -107,9 +107,9 @@
       "Ο Saifedean Ammous",
       "Ο Jeff Booth"
     ],
-    "why": "Δημοσιογράφος των New York Times. Από τα πρώτα βιβλία για την ιστορία του Bitcoin.",
-    "verified": false,
-    "source": ""
+    "why": "Φιναλίστ στο Financial Times Business Book of the Year 2015. Από τα πρώτα βιβλία για την ιστορία του Bitcoin.",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Nathaniel_Popper"
   },
   {
     "id": 7,
@@ -123,9 +123,9 @@
       "Ένα hardware wallet",
       "Το exchange του Satoshi"
     ],
-    "why": "Είναι η reference implementation, ο απόγονος του κώδικα του Satoshi.",
-    "verified": false,
-    "source": ""
+    "why": "Η πιο διαδεδομένη υλοποίηση full node, βασισμένη στον αρχικό κώδικα του Satoshi.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Bitcoin_Core"
   },
   {
     "id": 8,
@@ -139,9 +139,9 @@
       "Μόνο macOS",
       "Σε όλα"
     ],
-    "why": "Οι εκδόσεις για Linux και Mac ήρθαν αργότερα.",
-    "verified": false,
-    "source": ""
+    "why": "Ο Satoshi έγραψε στην ανακοίνωση: «Windows only for now». Οι άλλες πλατφόρμες ήρθαν αργότερα.",
+    "verified": true,
+    "source": "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"
   },
   {
     "id": 9,
@@ -156,8 +156,8 @@
       "Η συναλλαγή ακυρώνεται αυτόματα"
     ],
     "why": "Ο μηχανισμός ποινής κάνει την απάτη πολύ ακριβή.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/lightning/bolts/blob/master/05-onchain.md"
   },
   {
     "id": 10,
@@ -172,8 +172,8 @@
       "Ο Nic Carter"
     ],
     "why": "Ο Ανδρέας Αντωνόπουλος. Έγραψε επίσης το «The Internet of Money».",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Andreas_Antonopoulos"
   },
   {
     "id": 11,
@@ -188,8 +188,8 @@
       "BIP340"
     ],
     "why": "BIP141. Το BIP148 ήταν το UASF και το BIP340 οι υπογραφές Schnorr.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
   },
   {
     "id": 12,
@@ -203,9 +203,9 @@
       "Η πρώτη συναλλαγή του Satoshi",
       "Μια συναλλαγή χωρίς fee"
     ],
-    "why": "Από εδώ πήρε το όνομά του και το exchange.",
-    "verified": false,
-    "source": ""
+    "why": "Δημιουργεί τα νέα bitcoin (subsidy) και μαζεύει τα fees του block.",
+    "verified": true,
+    "source": "https://developer.bitcoin.org/reference/block_chain.html"
   },
   {
     "id": 13,
@@ -220,8 +220,8 @@
       "BlackRock"
     ],
     "why": "Ξεκίνησε το 2020. Το 2025 άλλαξε όνομα σε Strategy.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Strategy_Inc"
   },
   {
     "id": 14,
@@ -236,8 +236,8 @@
       "Wallet για mining"
     ],
     "why": "Βολικό για μικρά ποσά καθημερινής χρήσης. Τα μεγάλα ποσά πάνε σε cold storage.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://river.com/learn/terms/h/hot-wallet/"
   },
   {
     "id": 15,
@@ -252,24 +252,24 @@
       "120"
     ],
     "why": "Μόλις 9 σελίδες, μαζί με τις αναφορές.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/bitcoin.pdf"
   },
   {
     "id": 16,
     "hex": "0x10",
     "weight": 2,
     "level": "maxi",
-    "question": "Τι είναι το «Moscow time»;",
-    "answer": "Πόσα sats αγοράζει 1 δολάριο",
+    "question": "Πόσα bitcoin παράγει κάθε νέο block (block subsidy) μετά το halving του Απριλίου 2024;",
+    "answer": "3,125",
     "wrong": [
-      "Η ώρα που βγαίνει το επόμενο block",
-      "Η ώρα Μόσχας στο genesis block",
-      "Ο χρόνος του difficulty adjustment"
+      "6,25",
+      "1,5625",
+      "12,5"
     ],
-    "why": "Τιμή αντεστραμμένη: sats ανά δολάριο. Όσο πέφτει, τόσο ανεβαίνει το BTC.",
-    "verified": false,
-    "source": ""
+    "why": "Το halving στο block 840.000 μείωσε το subsidy από 6,25 σε 3,125 BTC.",
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
   },
   {
     "id": 17,
@@ -284,8 +284,8 @@
       "8.000.000 weight units"
     ],
     "why": "4M WU. Γι' αυτό τα blocks σήμερα ξεπερνούν το 1 MB χωρίς hard fork.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
   },
   {
     "id": 18,
@@ -300,8 +300,8 @@
       "1.260.000"
     ],
     "why": "840.000 + 210.000 = 1.050.000.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
   },
   {
     "id": 19,
@@ -316,8 +316,8 @@
       "Τα BTC στο cold wallet"
     ],
     "why": "Για να λάβεις sats, πρέπει να υπάρχει χωρητικότητα στην πλευρά του άλλου.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://docs.lightning.engineering/the-lightning-network/liquidity/understanding-liquidity"
   },
   {
     "id": 20,
@@ -332,8 +332,8 @@
       "Base Layer Optimization Toolkit"
     ],
     "why": "Οι προδιαγραφές που επιτρέπουν σε διαφορετικές υλοποιήσεις να μιλούν μεταξύ τους.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/lightning/bolts"
   },
   {
     "id": 21,
@@ -348,8 +348,8 @@
       "OP_DUP"
     ],
     "why": "Απενεργοποιήθηκε για λόγους ασφαλείας. Το BIP347 προτείνει επαναφορά του στο Tapscript.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki"
   },
   {
     "id": 22,
@@ -364,8 +364,8 @@
       "Wei Dai"
     ],
     "why": "Ο Nick Szabo. Ένας από τους πιο κοντινούς προγόνους του Bitcoin.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bit_gold"
   },
   {
     "id": 23,
@@ -380,8 +380,8 @@
       "Τον Len Sassaman"
     ],
     "why": "Ο ίδιος το διέψευσε. Ο Satoshi παραμένει άγνωστος.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
   },
   {
     "id": 24,
@@ -396,8 +396,8 @@
       "Ο Luke Dashjr"
     ],
     "why": "Το 2011, με βάση τη διαδικασία των PEP της Python.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
   },
   {
     "id": 25,
@@ -412,8 +412,8 @@
       "2010"
     ],
     "why": "Στις 31 Οκτωβρίου 2008. Το δίκτυο ξεκίνησε τον Ιανουάριο του 2009.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_(white_paper)"
   },
   {
     "id": 26,
@@ -428,8 +428,8 @@
       "merkle root"
     ],
     "why": "Το «bits» είναι συμπιεσμένη μορφή του target.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Block_hashing_algorithm"
   },
   {
     "id": 27,
@@ -444,8 +444,8 @@
       "Η Ιαπωνία"
     ],
     "why": "Αρχικά με BTC που η κυβέρνηση είχε ήδη κατασχέσει.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/"
   },
   {
     "id": 28,
@@ -460,8 +460,8 @@
       "Μια διαγραφή post"
     ],
     "why": "Αντί για likes, sats.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/nostr-protocol/nips/blob/master/57.md"
   },
   {
     "id": 29,
@@ -476,8 +476,8 @@
       "Του φιλοσόφου που τρώει"
     ],
     "why": "Συμφωνία ανάμεσα σε αγνώστους, χωρίς εμπιστοσύνη, ακόμα και αν κάποιοι είναι κακόβουλοι.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://diswww.mit.edu/bloom-picayune/crypto/137555"
   },
   {
     "id": 30,
@@ -492,8 +492,8 @@
       "BIP141"
     ],
     "why": "Το BIP350 όρισε το bech32m για Taproot (bc1p…).",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki"
   },
   {
     "id": 31,
@@ -524,8 +524,8 @@
       "2012"
     ],
     "why": "Τον Φεβρουάριο του 2011.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.clarkmoody.com/posts/ten-years-bitcoin-market-data"
   },
   {
     "id": 33,
