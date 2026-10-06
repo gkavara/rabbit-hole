@@ -1628,8 +1628,8 @@
       "Χωρίς όριο"
     ],
     "why": "Ο κανόνας περιορίζει την αλλαγή σε συντελεστή 4 προς κάθε κατεύθυνση.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Target"
   },
   {
     "id": 102,
@@ -1644,8 +1644,8 @@
       "Confirmed Payment First Priority"
     ],
     "why": "Ξοδεύεις ένα output μιας κολλημένης συναλλαγής με υψηλό fee, και οι miners παίρνουν και τις δύο.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Child_pays_for_parent"
   },
   {
     "id": 103,
@@ -1660,8 +1660,8 @@
       "Ο Laszlo"
     ],
     "why": "Στο BitcoinTalk, με ομολογημένο αλκοόλ και πολλά ορθογραφικά λάθη.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcointalk.org/index.php?topic=375643.0"
   },
   {
     "id": 104,
@@ -1676,8 +1676,8 @@
       "Lamport"
     ],
     "why": "Schnorr (BIP340). Πριν, το Bitcoin χρησιμοποιούσε μόνο ECDSA.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki"
   },
   {
     "id": 105,
@@ -1692,8 +1692,8 @@
       "Μέρα που αλλάζεις όλα τα passwords"
     ],
     "why": "Ξεκίνησε το 2019, ανήμερα της επετείου του genesis block.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoinist.com/bitcoin-proof-of-keys-btc-off-exchanges/"
   },
   {
     "id": 106,
@@ -1724,8 +1724,8 @@
       "Γιατί το απαγορεύει το πρωτόκολλο"
     ],
     "why": "Η επαναχρησιμοποίηση συνδέει όλες τις πληρωμές σου μεταξύ τους.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Address_reuse"
   },
   {
     "id": 108,
@@ -1740,8 +1740,8 @@
       "Next Gen Monetary Instrument"
     ],
     "why": "Ό,τι λέμε σε όποιον πουλάει στον πάτο. Το αντίθετο: WAGMI.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.bitmex.com/blog/what-is-wagmi-ngmi"
   },
   {
     "id": 109,
@@ -1756,8 +1756,8 @@
       "Από το όνομα του πρώτου wallet"
     ],
     "why": "Τον Δεκέμβριο του 2013 ένας χρήστης έγραψε μεθυσμένος «I AM HODLING». Το «Hold On for Dear Life» προστέθηκε αργότερα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcointalk.org/index.php?topic=375643.0"
   },
   {
     "id": 110,
@@ -1771,9 +1771,9 @@
       "Οι miners, το 2015",
       "Το SegWit, το 2017"
     ],
-    "why": "Το πρόσθεσε σιωπηλά ως μέτρο κατά του spam.",
-    "verified": false,
-    "source": ""
+    "why": "Το πρόσθεσε χωρίς ανακοίνωση, σε δύο commits το 2010.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Block_size_limit_controversy"
   },
   {
     "id": 111,
@@ -1788,8 +1788,8 @@
       "Mining με κάρτες γραφικών"
     ],
     "why": "Ο πιο γρήγορος δρόμος για «rekt». Οι maxis απλώς κάνουν stack.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Leverage_(finance)"
   },
   {
     "id": 112,
@@ -1804,8 +1804,8 @@
       "Ως εταιρεία mining"
     ],
     "why": "Magic: The Gathering Online eXchange. Ναι, σοβαρά.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Mt._Gox"
   },
   {
     "id": 113,
@@ -1820,8 +1820,8 @@
       "Μόνο για κυβερνήσεις"
     ],
     "why": "Ο καθένας μπορεί να τον διαβάσει, να τον ελέγξει και να τρέξει node.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bitcoin"
   },
   {
     "id": 114,
@@ -1836,8 +1836,8 @@
       "Unique Token Exchange Output"
     ],
     "why": "Unspent Transaction Output. Το Bitcoin δεν έχει «υπόλοιπα λογαριασμών», μόνο ανεξόδευτα outputs.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoin.org/en/vocabulary"
   },
   {
     "id": 115,
@@ -1852,8 +1852,8 @@
       "100"
     ],
     "why": "Περίπου μία ώρα. Είναι σύμβαση, όχι κανόνας του πρωτοκόλλου.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Confirmation"
   },
   {
     "id": 116,
@@ -1868,8 +1868,8 @@
       "Little Caesars"
     ],
     "why": "Από Papa John's. Ο Laszlo πλήρωσε τα BTC σε κάποιον που τις παρήγγειλε για λογαριασμό του.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/"
   },
   {
     "id": 117,
@@ -1884,8 +1884,8 @@
       "Υπογραφή του Satoshi"
     ],
     "why": "Κάνει πανάκριβο το να ξαναγράψεις την ιστορία. Γι' αυτό είναι ασφαλές.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Proof_of_work"
   },
   {
     "id": 118,
@@ -1900,8 +1900,8 @@
       "Keccak"
     ],
     "why": "Διπλό SHA-256. Το Scrypt είναι του Litecoin 😏",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Proof_of_work"
   },
   {
     "id": 119,
@@ -1916,8 +1916,8 @@
       "Ένα hardware wallet"
     ],
     "why": "Βολικό, αλλά συνήθως με υψηλές χρεώσεις και KYC.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_ATM"
   },
   {
     "id": 120,
@@ -1932,8 +1932,8 @@
       "Τον Craig Wright"
     ],
     "why": "Έναν ηλικιωμένο μηχανικό που δεν είχε καμία σχέση. Ο πραγματικός Satoshi έγραψε τότε «I am not Dorian Nakamoto».",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
   },
   {
     "id": 121,
@@ -1948,8 +1948,8 @@
       "6"
     ],
     "why": "2012, 2016, 2020, 2024.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
   },
   {
     "id": 122,
@@ -1964,8 +1964,8 @@
       "Η αγορά της Ρωσίας"
     ],
     "why": "Η καλύτερη εποχή για να μαζεύεις sats σε χαμηλότερες τιμές.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.wikipedia.org/wiki/Market_trend"
   },
   {
     "id": 123,
@@ -1980,8 +1980,8 @@
       "Ένα byte witness"
     ],
     "why": "Οι fees υπολογίζονται σε sat ανά vbyte.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
   },
   {
     "id": 124,
@@ -1995,9 +1995,9 @@
       "Ένα hard fork για αύξηση του supply",
       "Νέα μέθοδος mining"
     ],
-    "why": "User Activated Soft Fork: οι κόμβοι θα απέρριπταν blocks χωρίς σήμα για SegWit. Έδειξε ποιος κάνει κουμάντο: οι nodes.",
-    "verified": false,
-    "source": ""
+    "why": "User Activated Soft Fork: από την 1η Αυγούστου 2017 οι κόμβοι θα απέρριπταν blocks χωρίς σήμα για SegWit.",
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/BIP_0148"
   },
   {
     "id": 125,
@@ -2012,8 +2012,8 @@
       "Στη Βραζιλία"
     ],
     "why": "Οι ΗΠΑ έγιναν η μεγαλύτερη χώρα σε hashrate.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://www.jbs.cam.ac.uk/2022/bitcoin-mining-new-data-reveal-a-surprising-resurgence/"
   },
   {
     "id": 126,
@@ -2028,8 +2028,8 @@
       "Η Lyn Alden"
     ],
     "why": "Το χρήμα ως στρώματα: από τον χρυσό στις τράπεζες και στο Bitcoin.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://bitcoinmagazine.com/culture/review-layered-money-by-nik-bhatia"
   },
   {
     "id": 127,
@@ -2044,8 +2044,8 @@
       "Αρχείο με τα παλιά blocks"
     ],
     "why": "Εκεί περιμένουν οι συναλλαγές μέχρι να μπουν σε block. Όσο μεγαλύτερο fee, τόσο πιο γρήγορα.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Vocabulary"
   },
   {
     "id": 128,
@@ -2060,8 +2060,8 @@
       "Τα sats του Satoshi"
     ],
     "why": "Αν το fee για να το ξοδέψεις ξεπερνά την αξία του, είναι πρακτικά άχρηστο.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Dust"
   },
   {
     "id": 129,
@@ -2076,8 +2076,8 @@
       "21.000"
     ],
     "why": "2.048 = 2^11. Κάθε λέξη κωδικοποιεί 11 bits.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
   },
   {
     "id": 130,
@@ -2092,8 +2092,8 @@
       "Fed cuts rates to zero"
     ],
     "why": "«The Times 03/Jan/2009 Chancellor on brink of second bailout for banks». Χρονοσφραγίδα και δήλωση μαζί.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Genesis_block"
   },
   {
     "id": 131,
@@ -2108,8 +2108,8 @@
       "Περίπου 5 εκατομμύρια"
     ],
     "why": "Εκτίμηση από το Patoshi pattern. Δεν έχουν κινηθεί ποτέ.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://cointelegraph.com/news/mysterious-bitcoin-mining-pattern-solved-after-seven-years"
   },
   {
     "id": 132,
@@ -2124,8 +2124,8 @@
       "Reduce Block Footprint"
     ],
     "why": "Χρήσιμο όταν η συναλλαγή σου «κόλλησε» στον mempool.",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Replace_by_fee"
   },
   {
     "id": 133,
@@ -2140,8 +2140,8 @@
       "Δεδομένα κινητής"
     ],
     "why": "Ενέργεια μετατρέπεται σε ασφάλεια. Γι' αυτό λέγεται συχνά «digital energy».",
-    "verified": false,
-    "source": ""
+    "verified": true,
+    "source": "https://en.bitcoin.it/wiki/Mining"
   },
   {
     "id": 134,
