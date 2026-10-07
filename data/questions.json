@@ -2,8 +2,8 @@
   {
     "id": 0,
     "hex": "0x00",
-    "weight": 1,
-    "level": "pleb",
+    "weight": 2,
+    "level": "maxi",
     "question": "Πόσα BTC έστειλε ο Satoshi στον Hal Finney στην πρώτη συναλλαγή;",
     "answer": "10",
     "wrong": [
@@ -34,8 +34,8 @@
   {
     "id": 2,
     "hex": "0x02",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 1,
+    "level": "pleb",
     "question": "Ποιο exchange κατέρρευσε τον Νοέμβριο του 2022;",
     "answer": "Το FTX",
     "wrong": [
@@ -162,8 +162,8 @@
   {
     "id": 10,
     "hex": "0x0A",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 1,
+    "level": "pleb",
     "question": "Ποιος Ελληνοβρετανός έγραψε το «Mastering Bitcoin»;",
     "answer": "Ο Andreas Antonopoulos",
     "wrong": [
@@ -242,8 +242,8 @@
   {
     "id": 15,
     "hex": "0x0F",
-    "weight": 1,
-    "level": "pleb",
+    "weight": 2,
+    "level": "maxi",
     "question": "Πόσες σελίδες έχει περίπου το whitepaper;",
     "answer": "9",
     "wrong": [
@@ -546,8 +546,8 @@
   {
     "id": 34,
     "hex": "0x22",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 1,
+    "level": "pleb",
     "question": "Ποιος επινόησε τα Merkle trees που χρησιμοποιεί το Bitcoin;",
     "answer": "Ο Ralph Merkle",
     "wrong": [
@@ -866,8 +866,8 @@
   {
     "id": 54,
     "hex": "0x36",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 1,
+    "level": "pleb",
     "question": "Τι σημαίνει «be your own bank»;",
     "answer": "Κρατάς μόνος τα χρήματά σου χωρίς μεσάζοντα",
     "wrong": [
@@ -946,8 +946,8 @@
   {
     "id": 59,
     "hex": "0x3B",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Τι είναι ένα OP_RETURN output;",
     "answer": "Output που αποθηκεύει δεδομένα και δεν μπορεί να ξοδευτεί",
     "wrong": [
@@ -962,8 +962,8 @@
   {
     "id": 60,
     "hex": "0x3C",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 1,
+    "level": "pleb",
     "question": "Τι είναι το double spend;",
     "answer": "Να ξοδέψεις τα ίδια coins δύο φορές",
     "wrong": [
@@ -1106,8 +1106,8 @@
   {
     "id": 69,
     "hex": "0x45",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποιο γνωστό «σφάλμα» έχει το OP_CHECKMULTISIG;",
     "answer": "Αφαιρεί από το stack ένα επιπλέον, αχρησιμοποίητο στοιχείο",
     "wrong": [
@@ -1186,8 +1186,8 @@
   {
     "id": 74,
     "hex": "0x4A",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποια ήταν η πρώτη ισοτιμία BTC/USD που δημοσιεύτηκε (New Liberty Standard, 2009);",
     "answer": "1 $ = 1.309,03 BTC",
     "wrong": [
@@ -1538,8 +1538,8 @@
   {
     "id": 96,
     "hex": "0x60",
-    "weight": 1,
-    "level": "pleb",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποια χρονιά έγινε το πρώτο halving;",
     "answer": "2012",
     "wrong": [
@@ -1634,8 +1634,8 @@
   {
     "id": 102,
     "hex": "0x66",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Τι σημαίνει CPFP;",
     "answer": "Child Pays For Parent",
     "wrong": [
@@ -1666,8 +1666,8 @@
   {
     "id": 104,
     "hex": "0x68",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποιον τύπο υπογραφών έφερε το Taproot;",
     "answer": "Schnorr",
     "wrong": [
@@ -1970,8 +1970,8 @@
   {
     "id": 123,
     "hex": "0x7B",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Τι είναι το «vbyte»;",
     "answer": "Το weight διαιρεμένο με 4",
     "wrong": [
@@ -2194,8 +2194,8 @@
   {
     "id": 137,
     "hex": "0x89",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποια χρονιά ιδρύθηκε το Bitcoin Foundation;",
     "answer": "2012",
     "wrong": [
@@ -2210,8 +2210,8 @@
   {
     "id": 138,
     "hex": "0x8A",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Τι κάνουν τα compact blocks (BIP152);",
     "answer": "Στέλνουν σύντομα IDs συναλλαγών που ο peer έχει ήδη, όχι ολόκληρο το block",
     "wrong": [
@@ -2434,8 +2434,8 @@
   {
     "id": 152,
     "hex": "0x98",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποια μέρα βγήκε το block 1;",
     "answer": "9 Ιανουαρίου 2009",
     "wrong": [
@@ -2466,8 +2466,8 @@
   {
     "id": 154,
     "hex": "0x9A",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Με τι ξεκινούν οι P2SH διευθύνσεις;",
     "answer": "3",
     "wrong": [
@@ -2530,8 +2530,8 @@
   {
     "id": 158,
     "hex": "0x9E",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποιος έγραψε το «Crypto» (2001), για τη μάχη των cypherpunks με την κυβέρνηση για την κρυπτογραφία;",
     "answer": "Ο Steven Levy",
     "wrong": [
@@ -2546,8 +2546,8 @@
   {
     "id": 159,
     "hex": "0x9F",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Με τι ξεκινούν οι Taproot διευθύνσεις;",
     "answer": "bc1p",
     "wrong": [
@@ -2626,8 +2626,8 @@
   {
     "id": 164,
     "hex": "0xA4",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Με ποιο πρόθεμα ξεκινούν τα Lightning invoices του mainnet;",
     "answer": "lnbc",
     "wrong": [
@@ -2722,8 +2722,8 @@
   {
     "id": 170,
     "hex": "0xAA",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποιος δημιούργησε το Ordinals protocol (2023);",
     "answer": "Ο Casey Rodarmor",
     "wrong": [
@@ -2786,8 +2786,8 @@
   {
     "id": 174,
     "hex": "0xAE",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 1,
+    "level": "pleb",
     "question": "Σε ένα multisig 2-of-3, πόσα κλειδιά χρειάζεσαι για να ξοδέψεις;",
     "answer": "2",
     "wrong": [
@@ -2978,8 +2978,8 @@
   {
     "id": 186,
     "hex": "0xBA",
-    "weight": 1,
-    "level": "pleb",
+    "weight": 2,
+    "level": "maxi",
     "question": "Όταν πληρώνεις με ένα UTXO μεγαλύτερο από το ποσό, πού πάνε τα «ρέστα»;",
     "answer": "Σε μια νέα διεύθυνση δική σου (change output)",
     "wrong": [
@@ -3058,8 +3058,8 @@
   {
     "id": 191,
     "hex": "0xBF",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Τι ΔΕΝ μπορεί να κάνει κάποιος με 51% του hashrate;",
     "answer": "Να κλέψει bitcoin από διευθύνσεις άλλων",
     "wrong": [
@@ -3394,8 +3394,8 @@
   {
     "id": 212,
     "hex": "0xD4",
-    "weight": 1,
-    "level": "pleb",
+    "weight": 2,
+    "level": "maxi",
     "question": "Πόσα bitcoin είχαν ήδη γίνει mine μέχρι το 2026;",
     "answer": "Πάνω από 20 εκατομμύρια",
     "wrong": [
@@ -3602,8 +3602,8 @@
   {
     "id": 225,
     "hex": "0xE1",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποιο BIP ορίζει το client-side block filtering (Neutrino) για light clients;",
     "answer": "BIP157",
     "wrong": [
@@ -3682,8 +3682,8 @@
   {
     "id": 230,
     "hex": "0xE6",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποιος «βάφτισε» τους cypherpunks, από τα «cipher» και «cyberpunk»;",
     "answer": "Η Jude Milhon",
     "wrong": [
@@ -3698,8 +3698,8 @@
   {
     "id": 231,
     "hex": "0xE7",
-    "weight": 1,
-    "level": "pleb",
+    "weight": 2,
+    "level": "maxi",
     "question": "Πώς λέγονται τα άρθρα που ανακοινώνουν τον «θάνατο» του Bitcoin;",
     "answer": "Bitcoin obituaries",
     "wrong": [
@@ -3826,8 +3826,8 @@
   {
     "id": 239,
     "hex": "0xEF",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Τι είναι το nonce στο block header;",
     "answer": "Αριθμός που αλλάζουν οι miners για να βρουν έγκυρο hash",
     "wrong": [
@@ -4002,8 +4002,8 @@
   {
     "id": 250,
     "hex": "0xFA",
-    "weight": 2,
-    "level": "maxi",
+    "weight": 3,
+    "level": "cypherpunk",
     "question": "Ποια συνάρτηση hash εφαρμόζεται μετά το SHA-256 για να βγει το public key hash μιας διεύθυνσης;",
     "answer": "RIPEMD-160",
     "wrong": [
