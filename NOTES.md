@@ -55,3 +55,8 @@
 ## Βήμα Γ – Γενικοί όροι crypto → Bitcoin (ολοκληρώθηκε)
 - 63: «rug pull» → γιατί δεν γίνεται rug pull στο Bitcoin (bitcoin.org FAQ). 184: «pump and dump» → «Bitcoin maximalist» (Lopp). 215: «crypto exchange» → custodial wallet (bitcoin.design, topic self-custody). 233: «buy the dip» → «ψηφιακός χρυσός» (Satoshi, BitcoinTalk 27/8/2010).
 - Όλες pleb (weight 1). Η 233 δεν αποκαλύπτει τον συγγραφέα της 6 («Digital Gold»).
+
+## Βήμα Δ – Αδύναμες πηγές (ολοκληρώθηκε)
+- Νέα, καλύτερη πηγή: 175 (bitcoin.org/about-us), 205 (Blockstream glossary), 202 (άρθρο CoinDesk αντί για tag page), 230 (Cyphernomicon του Tim May: «Jude Milhon nicknames us»), 248 (Bitcoin Core, `COINBASE_MATURITY = 100`), 252 (το ίδιο το άρθρο του Mike Hearn), 77 (δελτίο τύπου DOJ), 27 (bitcoin.it Bitcoin_Market· το «πρώτο» το επιβεβαιώνει και το Guinness), 255 (The Blocksize War, κεφ. 17).
+- Διορθώσεις από τις πρωτογενείς πηγές: 255 «στρατιωτικά χρώματα» αντί για «γκρι καμουφλάζ» (η πηγή δεν λέει γκρι). 252: το «το πείραμα του Bitcoin απέτυχε» σε εισαγωγικά δεν ήταν αυτολεξεί· τώρα «απέτυχε» (Hearn: «it has failed»). 77: «πάνω από 94.000» αντί για «τα περισσότερα».
+- Κρατήθηκαν ως έχουν (πηγή ήδη πρωτογενής ή γεγονός ευρέως γνωστό): 170 (docs.ordinals.com), 195 (bitcoinknots.org), 201/208 (σελίδες των βιβλίων), 237 (NIP-01), 231 (99bitcoins είναι ο ίδιος ο κατάλογος των obituaries), 181/222/246/232/94 (γενικοί όροι), 193 (KYM, αποδεκτό για memes), 198 (Wikipedia, γνωστό παρατσούκλι), 207 (bitcoin.it Units), 247 (bitcoin.org/scams).

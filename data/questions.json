@@ -472,7 +472,7 @@
     ],
     "why": "Το έφτιαξε ο χρήστης dwdollar του φόρουμ. Οι συναλλαγές ξεκίνησαν στις 17 Μαρτίου 2010.",
     "verified": true,
-    "source": "https://guinnessworldrecords.com/world-records/696258-first-cryptocurrency-exchange",
+    "source": "https://en.bitcoin.it/wiki/Bitcoin_Market",
     "topic": "history"
   },
   {
@@ -1320,9 +1320,9 @@
       "Περίπου 650.000",
       "Περίπου 1.000.000"
     ],
-    "why": "119.754 BTC. Το 2022 οι αρχές των ΗΠΑ κατάσχεσαν τα περισσότερα, αξίας ~3,6 δισ. $.",
+    "why": "119.754 BTC. Το 2022 οι αρχές των ΗΠΑ ανέκτησαν πάνω από 94.000 από αυτά, αξίας άνω των 3,6 δισ. $.",
     "verified": true,
-    "source": "https://www.bloomberg.com/news/articles/2022-02-08/doj-seizes-3-6-billion-in-bitcoin-stolen-in-2016-bitfinex-hack",
+    "source": "https://www.justice.gov/archives/opa/pr/two-arrested-alleged-conspiracy-launder-45-billion-stolen-cryptocurrency",
     "topic": "history"
   },
   {
@@ -2988,7 +2988,7 @@
     ],
     "why": "Το bitcoin.org, τον Αύγουστο του 2008. Το .com είναι άλλη υπόθεση.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin",
+    "source": "https://bitcoin.org/en/about-us",
     "topic": "history"
   },
   {
@@ -3447,7 +3447,7 @@
     ],
     "why": "Πληθωρισμός; Bitcoin fixes this. Ακριβό σπίτι; Bitcoin fixes this. Και ούτω καθεξής.",
     "verified": true,
-    "source": "https://www.coindesk.com/tag/bitcoin-fixes-this",
+    "source": "https://www.coindesk.com/markets/2020/06/01/the-power-and-peril-of-the-bitcoin-fixes-this-meme",
     "topic": "culture"
   },
   {
@@ -3498,7 +3498,7 @@
     ],
     "why": "Από το Matrix: παίρνεις το πορτοκαλί χάπι και πέφτεις στο rabbit hole.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Red_pill_and_blue_pill",
+    "source": "https://help.blockstream.com/education/glossary/orange-pill",
     "topic": "culture"
   },
   {
@@ -3923,7 +3923,7 @@
     ],
     "why": "Το είπε χαριτολογώντας σε μία από τις πρώτες συναντήσεις της ομάδας.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Cypherpunk",
+    "source": "https://koeln.ccc.de/archiv/cyphernomicon/chapter3/3.3.html",
     "topic": "people"
   },
   {
@@ -4229,7 +4229,7 @@
     ],
     "why": "100 blocks. Αν το block γίνει orphan, τα νέα coins δεν προλαβαίνουν να κυκλοφορήσουν.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/reference/glossary.html",
+    "source": "https://github.com/bitcoin/bitcoin/blob/master/src/consensus/consensus.h",
     "topic": "mining"
   },
   {
@@ -4288,16 +4288,16 @@
     "hex": "0xFC",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιος δήλωσε το 2016 ότι «το πείραμα του Bitcoin απέτυχε» και έφυγε;",
+    "question": "Ποιος developer έγραψε τον Ιανουάριο του 2016 ότι το Bitcoin «απέτυχε» και αποχώρησε;",
     "answer": "Ο Mike Hearn",
     "wrong": [
       "Ο Gavin Andresen",
       "Ο Hal Finney",
       "Ο Adam Back"
     ],
-    "why": "Το έγραψε τον Ιανουάριο του 2016 και είπε ότι πούλησε όλα του τα BTC.",
+    "why": "Στο άρθρο «The resolution of the Bitcoin experiment». Έγραψε επίσης ότι πούλησε όλα του τα coins.",
     "verified": true,
-    "source": "https://www.pcworld.com/article/419197/bitcoin-is-a-failed-experiment-says-major-bitcoin-developer.html",
+    "source": "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7",
     "topic": "people"
   },
   {
@@ -4340,15 +4340,15 @@
     "weight": 2,
     "level": "maxi",
     "question": "Τι φορούσαν οι υποστηρικτές του UASF το 2017;",
-    "answer": "Γκρι καπέλα καμουφλάζ με κεντημένο «UASF»",
+    "answer": "Καπέλα σε στρατιωτικά χρώματα με κεντημένο «UASF»",
     "wrong": [
       "Πορτοκαλί γιλέκα",
       "Laser γυαλιά",
       "Μάσκες Guy Fawkes"
     ],
-    "why": "Τα καπέλα UASF έγιναν σύμβολο του Blocksize War.",
+    "why": "Τα οργάνωσε και τα διένειμε ο Samson Mow. Τα φορούσαν οι small blockers σε συνέδρια, ως σύμβολο του Blocksize War.",
     "verified": true,
-    "source": "https://dailybitcoiner.substack.com/p/td-the-blocksize-wars-cyber-soldier",
+    "source": "https://farside.co.uk/the-blocksize-war-chapter-17-user-activated-softfork/",
     "topic": "culture"
   }
 ]
