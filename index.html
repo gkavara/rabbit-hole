@@ -94,6 +94,8 @@ button:focus-visible{outline:2px solid var(--w3);outline-offset:2px}
 .rows .nm{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .rows .nm small{display:block;color:var(--mute);font-weight:400;font-size:12px}
 .rows .pt{font-family:var(--mono);font-weight:700}
+.cardprev{display:block;width:100%;max-width:240px;height:auto;margin:0 auto;border-radius:12px;border:1px solid var(--line)}
+.cardprev[hidden]{display:none}
 .sharebox{font:inherit;font-family:var(--mono);font-size:13px;width:100%;box-sizing:border-box;color:var(--ink);background:#0000004d;border:1px solid var(--line);border-radius:10px;padding:10px;resize:none}
 
 /* hash grid */
@@ -536,7 +538,7 @@ function dailyCard(error) {
     el("h2", {}, "Το έκανες mine σήμερα ✅"),
     el("div", {class: "big"}, fmt(done.score), el("small", {}, " sats")),
     el("p", {class: "strip"}, done.strip),
-    shareRow(dailyText(done)),
+    shareRow(dailyText(done), dailyCardData(done)),
     el("p", {class: "note"}, "Tick tock, next block: νέο αύριο. Μέχρι τότε, Ελεύθερο."));
   const input = el("input", {id: "dname", value: names[0] || "", maxlength: "18", placeholder: "Το nickname σου", autocomplete: "off"});
   const go = () => {
@@ -659,14 +661,116 @@ function titleFor(p, total, maxS) {
 const dailyText = d => `🐇 Rabbit Hole · Block #${d.no}\n${d.name}: ${fmt(d.score)} sats (${d.right}/10) · ${d.title}\n${d.strip}\nFew understand 👉 ${LINK}`;
 const soloText = (p, total, t) => `🐇 Rabbit Hole\n${p.name}: ${fmt(p.score)} sats (${p.right}/${total}) · ${t}\n${stripOf(p.log)}\nDon't trust, verify 👉 ${LINK}`;
 const partyText = ranked => `🐇 Rabbit Hole\n` + ranked.map((p, i) => `${["🥇", "🥈", "🥉"][i] || (i + 1) + "."} ${p.name}: ${fmt(p.score)} sats`).join("\n") + `\nFew understand 👉 ${LINK}`;
-function shareRow(text) {
+const logOf = strip => Array.from(strip || "").map(ch => ch === "🟧");
+const dailyCardData = d => ({label: `BLOCK ΤΗΣ ΗΜΕΡΑΣ #${d.no}`, name: d.name, score: d.score, right: d.right, total: 10, title: d.title || "", log: logOf(d.strip), file: `rabbit-hole-block-${d.no}.png`});
+function shareRow(text, card) {
   const msg = el("p", {class: "note", "aria-live": "polite"});
   const box = el("textarea", {class: "sharebox", readonly: true, rows: "5", hidden: true, "aria-label": "Κείμενο για αποστολή"}, text);
-  const btn = el("button", {class: "btn", type: "button", onclick: async () => {
-    try { await navigator.clipboard.writeText(text); box.hidden = true; msg.textContent = "Αντιγράφηκε. Κάνε επικόλληση στο Telegram ή στο X."; }
-    catch (e) { box.hidden = false; box.focus(); box.select(); msg.textContent = "Κράτα πατημένο το κείμενο και πάτα «Αντιγραφή»."; }
-  }}, "📤 Στείλε το σκορ");
-  return el("div", {class: "field"}, btn, box, msg);
+  async function copy() {
+    try { await navigator.clipboard.writeText(text); box.hidden = true; return true; }
+    catch (e) { box.hidden = false; box.focus(); box.select(); return false; }
+  }
+  const copyBtn = el("button", {class: card ? "btn ghost" : "btn", type: "button", onclick: async () => {
+    msg.textContent = await copy() ? "Αντιγράφηκε. Κάνε επικόλληση στο Telegram ή στο X." : "Κράτα πατημένο το κείμενο και πάτα «Αντιγραφή».";
+  }}, card ? "📋 Αντιγραφή κειμένου" : "📤 Στείλε το σκορ");
+  if (!card) return el("div", {class: "field"}, copyBtn, box, msg);
+  // the image is drawn as soon as the result shows, so the tap can call navigator.share right away (iOS needs that)
+  const prev = el("img", {class: "cardprev", alt: "Κάρτα αποτελέσματος για share", width: "1080", height: "1350", hidden: true});
+  let blob = null;
+  const ready = renderCard(card).then(b => { blob = b; prev.src = URL.createObjectURL(b); prev.hidden = false; return b; }).catch(() => null);
+  const imgBtn = el("button", {class: "btn", type: "button", onclick: async () => {
+    const b = blob || await ready;
+    if (!b) { msg.textContent = await copy() ? "Η εικόνα δεν φτιάχτηκε· αντιγράφηκε μόνο το κείμενο." : "Η εικόνα δεν φτιάχτηκε. Κράτα πατημένο το κείμενο και πάτα «Αντιγραφή»."; return; }
+    const file = new File([b], card.file, {type: "image/png"});
+    if (matchMedia("(pointer: coarse)").matches && navigator.canShare && navigator.canShare({files: [file]})) {
+      try { await navigator.share({files: [file], text}); msg.textContent = ""; return; }
+      catch (e) { if (e.name === "AbortError") return; }
+    }
+    const a = el("a", {href: prev.src, download: card.file}); document.body.append(a); a.click(); a.remove();
+    msg.textContent = await copy() ? "Η εικόνα κατέβηκε και το κείμενο αντιγράφηκε. Ανέβασε την εικόνα και κάνε επικόλληση." : "Η εικόνα κατέβηκε. Κράτα πατημένο το κείμενο και πάτα «Αντιγραφή».";
+  }}, "🖼️ Στείλε την κάρτα");
+  return el("div", {class: "field"}, prev, imgBtn, copyBtn, box, msg);
+}
+
+/* ---------- result card: 1080x1350 image, same look as the page ---------- */
+const CW = 1080, CH = 1350;
+const TF = "Commissioner, system-ui, sans-serif", MF = "'JetBrains Mono', ui-monospace, monospace";
+const C = {bg: "#0c0b09", panel: "#15130f", line: "#2a251d", ink: "#f4efe6", mute: "#9a9184", orange: "#f7931a", w1: "#7a4a12", w2: "#f7931a", w3: "#ffd27a"};
+const capsGR = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase(); // Greek capitals take no accents
+function rrect(g, x, y, w, h, r) {
+  g.beginPath(); g.moveTo(x + r, y);
+  g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r);
+  g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath();
+}
+function fitText(g, text, weight, size, family, maxW, min = 36) {
+  for (; size >= min; size -= 4) { g.font = `${weight} ${size}px ${family}`; if (g.measureText(text).width <= maxW) return text; }
+  g.font = `${weight} ${min}px ${family}`;
+  while (text.length > 1 && g.measureText(text + "…").width > maxW) text = text.slice(0, -1);
+  return text + "…";
+}
+async function renderCard(d) {
+  try { await Promise.all([`800 88px ${TF}`, `600 28px ${TF}`, `700 40px ${MF}`, `400 28px ${MF}`].map(f => document.fonts.load(f, "₿ Rabbit Ελεύθερο 0x"))); } catch (e) {}
+  const c = document.createElement("canvas"); c.width = CW; c.height = CH;
+  const g = c.getContext("2d"), mid = CW / 2;
+  g.fillStyle = C.bg; g.fillRect(0, 0, CW, CH);
+  g.fillStyle = "rgba(247,147,26,.035)";
+  for (let x = 0; x < CW; x += 36) g.fillRect(x, 0, 2, CH);
+  for (let y = 0; y < CH; y += 36) g.fillRect(0, y, CW, 2);
+
+  g.font = `800 72px ${TF}`; g.textAlign = "left";
+  const t1 = "₿ ", t2 = "Rabbit Hole", w1 = g.measureText(t1).width;
+  let x = mid - (w1 + g.measureText(t2).width) / 2;
+  g.fillStyle = C.orange; g.fillText(t1, x, 140); g.fillStyle = C.ink; g.fillText(t2, x + w1, 140);
+  g.textAlign = "center"; g.font = `400 26px ${MF}`; g.fillStyle = C.mute;
+  g.fillText("Proof of Knowledge · SHA-256 · 0x00–0xFF", mid, 186);
+
+  rrect(g, 60, 225, 960, 1050, 28); g.fillStyle = C.panel; g.fill(); g.strokeStyle = C.line; g.lineWidth = 2; g.stroke();
+  g.letterSpacing = "4px"; g.font = `700 28px ${MF}`; g.fillStyle = C.mute; g.fillText(d.label, mid, 300); g.letterSpacing = "0px";
+  g.fillStyle = C.ink; g.fillText(fitText(g, d.name, 800, 88, TF, 860), mid, 400);
+
+  const s1 = fmt(d.score), s2 = " sats";
+  g.font = `700 120px ${MF}`; const sw1 = g.measureText(s1).width;
+  g.font = `700 44px ${MF}`; const sw2 = g.measureText(s2).width;
+  x = mid - (sw1 + sw2) / 2; g.textAlign = "left";
+  g.font = `700 120px ${MF}`; g.fillStyle = C.ink; g.fillText(s1, x, 535);
+  g.font = `700 44px ${MF}`; g.fillStyle = C.mute; g.fillText(s2, x + sw1, 535);
+  g.textAlign = "center";
+  if (d.total) { g.font = `400 30px ${MF}`; g.fillStyle = C.mute; g.fillText(`${d.right}/${d.total} σωστές`, mid, 592); }
+  g.letterSpacing = "3px"; g.fillStyle = C.orange; g.fillText(fitText(g, capsGR(d.title), 700, 36, MF, 860, 24), mid, 652); g.letterSpacing = "0px";
+
+  if (d.log) { // 🟧⬛ strip
+    const n = d.log.length, gap = n > 12 ? 8 : 14, size = Math.min(64, (860 - gap * (n - 1)) / n), w = n * size + (n - 1) * gap;
+    d.log.forEach((ok, i) => {
+      rrect(g, mid - w / 2 + i * (size + gap), 690, size, size, size * .14);
+      g.fillStyle = ok ? C.orange : "#000"; g.fill();
+      if (!ok) { g.strokeStyle = "#3a342b"; g.lineWidth = 2; g.stroke(); }
+    });
+  } else if (d.ranked) { // party: ranking in two columns
+    g.textAlign = "left";
+    d.ranked.slice(0, 6).forEach(([name, score], i) => {
+      const cx = i % 2 ? 560 : 120, cy = 718 + Math.floor(i / 2) * 44, sc = fmt(score);
+      g.font = `700 28px ${MF}`; g.fillStyle = i ? C.mute : C.orange; g.fillText(`${i + 1}.`, cx, cy);
+      const scw = g.measureText(sc).width; g.fillStyle = C.ink; g.fillText(sc, cx + 400 - scw, cy);
+      g.fillText(fitText(g, name, 600, 28, TF, 400 - 50 - scw - 16, 28), cx + 50, cy);
+    });
+    g.textAlign = "center";
+  }
+  g.fillStyle = C.line; g.fillRect(120, 830, 840, 2);
+
+  const byId = new Map(BANK.map(q => [q[0], q[1]])), m = [...mined].filter(id => byId.has(id)).length;
+  g.letterSpacing = "2px"; g.font = `700 28px ${MF}`; g.fillStyle = C.mute;
+  g.fillText(`ΒΑΘΟΣ ${hex(m)} / 0x100 · ${m}/256`, mid, 880); g.letterSpacing = "0px";
+  const cell = 18, gp = 4, gx = mid - (16 * cell + 15 * gp) / 2, gy = 905;
+  for (let i = 0; i < 256; i++) {
+    const w = byId.get(i);
+    g.fillStyle = w == null ? "rgba(255,255,255,.024)" : mined.has(i) ? C["w" + w] : "rgba(255,255,255,.15)";
+    g.shadowColor = "rgba(255,210,122,.6)"; g.shadowBlur = w === 3 && mined.has(i) ? 8 : 0;
+    rrect(g, gx + (i % 16) * (cell + gp), gy + Math.floor(i / 16) * (cell + gp), cell, cell, 3); g.fill();
+  }
+  g.shadowBlur = 0;
+  g.font = `400 28px ${MF}`; g.fillStyle = C.orange;
+  g.fillText(LINK.startsWith("http") ? LINK.replace(/^https?:\/\//, "").replace(/\/$/, "") : "Proof of Knowledge", mid, 1322);
+  return new Promise((res, rej) => c.toBlob(b => b ? res(b) : rej(new Error("toBlob")), "image/png"));
 }
 
 /* ---------- final ---------- */
@@ -686,7 +790,7 @@ function final() {
         el("div", {class: "big"}, fmt(p.score), el("small", {}, " sats")),
         el("p", {class: "strip"}, res.strip),
         el("span", {class: "title"}, t)),
-      shareRow(dailyText(res)),
+      shareRow(dailyText(res), dailyCardData(res)),
       el("button", {class: "btn ghost", type: "button", onclick: () => { mode = "free"; store.set("pok-mode", mode); home(); }}, "Παίξε Ελεύθερο")),
       hashGrid(), recordsCard());
   } else {
@@ -705,7 +809,9 @@ function final() {
         el("span", {class: "rk"}, ["🥇", "🥈", "🥉"][i] || i + 1),
         el("span", {class: "nm"}, p.name, el("small", {}, `${p.right}/${total} σωστές`)),
         el("span", {class: "pt"}, fmt(p.score))))),
-      shareRow(solo ? soloText(top, total, t) : partyText(ranked)),
+      shareRow(solo ? soloText(top, total, t) : partyText(ranked), solo
+        ? {label: "ΕΛΕΥΘΕΡΟ", name: top.name, score: top.score, right: top.right, total, title: t, log: top.log, file: "rabbit-hole.png"}
+        : {label: `ΕΛΕΥΘΕΡΟ · ${ranked.length} ΠΑΙΚΤΕΣ`, name: tie.map(p => p.name).join(" & "), score: top.score, title: t, ranked: ranked.map(p => [p.name, p.score]), file: "rabbit-hole.png"}),
       el("button", {class: "btn ghost", type: "button", onclick: () => startFree(game.players.map(p => p.name))}, "Ξανά 🔁"),
       el("button", {class: "link", type: "button", onclick: () => home()}, "← Αρχική")),
       hashGrid(), recordsCard());
