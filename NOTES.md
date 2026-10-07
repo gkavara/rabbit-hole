@@ -51,3 +51,7 @@
 - Αποφυγή διαρροών: το `why` της 158 δεν αναφέρει πια το Clipper chip, η λάθος επιλογή «Theymos» της 64 έγινε «Cobra».
 - Αποτέλεσμα: κάθε weight = βαθμός. Θέματα: technical 27,7%, history 20,7%, culture 16,8%, mining 13,7%, people 12,1%, self-custody 9,0%.
 - Αδύναμες πηγές: 94 (Wikipedia, γενικός όρος), 27 (Guinness, δευτερογενής· βλ. και bitcoin.it/wiki/Bitcoin_Market), 77 (Bloomberg).
+
+## Βήμα Γ – Γενικοί όροι crypto → Bitcoin (ολοκληρώθηκε)
+- 63: «rug pull» → γιατί δεν γίνεται rug pull στο Bitcoin (bitcoin.org FAQ). 184: «pump and dump» → «Bitcoin maximalist» (Lopp). 215: «crypto exchange» → custodial wallet (bitcoin.design, topic self-custody). 233: «buy the dip» → «ψηφιακός χρυσός» (Satoshi, BitcoinTalk 27/8/2010).
+- Όλες pleb (weight 1). Η 233 δεν αποκαλύπτει τον συγγραφέα της 6 («Digital Gold»).

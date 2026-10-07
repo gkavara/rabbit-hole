@@ -1075,16 +1075,16 @@
     "hex": "0x3F",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι ένα «rug pull»;",
-    "answer": "Οι δημιουργοί ενός project παίρνουν τα λεφτά των επενδυτών και εξαφανίζονται",
+    "question": "Γιατί οι bitcoiners λένε ότι στο Bitcoin δεν γίνεται «rug pull»;",
+    "answer": "Δεν υπάρχει εταιρεία ή ομάδα με premine που να μπορεί να πουλήσει και να εξαφανιστεί",
     "wrong": [
-      "Μια μεγάλη πτώση λόγω halving",
-      "Ένα είδος hardware wallet",
-      "Μια πληρωμή που αντιστρέφεται"
+      "Επειδή το εγγυάται νομικά η SEC",
+      "Επειδή η τιμή του δεν μπορεί να πέσει",
+      "Επειδή τα exchanges ασφαλίζουν τα κεφάλαια"
     ],
-    "why": "Συνηθισμένο στα altcoins και στα memecoins. Το Bitcoin δεν έχει ομάδα που να σου τραβήξει το χαλί.",
+    "why": "Τα νέα BTC βγαίνουν μόνο με τους κανόνες του πρωτοκόλλου, χωρίς προπώληση. Πολλά altcoins και memecoins ξεκίνησαν με premine… και σε κάποια το χαλί όντως τραβήχτηκε.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Rug_pull",
+    "source": "https://bitcoin.org/en/faq",
     "topic": "culture"
   },
   {
@@ -3132,16 +3132,16 @@
     "hex": "0xB8",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι ένα «pump and dump»;",
-    "answer": "Φουσκώνουν την τιμή ενός asset και μετά πουλάνε στους αγοραστές",
+    "question": "Τι είναι ένας «Bitcoin maximalist»;",
+    "answer": "Κάποιος που θεωρεί ότι μόνο το Bitcoin αξίζει ως χρήμα, όχι τα altcoins",
     "wrong": [
-      "Η αποστολή BTC σε cold storage",
-      "Ένας τρόπος να βρεις νέο block",
-      "Μια αναβάθμιση του πρωτοκόλλου"
+      "Κάποιος που έχει τουλάχιστον 21 BTC",
+      "Κάποιος που κάνει mining με το μέγιστο hashrate",
+      "Κάποιος που αγοράζει μόνο στο ATH"
     ],
-    "why": "Παράνομο στις παραδοσιακές αγορές, συχνό στα μικρά altcoins.",
+    "why": "Ο όρος έγινε γνωστός το 2014 ως επικριτικός. Οι bitcoiners τον υιοθέτησαν με περηφάνια· από εκεί και το «maxi».",
     "verified": true,
-    "source": "https://www.investor.gov/introduction-investing/investing-basics/glossary/pump-and-dump-schemes",
+    "source": "https://blog.lopp.net/history-of-bitcoin-maximalism/",
     "topic": "culture"
   },
   {
@@ -3659,17 +3659,17 @@
     "hex": "0xD7",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι είναι ένα crypto exchange;",
-    "answer": "Πλατφόρμα όπου αγοράζεις και πουλάς κρυπτονομίσματα",
+    "question": "Τι σημαίνει ότι ένα wallet είναι «custodial», όπως στα περισσότερα exchanges;",
+    "answer": "Τα κλειδιά τα κρατά η εταιρεία, όχι εσύ",
     "wrong": [
-      "Πρωτόκολλο επικοινωνίας μεταξύ nodes",
-      "Είδος hardware wallet",
-      "Μηχανή που φτιάχνει νέα blocks"
+      "Τα κλειδιά είναι σε hardware wallet",
+      "Λειτουργεί μόνο με Lightning",
+      "Τα BTC του είναι ασφαλισμένα από το κράτος"
     ],
-    "why": "Μπορεί να είναι κεντρικοποιημένο (CEX) ή αποκεντρωμένο (DEX).",
+    "why": "Η εταιρεία ελέγχει τεχνικά τα κεφάλαιά σου. Αν καταρρεύσει ή παγώσει τις αναλήψεις, κινδυνεύουν.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Cryptocurrency_exchange",
-    "topic": "culture"
+    "source": "https://bitcoin.design/guide/glossary/wallet/",
+    "topic": "self-custody"
   },
   {
     "id": 216,
@@ -3965,16 +3965,16 @@
     "hex": "0xE9",
     "weight": 1,
     "level": "pleb",
-    "question": "Τι σημαίνει «buy the dip»;",
-    "answer": "Αγοράζω όταν η τιμή πέφτει",
+    "question": "Γιατί το Bitcoin αποκαλείται «ψηφιακός χρυσός»;",
+    "answer": "Επειδή, όπως ο χρυσός, είναι σπάνιο και δύσκολο να παραχθεί",
     "wrong": [
-      "Πουλάω αμέσως όταν πέφτει η τιμή",
-      "Κάνω mining σε χαμηλό difficulty",
-      "Δανείζομαι για να αγοράσω στην κορυφή"
+      "Επειδή υποστηρίζεται από αποθέματα χρυσού",
+      "Επειδή το αγοράζουν κυρίως κεντρικές τράπεζες",
+      "Επειδή η τιμή του ακολουθεί πάντα τον χρυσό"
     ],
-    "why": "Η πτώση ως ευκαιρία αγοράς, όχι ως λόγος πανικού.",
+    "why": "Ήδη το 2010 ο Satoshi το παρομοίασε με ένα μέταλλο σπάνιο σαν τον χρυσό, που όμως ταξιδεύει μέσα από ένα κανάλι επικοινωνίας.",
     "verified": true,
-    "source": "https://www.investopedia.com/terms/b/buy-the-dip.asp",
+    "source": "https://satoshi.nakamotoinstitute.org/posts/bitcointalk/428/",
     "topic": "culture"
   },
   {
