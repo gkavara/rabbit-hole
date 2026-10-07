@@ -13,7 +13,8 @@
     ],
     "why": "10 BTC, στο block 170.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)",
+    "topic": "history"
   },
   {
     "id": 1,
@@ -29,7 +30,8 @@
     ],
     "why": "Το επικολλάς σε έναν explorer για να βρεις τη συναλλαγή σου.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Transaction"
+    "source": "https://en.bitcoin.it/wiki/Transaction",
+    "topic": "technical"
   },
   {
     "id": 2,
@@ -45,7 +47,8 @@
     ],
     "why": "Άλλη μια υπενθύμιση γιατί μετράει η φύλαξη των κλειδιών.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/FTX"
+    "source": "https://en.wikipedia.org/wiki/FTX",
+    "topic": "history"
   },
   {
     "id": 3,
@@ -61,7 +64,8 @@
     ],
     "why": "Πρόγονος του Bitcoin, βασισμένος στο Hashcash.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)",
+    "topic": "people"
   },
   {
     "id": 4,
@@ -77,7 +81,8 @@
     ],
     "why": "Αύγουστος 2010, block 74.638. Διορθώθηκε με soft fork μέσα σε λίγες ώρες και η αλυσίδα «ξαναγράφτηκε».",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Value_overflow_incident"
+    "source": "https://en.bitcoin.it/wiki/Value_overflow_incident",
+    "topic": "history"
   },
   {
     "id": 5,
@@ -93,7 +98,8 @@
     ],
     "why": "Από το «wrecked».",
     "verified": true,
-    "source": "https://www.ledger.com/academy/glossary/rekt"
+    "source": "https://www.ledger.com/academy/glossary/rekt",
+    "topic": "culture"
   },
   {
     "id": 6,
@@ -109,7 +115,8 @@
     ],
     "why": "Φιναλίστ στο Financial Times Business Book of the Year 2015. Από τα πρώτα βιβλία για την ιστορία του Bitcoin.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Nathaniel_Popper"
+    "source": "https://en.wikipedia.org/wiki/Nathaniel_Popper",
+    "topic": "people"
   },
   {
     "id": 7,
@@ -125,7 +132,8 @@
     ],
     "why": "Η πιο διαδεδομένη υλοποίηση full node, βασισμένη στον αρχικό κώδικα του Satoshi.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Bitcoin_Core"
+    "source": "https://en.bitcoin.it/wiki/Bitcoin_Core",
+    "topic": "technical"
   },
   {
     "id": 8,
@@ -141,13 +149,14 @@
     ],
     "why": "Ο Satoshi έγραψε στην ανακοίνωση: «Windows only for now». Οι άλλες πλατφόρμες ήρθαν αργότερα.",
     "verified": true,
-    "source": "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/"
+    "source": "https://satoshi.nakamotoinstitute.org/emails/cryptography/16/",
+    "topic": "history"
   },
   {
     "id": 9,
     "hex": "0x09",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Τι γίνεται αν κάποιος στο Lightning εκπέμψει παλιά κατάσταση του channel;",
     "answer": "Ο άλλος μπορεί να πάρει όλα τα κεφάλαια του channel ως ποινή",
     "wrong": [
@@ -157,7 +166,8 @@
     ],
     "why": "Ο μηχανισμός ποινής κάνει την απάτη πολύ ακριβή.",
     "verified": true,
-    "source": "https://github.com/lightning/bolts/blob/master/05-onchain.md"
+    "source": "https://github.com/lightning/bolts/blob/master/05-onchain.md",
+    "topic": "technical"
   },
   {
     "id": 10,
@@ -173,7 +183,8 @@
     ],
     "why": "Ο Ανδρέας Αντωνόπουλος. Έγραψε επίσης το «The Internet of Money».",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Andreas_Antonopoulos"
+    "source": "https://en.wikipedia.org/wiki/Andreas_Antonopoulos",
+    "topic": "people"
   },
   {
     "id": 11,
@@ -189,7 +200,8 @@
     ],
     "why": "BIP141. Το BIP143 ορίζει τον νέο τρόπο υπογραφής των SegWit inputs.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 12,
@@ -205,7 +217,8 @@
     ],
     "why": "Δημιουργεί τα νέα bitcoin (subsidy) και μαζεύει τα fees του block.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/reference/block_chain.html"
+    "source": "https://developer.bitcoin.org/reference/block_chain.html",
+    "topic": "mining"
   },
   {
     "id": 13,
@@ -221,7 +234,8 @@
     ],
     "why": "Ξεκίνησε το 2020. Το 2025 άλλαξε όνομα σε Strategy.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Strategy_Inc"
+    "source": "https://en.wikipedia.org/wiki/Strategy_Inc",
+    "topic": "history"
   },
   {
     "id": 14,
@@ -237,7 +251,8 @@
     ],
     "why": "Βολικό για μικρά ποσά καθημερινής χρήσης. Τα μεγάλα ποσά πάνε σε cold storage.",
     "verified": true,
-    "source": "https://river.com/learn/terms/h/hot-wallet/"
+    "source": "https://river.com/learn/terms/h/hot-wallet/",
+    "topic": "self-custody"
   },
   {
     "id": 15,
@@ -253,7 +268,8 @@
     ],
     "why": "Μόλις 9 σελίδες, μαζί με τις αναφορές.",
     "verified": true,
-    "source": "https://bitcoin.org/bitcoin.pdf"
+    "source": "https://bitcoin.org/bitcoin.pdf",
+    "topic": "history"
   },
   {
     "id": 16,
@@ -269,7 +285,8 @@
     ],
     "why": "Τιμή αντεστραμμένη: sats ανά δολάριο. Όσο πέφτει, τόσο ανεβαίνει το BTC.",
     "verified": true,
-    "source": "https://decrypt.co/62929/jack-dorsey-shows-the-world-his-bitcoin-clock"
+    "source": "https://decrypt.co/62929/jack-dorsey-shows-the-world-his-bitcoin-clock",
+    "topic": "culture"
   },
   {
     "id": 17,
@@ -285,7 +302,8 @@
     ],
     "why": "4M WU. Γι' αυτό τα blocks σήμερα ξεπερνούν το 1 MB χωρίς hard fork.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 18,
@@ -301,7 +319,8 @@
     ],
     "why": "Το πέμπτο κατά σειρά halving.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "mining"
   },
   {
     "id": 19,
@@ -317,7 +336,8 @@
     ],
     "why": "Για να λάβεις sats, πρέπει να υπάρχει χωρητικότητα στην πλευρά του άλλου.",
     "verified": true,
-    "source": "https://docs.lightning.engineering/the-lightning-network/liquidity/understanding-liquidity"
+    "source": "https://docs.lightning.engineering/the-lightning-network/liquidity/understanding-liquidity",
+    "topic": "technical"
   },
   {
     "id": 20,
@@ -333,13 +353,14 @@
     ],
     "why": "Οι προδιαγραφές που επιτρέπουν σε διαφορετικές υλοποιήσεις να μιλούν μεταξύ τους.",
     "verified": true,
-    "source": "https://github.com/lightning/bolts"
+    "source": "https://github.com/lightning/bolts",
+    "topic": "technical"
   },
   {
     "id": 21,
     "hex": "0x15",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποιο opcode απενεργοποίησε ο Satoshi το 2010, που συζητιέται ξανά σήμερα;",
     "answer": "OP_CAT",
     "wrong": [
@@ -349,7 +370,8 @@
     ],
     "why": "Απενεργοποιήθηκε για λόγους ασφαλείας. Το BIP347 προτείνει επαναφορά του στο Tapscript.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0347.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 22,
@@ -365,7 +387,8 @@
     ],
     "why": "Ο Nick Szabo. Ένας από τους πιο κοντινούς προγόνους του Bitcoin.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bit_gold"
+    "source": "https://en.wikipedia.org/wiki/Bit_gold",
+    "topic": "people"
   },
   {
     "id": 23,
@@ -381,7 +404,8 @@
     ],
     "why": "Ο ίδιος το διέψευσε. Ο Satoshi παραμένει άγνωστος.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
+    "source": "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery",
+    "topic": "people"
   },
   {
     "id": 24,
@@ -397,7 +421,8 @@
     ],
     "why": "Το 2011, με βάση τη διαδικασία των PEP της Python.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki",
+    "topic": "people"
   },
   {
     "id": 25,
@@ -413,7 +438,8 @@
     ],
     "why": "Στις 31 Οκτωβρίου 2008. Το δίκτυο ξεκίνησε τον Ιανουάριο του 2009.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_(white_paper)"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_(white_paper)",
+    "topic": "history"
   },
   {
     "id": 26,
@@ -429,23 +455,25 @@
     ],
     "why": "Το «bits» είναι συμπιεσμένη μορφή του target.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Block_hashing_algorithm"
+    "source": "https://en.bitcoin.it/wiki/Block_hashing_algorithm",
+    "topic": "mining"
   },
   {
     "id": 27,
     "hex": "0x1B",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Ποια χώρα δημιούργησε Strategic Bitcoin Reserve με εκτελεστικό διάταγμα τον Μάρτιο του 2025;",
-    "answer": "Οι ΗΠΑ",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο θεωρείται το πρώτο ανταλλακτήριο όπου οι χρήστες αγόραζαν και πουλούσαν BTC μεταξύ τους (Μάρτιος 2010);",
+    "answer": "BitcoinMarket.com",
     "wrong": [
-      "Η Ελβετία",
-      "Το Ηνωμένο Βασίλειο",
-      "Η Ιαπωνία"
+      "Mt. Gox",
+      "Bitstamp",
+      "BTC-e"
     ],
-    "why": "Αρχικά με BTC που η κυβέρνηση είχε ήδη κατασχέσει.",
+    "why": "Το έφτιαξε ο χρήστης dwdollar του φόρουμ. Οι συναλλαγές ξεκίνησαν στις 17 Μαρτίου 2010.",
     "verified": true,
-    "source": "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/"
+    "source": "https://guinnessworldrecords.com/world-records/696258-first-cryptocurrency-exchange",
+    "topic": "history"
   },
   {
     "id": 28,
@@ -461,7 +489,8 @@
     ],
     "why": "Αντί για likes, sats.",
     "verified": true,
-    "source": "https://github.com/nostr-protocol/nips/blob/master/57.md"
+    "source": "https://github.com/nostr-protocol/nips/blob/master/57.md",
+    "topic": "culture"
   },
   {
     "id": 29,
@@ -477,7 +506,8 @@
     ],
     "why": "Συμφωνία ανάμεσα σε αγνώστους, χωρίς εμπιστοσύνη, ακόμα και αν κάποιοι είναι κακόβουλοι.",
     "verified": true,
-    "source": "https://diswww.mit.edu/bloom-picayune/crypto/137555"
+    "source": "https://diswww.mit.edu/bloom-picayune/crypto/137555",
+    "topic": "technical"
   },
   {
     "id": 30,
@@ -493,7 +523,8 @@
     ],
     "why": "Το BIP350 όρισε το bech32m για τις νεότερες εκδόσεις διευθύνσεων.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0173.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 31,
@@ -509,7 +540,8 @@
     ],
     "why": "Υπολογισμός «για πλάκα» το 2009, αν το Bitcoin γινόταν το κυρίαρχο παγκόσμιο σύστημα πληρωμών.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "history"
   },
   {
     "id": 32,
@@ -525,23 +557,25 @@
     ],
     "why": "Τον Φεβρουάριο του 2011.",
     "verified": true,
-    "source": "https://bitcoin.clarkmoody.com/posts/ten-years-bitcoin-market-data"
+    "source": "https://bitcoin.clarkmoody.com/posts/ten-years-bitcoin-market-data",
+    "topic": "history"
   },
   {
     "id": 33,
     "hex": "0x21",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Ποιο fork δημιουργήθηκε την 1η Αυγούστου 2017 από όσους ήθελαν μεγαλύτερα blocks;",
-    "answer": "Bitcoin Cash",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Πώς ονόμαζε το Bitcoin Unlimited την ιδέα του ότι κάθε node ορίζει μόνος του το μέγιστο μέγεθος block που δέχεται;",
+    "answer": "Emergent consensus",
     "wrong": [
-      "Bitcoin SV",
-      "Bitcoin Gold",
-      "Litecoin"
+      "Flexible cap",
+      "Adaptive block size",
+      "Extension blocks"
     ],
-    "why": "Το Bitcoin Cash. Το Bitcoin SV έγινε fork του Bitcoin Cash το 2018. Forks των forks…",
+    "why": "Με τις ρυθμίσεις EB (Excessive Block) και AD (Acceptance Depth). Οι επικριτές έλεγαν ότι έτσι το δίκτυο κινδύνευε να διασπαστεί.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_Cash"
+    "source": "https://bitcoinmagazine.com/technical/why-bitcoin-unlimiteds-emergent-consensus-gamble",
+    "topic": "history"
   },
   {
     "id": 34,
@@ -557,7 +591,8 @@
     ],
     "why": "Ο Ralph Merkle κατέθεσε την πατέντα το 1979 (US 4309569).",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Merkle_tree"
+    "source": "https://en.wikipedia.org/wiki/Merkle_tree",
+    "topic": "people"
   },
   {
     "id": 35,
@@ -573,7 +608,8 @@
     ],
     "why": "2.083.236.893. Το 1.231.006.505 είναι το timestamp του (Unix time).",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Genesis_block"
+    "source": "https://en.bitcoin.it/wiki/Genesis_block",
+    "topic": "history"
   },
   {
     "id": 36,
@@ -589,7 +625,8 @@
     ],
     "why": "Το «NO2X» έγινε σημαία της αντίστασης των χρηστών το 2017.",
     "verified": true,
-    "source": "https://cointelegraph.com/news/litecoin-creator-charlie-lee-publicly-opposes-segwit2x"
+    "source": "https://cointelegraph.com/news/litecoin-creator-charlie-lee-publicly-opposes-segwit2x",
+    "topic": "culture"
   },
   {
     "id": 37,
@@ -605,7 +642,8 @@
     ],
     "why": "Τον Απρίλιο του 2011: «I've moved on to other things». Και εξαφανίστηκε.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
+    "source": "https://en.wikipedia.org/wiki/Satoshi_Nakamoto",
+    "topic": "history"
   },
   {
     "id": 38,
@@ -621,13 +659,14 @@
     ],
     "why": "21 × 10^6 = 21.000.000, το όριο του supply.",
     "verified": true,
-    "source": "https://bitcointreasuries.net/glossary/21-million"
+    "source": "https://bitcointreasuries.net/glossary/21-million",
+    "topic": "culture"
   },
   {
     "id": 39,
     "hex": "0x27",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποια αλυσίδα θεωρούν έγκυρη οι nodes;",
     "answer": "Αυτή με τη μεγαλύτερη συσσωρευμένη δουλειά",
     "wrong": [
@@ -637,7 +676,8 @@
     ],
     "why": "Το «longest chain» είναι απλοποίηση. Μετράει η συνολική δουλειά (most work).",
     "verified": true,
-    "source": "https://developer.bitcoin.org/devguide/block_chain.html"
+    "source": "https://developer.bitcoin.org/devguide/block_chain.html",
+    "topic": "technical"
   },
   {
     "id": 40,
@@ -653,7 +693,8 @@
     ],
     "why": "Οι κανόνες script για τα Taproot spends.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 41,
@@ -669,7 +710,8 @@
     ],
     "why": "Εκεί δοκιμάζουν οι developers χωρίς να ρισκάρουν πραγματικά sats.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Testnet"
+    "source": "https://en.bitcoin.it/wiki/Testnet",
+    "topic": "technical"
   },
   {
     "id": 42,
@@ -685,7 +727,8 @@
     ],
     "why": "BIP44: legacy · BIP49: nested SegWit · BIP84: native SegWit · BIP86: Taproot.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0084.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 43,
@@ -701,7 +744,8 @@
     ],
     "why": "Το διέθεσε δωρεάν μαζί με τον πηγαίο κώδικα, μέσω δημόσιου FTP.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Phil_Zimmermann"
+    "source": "https://en.wikipedia.org/wiki/Phil_Zimmermann",
+    "topic": "people"
   },
   {
     "id": 44,
@@ -717,7 +761,8 @@
     ],
     "why": "Κρυοσυντηρήθηκε στο Alcor, στην Αριζόνα, μετά τον θάνατό του στις 28 Αυγούστου 2014.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)",
+    "topic": "people"
   },
   {
     "id": 45,
@@ -733,7 +778,8 @@
     ],
     "why": "Κάθε 210.000 blocks, δηλαδή περίπου κάθε 4 χρόνια, η νέα έκδοση BTC μειώνεται στο μισό.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "mining"
   },
   {
     "id": 46,
@@ -749,7 +795,8 @@
     ],
     "why": "Το σύστημα αποσύρθηκε το 2016 ως κίνδυνος κεντρικοποίησης.",
     "verified": true,
-    "source": "https://bitcoin.org/alert-retirement"
+    "source": "https://bitcoin.org/alert-retirement",
+    "topic": "history"
   },
   {
     "id": 47,
@@ -765,7 +812,8 @@
     ],
     "why": "Wei Dai, το 1998. Είναι η πρώτη αναφορά (reference [1]) του whitepaper.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/B-money"
+    "source": "https://en.wikipedia.org/wiki/B-money",
+    "topic": "people"
   },
   {
     "id": 48,
@@ -781,7 +829,8 @@
     ],
     "why": "Από ένα seed παράγεται ολόκληρο δέντρο κλειδιών.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 49,
@@ -797,7 +846,8 @@
     ],
     "why": "CLTV (BIP65): κλειδώνει σε συγκεκριμένο ύψος block ή χρόνο.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 50,
@@ -813,7 +863,8 @@
     ],
     "why": "Σύντομο παράθυρο σηματοδότησης από miners με κατώφλι 90%, μετά τις εμπειρίες του 2017.",
     "verified": true,
-    "source": "https://bitcoincore.org/en/releases/0.21.1/"
+    "source": "https://bitcoincore.org/en/releases/0.21.1/",
+    "topic": "history"
   },
   {
     "id": 51,
@@ -829,7 +880,8 @@
     ],
     "why": "Όταν κινείται ένα whale, όλοι κοιτάνε τα charts.",
     "verified": true,
-    "source": "https://www.coindesk.com/learn/bitcoin-whales-what-they-are-how-to-spot-them"
+    "source": "https://www.coindesk.com/learn/bitcoin-whales-what-they-are-how-to-spot-them",
+    "topic": "culture"
   },
   {
     "id": 52,
@@ -845,7 +897,8 @@
     ],
     "why": "Ανακοινώθηκε στο BitcoinTalk στις 27 Νοεμβρίου 2010.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Slush_Pool"
+    "source": "https://en.bitcoin.it/wiki/Slush_Pool",
+    "topic": "mining"
   },
   {
     "id": 53,
@@ -861,7 +914,8 @@
     ],
     "why": "Ψάξ' το μόνος σου. Don't trust, verify.",
     "verified": true,
-    "source": "https://www.babypips.com/crypto/glossary/do-your-own-research-dyor"
+    "source": "https://www.babypips.com/crypto/glossary/do-your-own-research-dyor",
+    "topic": "culture"
   },
   {
     "id": 54,
@@ -877,7 +931,8 @@
     ],
     "why": "Self-custody: πλήρης έλεγχος, πλήρης ευθύνη.",
     "verified": true,
-    "source": "https://www.ledger.com/academy/what-it-means-to-be-your-own-bank"
+    "source": "https://www.ledger.com/academy/what-it-means-to-be-your-own-bank",
+    "topic": "culture"
   },
   {
     "id": 55,
@@ -893,7 +948,8 @@
     ],
     "why": "Το Μπουτάν συσσώρευσε BTC κάνοντας mining με το πλεόνασμα των φραγμάτων του.",
     "verified": true,
-    "source": "https://cointelegraph.com/news/how-bhutan-is-building-a-green-bitcoin-economy-from-the-ground-up"
+    "source": "https://cointelegraph.com/news/how-bhutan-is-building-a-green-bitcoin-economy-from-the-ground-up",
+    "topic": "mining"
   },
   {
     "id": 56,
@@ -909,7 +965,8 @@
     ],
     "why": "Το βιβλίο για τον αποπληθωρισμό που φέρνει η τεχνολογία.",
     "verified": true,
-    "source": "https://www.businesswire.com/news/home/20200114005299/en/Jeff-Booth-BuildDirect-Co-Founder-Releases-Book-Titled"
+    "source": "https://www.businesswire.com/news/home/20200114005299/en/Jeff-Booth-BuildDirect-Co-Founder-Releases-Book-Titled",
+    "topic": "people"
   },
   {
     "id": 57,
@@ -925,7 +982,8 @@
     ],
     "why": "Η ταυτοποίηση που ζητούν τα exchanges. Τα δεδομένα σου μένουν σε κάποιον server.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Know_your_customer"
+    "source": "https://en.wikipedia.org/wiki/Know_your_customer",
+    "topic": "culture"
   },
   {
     "id": 58,
@@ -941,7 +999,8 @@
     ],
     "why": "«Running bitcoin». Από τα πιο ιστορικά tweets που γράφτηκαν ποτέ.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)"
+    "source": "https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)",
+    "topic": "history"
   },
   {
     "id": 59,
@@ -957,7 +1016,8 @@
     ],
     "why": "Αποδεδειγμένα unspendable. Έτσι δεν φουσκώνει το UTXO set.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/OP_RETURN"
+    "source": "https://en.bitcoin.it/wiki/OP_RETURN",
+    "topic": "technical"
   },
   {
     "id": 60,
@@ -973,7 +1033,8 @@
     ],
     "why": "Το πρόβλημα που έλυσε ο Satoshi χωρίς κεντρικό διαχειριστή.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/devguide/block_chain.html"
+    "source": "https://developer.bitcoin.org/devguide/block_chain.html",
+    "topic": "technical"
   },
   {
     "id": 61,
@@ -989,7 +1050,8 @@
     ],
     "why": "Η καμπάνια ήταν να μείνουν τα laser eyes μέχρι το BTC να φτάσει τα 100.000$.",
     "verified": true,
-    "source": "https://knowyourmeme.com/memes/laser-eyes-bitcoin-trend-laserrayuntil100k"
+    "source": "https://knowyourmeme.com/memes/laser-eyes-bitcoin-trend-laserrayuntil100k",
+    "topic": "culture"
   },
   {
     "id": 62,
@@ -1005,7 +1067,8 @@
     ],
     "why": "Mining, με Proof of Work. Το staking είναι για άλλα δίκτυα… που δεν θα αναφέρουμε.",
     "verified": true,
-    "source": "https://bitcoin.org/en/vocabulary"
+    "source": "https://bitcoin.org/en/vocabulary",
+    "topic": "mining"
   },
   {
     "id": 63,
@@ -1021,7 +1084,8 @@
     ],
     "why": "Συνηθισμένο στα altcoins και στα memecoins. Το Bitcoin δεν έχει ομάδα που να σου τραβήξει το χαλί.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Rug_pull"
+    "source": "https://en.wikipedia.org/wiki/Rug_pull",
+    "topic": "culture"
   },
   {
     "id": 64,
@@ -1033,27 +1097,29 @@
     "wrong": [
       "Hal Finney",
       "Gavin Andresen",
-      "Theymos"
+      "Cobra"
     ],
     "why": "Ο ίδιος ο Satoshi, τον Νοέμβριο του 2009.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/BitcoinTalk"
+    "source": "https://en.bitcoin.it/wiki/BitcoinTalk",
+    "topic": "history"
   },
   {
     "id": 65,
     "hex": "0x41",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Τι είναι ένα block explorer;",
-    "answer": "Ιστοσελίδα που δείχνει blocks και συναλλαγές",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος χρήστης του BitcoinTalk σχεδίασε το γνωστό πορτοκαλί λογότυπο του Bitcoin;",
+    "answer": "bitboy",
     "wrong": [
-      "Wallet για εξερεύνηση",
-      "Miner",
-      "Το Lightning"
+      "Gavin Andresen",
+      "Hal Finney",
+      "Cobra"
     ],
-    "why": "Π.χ. mempool.space. Ακόμα καλύτερα: δικός σου node με δικό σου explorer.",
+    "why": "Το έφτιαξε πάνω στο σύμβολο που είχε σχεδιάσει ο ίδιος ο Satoshi.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Block_chain_browser"
+    "source": "https://en.bitcoin.it/wiki/Promotional_graphics",
+    "topic": "culture"
   },
   {
     "id": 66,
@@ -1069,7 +1135,8 @@
     ],
     "why": "Sats ανά virtual byte. Πληρώνεις για χώρο στο block, όχι για το ποσό που στέλνεις.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Transaction_fees"
+    "source": "https://en.bitcoin.it/wiki/Transaction_fees",
+    "topic": "technical"
   },
   {
     "id": 67,
@@ -1085,7 +1152,8 @@
     ],
     "why": "Block 840.000, στις 20 Απριλίου 2024. Το τέταρτο halving.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol",
+    "topic": "mining"
   },
   {
     "id": 68,
@@ -1101,7 +1169,8 @@
     ],
     "why": "Ο παραλήπτης δίνει τις συνθήκες ξοδέματος, ο αποστολέας ένα hash 20 bytes.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 69,
@@ -1117,7 +1186,8 @@
     ],
     "why": "Ένα off-by-one που δεν διορθώθηκε, για να μην αλλάξουν οι κανόνες συναίνεσης.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Script"
+    "source": "https://en.bitcoin.it/wiki/Script",
+    "topic": "technical"
   },
   {
     "id": 70,
@@ -1133,7 +1203,8 @@
     ],
     "why": "Η καρδιά της απόδειξης ιδιοκτησίας στο Bitcoin Script.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Script"
+    "source": "https://en.bitcoin.it/wiki/Script",
+    "topic": "technical"
   },
   {
     "id": 71,
@@ -1149,7 +1220,8 @@
     ],
     "why": "Κανένας κεντρικός διαχειριστής δεν εγκρίνει την πληρωμή σου.",
     "verified": true,
-    "source": "https://bitcoin.org/bitcoin.pdf"
+    "source": "https://bitcoin.org/bitcoin.pdf",
+    "topic": "technical"
   },
   {
     "id": 72,
@@ -1165,13 +1237,14 @@
     ],
     "why": "Στις 12 Δεκεμβρίου 2010.",
     "verified": true,
-    "source": "https://forklog.com/en/thirteen-years-since-satoshi-nakamotos-last-post/"
+    "source": "https://forklog.com/en/thirteen-years-since-satoshi-nakamotos-last-post/",
+    "topic": "history"
   },
   {
     "id": 73,
     "hex": "0x49",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποια elliptic curve χρησιμοποιεί το Bitcoin;",
     "answer": "secp256k1",
     "wrong": [
@@ -1181,7 +1254,8 @@
     ],
     "why": "secp256k1. Επιλογή του Satoshi που τότε θεωρήθηκε ασυνήθιστη.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Secp256k1"
+    "source": "https://en.bitcoin.it/wiki/Secp256k1",
+    "topic": "technical"
   },
   {
     "id": 74,
@@ -1197,7 +1271,8 @@
     ],
     "why": "Βασισμένη στο κόστος ρεύματος για το mining. Τον Οκτώβριο του 2009.",
     "verified": true,
-    "source": "https://bitcoinmagazine.com/culture/bitcoin-is-up-6-5-billion-percent-since-it-was-first-priced-in-usd"
+    "source": "https://bitcoinmagazine.com/culture/bitcoin-is-up-6-5-billion-percent-since-it-was-first-priced-in-usd",
+    "topic": "history"
   },
   {
     "id": 75,
@@ -1213,7 +1288,8 @@
     ],
     "why": "Το security budget θα στηρίζεται αποκλειστικά στα fees.",
     "verified": true,
-    "source": "https://bitcoin.org/bitcoin.pdf"
+    "source": "https://bitcoin.org/bitcoin.pdf",
+    "topic": "mining"
   },
   {
     "id": 76,
@@ -1229,39 +1305,42 @@
     ],
     "why": "Ο χρόνος του Bitcoin μετριέται σε blocks.",
     "verified": true,
-    "source": "https://dailybitcoiner.substack.com/p/td-bitcoin-is-time"
+    "source": "https://dailybitcoiner.substack.com/p/td-bitcoin-is-time",
+    "topic": "culture"
   },
   {
     "id": 77,
     "hex": "0x4D",
     "weight": 2,
     "level": "maxi",
-    "question": "Ποιος είναι ο ρόλος των miners;",
-    "answer": "Ταξινομούν συναλλαγές σε blocks και ασφαλίζουν την αλυσίδα",
+    "question": "Περίπου πόσα BTC κλάπηκαν από το Bitfinex τον Αύγουστο του 2016;",
+    "answer": "Περίπου 120.000",
     "wrong": [
-      "Ορίζουν την τιμή",
-      "Εκδίδουν άδειες χρήσης",
-      "Ελέγχουν τα wallets"
+      "Περίπου 12.000",
+      "Περίπου 650.000",
+      "Περίπου 1.000.000"
     ],
-    "why": "Δεν «κάνουν τους κανόνες». Τους ακολουθούν, αλλιώς τα blocks τους απορρίπτονται.",
+    "why": "119.754 BTC. Το 2022 οι αρχές των ΗΠΑ κατάσχεσαν τα περισσότερα, αξίας ~3,6 δισ. $.",
     "verified": true,
-    "source": "https://bitcoin.org/en/vocabulary"
+    "source": "https://www.bloomberg.com/news/articles/2022-02-08/doj-seizes-3-6-billion-in-bitcoin-stolen-in-2016-bitfinex-hack",
+    "topic": "history"
   },
   {
     "id": 78,
     "hex": "0x4E",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Τι αποφάσισε το βρετανικό δικαστήριο το 2024 για τον Craig Wright;",
-    "answer": "Ότι δεν είναι ο Satoshi",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Σε ποιο φόρουμ ανακοίνωσε ο Satoshi το Bitcoin στις 11 Φεβρουαρίου 2009;",
+    "answer": "P2P Foundation",
     "wrong": [
-      "Ότι είναι ο Satoshi",
-      "Ότι συνέγραψε το whitepaper",
-      "Δεν αποφάνθηκε"
+      "BitcoinTalk",
+      "Hacker News",
+      "Usenet"
     ],
-    "why": "Στην υπόθεση COPA v Wright, τον Μάρτιο του 2024: δεν είναι ο Satoshi.",
+    "why": "Με τίτλο «Bitcoin open source implementation of P2P currency». Το BitcoinTalk δεν υπήρχε ακόμα.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Craig_Steven_Wright"
+    "source": "https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/",
+    "topic": "history"
   },
   {
     "id": 79,
@@ -1277,7 +1356,8 @@
     ],
     "why": "Median Time Past. Γι' αυτό τα timestamps δεν είναι πάντα σε σειρά.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 80,
@@ -1293,7 +1373,8 @@
     ],
     "why": "Γεννήθηκε ως διαφήμιση για το r/Bitcoin, τον Φεβρουάριο του 2013.",
     "verified": true,
-    "source": "https://knowyourmeme.com/memes/magic-internet-money-bitcoin-wizard"
+    "source": "https://knowyourmeme.com/memes/magic-internet-money-bitcoin-wizard",
+    "topic": "culture"
   },
   {
     "id": 81,
@@ -1309,23 +1390,25 @@
     ],
     "why": "Ο στόχος είναι 10 λεπτά. Τα 2,5 λεπτά είναι του Litecoin, NGMI.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Litecoin"
+    "source": "https://en.wikipedia.org/wiki/Litecoin",
+    "topic": "mining"
   },
   {
     "id": 82,
     "hex": "0x52",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Συμπλήρωσε τη γνωστή φράση των maxis: «There is no …»",
-    "answer": "second best",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος χρήστης του BitcoinTalk πρότεινε το 2011 να ονομαστεί «satoshi» η μικρότερη μονάδα του bitcoin;",
+    "answer": "ribuck",
     "wrong": [
-      "other way",
-      "safe haven",
-      "plan B"
+      "Luke-Jr",
+      "jgarzik",
+      "ArtForz"
     ],
-    "why": "«There is no second best». Τα υπόλοιπα είναι, ας πούμε, πειράματα.",
+    "why": "Πρότεινε «austrian» ή «satoshi». Επικράτησε το δεύτερο.",
     "verified": true,
-    "source": "https://www.strategysoftware.com/video/bitcoin-there-is-no-second-best"
+    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)",
+    "topic": "culture"
   },
   {
     "id": 83,
@@ -1341,7 +1424,8 @@
     ],
     "why": "Layer 2: οι πληρωμές γίνονται μέσα σε channels, εκτός αλυσίδας.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "technical"
   },
   {
     "id": 84,
@@ -1357,7 +1441,8 @@
     ],
     "why": "Το xpub είναι extended public key: δεν κλέβει, αλλά αποκαλύπτει όλο το ιστορικό σου.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 85,
@@ -1373,7 +1458,8 @@
     ],
     "why": "Ο φόβος ότι θα χάσεις την άνοδο. Οδηγεί σε αγορές στην κορυφή.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Fear_of_missing_out"
+    "source": "https://en.wikipedia.org/wiki/Fear_of_missing_out",
+    "topic": "culture"
   },
   {
     "id": 86,
@@ -1389,7 +1475,8 @@
     ],
     "why": "Το subsidy μετριέται σε sats και κόβεται στο μισό με ακέραια διαίρεση. Στο 33ο halving μηδενίζεται.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "mining"
   },
   {
     "id": 87,
@@ -1405,7 +1492,8 @@
     ],
     "why": "Αν αλλάξει έστω και μία συναλλαγή, αλλάζει και το merkle root.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/reference/block_chain.html#merkle-trees"
+    "source": "https://developer.bitcoin.org/reference/block_chain.html#merkle-trees",
+    "topic": "technical"
   },
   {
     "id": 88,
@@ -1421,7 +1509,8 @@
     ],
     "why": "Σε σχόλιο του αρχικού κώδικα. Πολλοί maxis τον προτιμούν ακόμα.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "history"
   },
   {
     "id": 89,
@@ -1437,7 +1526,8 @@
     ],
     "why": "Ξεπερασμένη και ανασφαλής μέθοδος (δημοφιλής 2011–2016). Σήμερα προτιμάται το seed phrase.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Paper_wallet"
+    "source": "https://en.bitcoin.it/wiki/Paper_wallet",
+    "topic": "self-custody"
   },
   {
     "id": 90,
@@ -1453,7 +1543,8 @@
     ],
     "why": "Κάθε 2.016 blocks, δηλαδή περίπου κάθε 2 εβδομάδες.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Difficulty"
+    "source": "https://en.bitcoin.it/wiki/Difficulty",
+    "topic": "mining"
   },
   {
     "id": 91,
@@ -1469,7 +1560,8 @@
     ],
     "why": "Τον Νοέμβριο του 2013.",
     "verified": true,
-    "source": "https://techcrunch.com/2013/11/27/bitcoin-crosses-the-1000-mark-on-the-mt-gox-exchange"
+    "source": "https://techcrunch.com/2013/11/27/bitcoin-crosses-the-1000-mark-on-the-mt-gox-exchange",
+    "topic": "history"
   },
   {
     "id": 92,
@@ -1485,7 +1577,8 @@
     ],
     "why": "Ένα από τα ιδρυτικά κείμενα των cypherpunks.",
     "verified": true,
-    "source": "https://reason.com/2018/12/16/tim-may-influential-writer-on-crypto-ana/"
+    "source": "https://reason.com/2018/12/16/tim-may-influential-writer-on-crypto-ana/",
+    "topic": "people"
   },
   {
     "id": 93,
@@ -1501,23 +1594,25 @@
     ],
     "why": "«Not your keys, not your coins». Αν τα κλειδιά τα έχει το exchange, τα coins είναι δικά του.",
     "verified": true,
-    "source": "https://regional-front.cointelegraph.com/news/antonopoulos-your-keys-your-bitcoin-not-your-keys-not-your-bitcoin"
+    "source": "https://regional-front.cointelegraph.com/news/antonopoulos-your-keys-your-bitcoin-not-your-keys-not-your-bitcoin",
+    "topic": "self-custody"
   },
   {
     "id": 94,
     "hex": "0x5E",
     "weight": 2,
     "level": "maxi",
-    "question": "Τι σημαίνει «fiat»;",
-    "answer": "Χρήμα που ισχύει με κρατική απόφαση",
+    "question": "Τι εννοούν οι bitcoiners με «low time preference»;",
+    "answer": "Προτιμούν το μελλοντικό όφελος από την άμεση κατανάλωση",
     "wrong": [
-      "Χρήμα από χρυσό",
-      "Ιταλικό αυτοκίνητο",
-      "Ένα altcoin"
+      "Προτιμούν συναλλαγές με χαμηλά fees",
+      "Κάνουν trading σε μικρά χρονικά διαστήματα",
+      "Περιμένουν λίγα confirmations"
     ],
-    "why": "Από το λατινικό «ας γίνει». Τυπώνεται όσο αποφασίσει η κεντρική τράπεζα.",
+    "why": "Όρος της Αυστριακής σχολής οικονομικών. Οι bitcoiners υποστηρίζουν ότι το σκληρό χρήμα ενθαρρύνει την αποταμίευση.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Fiat_money"
+    "source": "https://en.wikipedia.org/wiki/Time_preference",
+    "topic": "culture"
   },
   {
     "id": 95,
@@ -1533,7 +1628,8 @@
     ],
     "why": "Οι παλιοί nodes συνεχίζουν να δέχονται τα νέα blocks ως έγκυρα.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Softfork"
+    "source": "https://en.bitcoin.it/wiki/Softfork",
+    "topic": "technical"
   },
   {
     "id": 96,
@@ -1549,7 +1645,8 @@
     ],
     "why": "Στο τέλος του πρώτου κύκλου: το reward μειώθηκε στο μισό.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol",
+    "topic": "mining"
   },
   {
     "id": 97,
@@ -1565,7 +1662,8 @@
     ],
     "why": "Συνήθως ο ίδιος που έλεγε «φούσκα» στα 100$.",
     "verified": true,
-    "source": "https://www.coindesk.com/markets/2018/02/19/the-real-problem-with-nocoiners/"
+    "source": "https://www.coindesk.com/markets/2018/02/19/the-real-problem-with-nocoiners/",
+    "topic": "culture"
   },
   {
     "id": 98,
@@ -1581,7 +1679,8 @@
     ],
     "why": "Το SegWit ενεργοποιήθηκε, αλλά το «2x» ακυρώθηκε τον Νοέμβριο του 2017 λόγω έλλειψης υποστήριξης.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/SegWit"
+    "source": "https://en.wikipedia.org/wiki/SegWit",
+    "topic": "history"
   },
   {
     "id": 99,
@@ -1597,7 +1696,8 @@
     ],
     "why": "Block 709.632, στις 14 Νοεμβρίου 2021.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "history"
   },
   {
     "id": 100,
@@ -1613,7 +1713,8 @@
     ],
     "why": "Όσο ψηλότερο, τόσο ακριβότερη μια επίθεση.",
     "verified": true,
-    "source": "https://bitcoin.org/en/vocabulary"
+    "source": "https://bitcoin.org/en/vocabulary",
+    "topic": "mining"
   },
   {
     "id": 101,
@@ -1629,7 +1730,8 @@
     ],
     "why": "Ο κανόνας περιορίζει την αλλαγή σε συντελεστή 4 προς κάθε κατεύθυνση.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Target"
+    "source": "https://en.bitcoin.it/wiki/Target",
+    "topic": "mining"
   },
   {
     "id": 102,
@@ -1645,7 +1747,8 @@
     ],
     "why": "Ξοδεύεις ένα output μιας κολλημένης συναλλαγής με υψηλό fee, και οι miners παίρνουν και τις δύο.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Child_pays_for_parent"
+    "source": "https://en.bitcoin.it/wiki/Child_pays_for_parent",
+    "topic": "technical"
   },
   {
     "id": 103,
@@ -1661,7 +1764,8 @@
     ],
     "why": "Μυθιστόρημα με κρυπτογράφους, data havens και ψηφιακό χρήμα.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Cryptonomicon"
+    "source": "https://en.wikipedia.org/wiki/Cryptonomicon",
+    "topic": "people"
   },
   {
     "id": 104,
@@ -1677,7 +1781,8 @@
     ],
     "why": "Schnorr (BIP340). Πριν, το Bitcoin χρησιμοποιούσε μόνο ECDSA.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0340.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 105,
@@ -1693,7 +1798,8 @@
     ],
     "why": "Ξεκίνησε το 2019, ανήμερα της επετείου του genesis block.",
     "verified": true,
-    "source": "https://bitcoinist.com/bitcoin-proof-of-keys-btc-off-exchanges/"
+    "source": "https://bitcoinist.com/bitcoin-proof-of-keys-btc-off-exchanges/",
+    "topic": "self-custody"
   },
   {
     "id": 106,
@@ -1709,7 +1815,8 @@
     ],
     "why": "Ο Satoshi γράφει «chain of blocks». Η λέξη blockchain ήρθε αργότερα.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "history"
   },
   {
     "id": 107,
@@ -1725,7 +1832,8 @@
     ],
     "why": "Η επαναχρησιμοποίηση συνδέει όλες τις πληρωμές σου μεταξύ τους.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Address_reuse"
+    "source": "https://en.bitcoin.it/wiki/Address_reuse",
+    "topic": "self-custody"
   },
   {
     "id": 108,
@@ -1741,7 +1849,8 @@
     ],
     "why": "Ό,τι λέμε σε όποιον πουλάει στον πάτο. Το αντίθετο: WAGMI.",
     "verified": true,
-    "source": "https://www.bitmex.com/blog/what-is-wagmi-ngmi"
+    "source": "https://www.bitmex.com/blog/what-is-wagmi-ngmi",
+    "topic": "culture"
   },
   {
     "id": 109,
@@ -1757,13 +1866,14 @@
     ],
     "why": "Τον Δεκέμβριο του 2013 ένας χρήστης έγραψε μεθυσμένος «I AM HODLING». Το «Hold On for Dear Life» προστέθηκε αργότερα.",
     "verified": true,
-    "source": "https://bitcointalk.org/index.php?topic=375643.0"
+    "source": "https://bitcointalk.org/index.php?topic=375643.0",
+    "topic": "culture"
   },
   {
     "id": 110,
     "hex": "0x6E",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποιος πρόσθεσε το όριο του 1 MB στο μέγεθος του block;",
     "answer": "Ο Satoshi, το 2010",
     "wrong": [
@@ -1773,7 +1883,8 @@
     ],
     "why": "Το πρόσθεσε χωρίς ανακοίνωση, σε δύο commits το 2010.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Block_size_limit_controversy"
+    "source": "https://en.bitcoin.it/wiki/Block_size_limit_controversy",
+    "topic": "history"
   },
   {
     "id": 111,
@@ -1789,7 +1900,8 @@
     ],
     "why": "Οι maxis απλώς κάνουν stack.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Leverage_(finance)"
+    "source": "https://en.wikipedia.org/wiki/Leverage_(finance)",
+    "topic": "culture"
   },
   {
     "id": 112,
@@ -1805,7 +1917,8 @@
     ],
     "why": "Magic: The Gathering Online eXchange. Ναι, σοβαρά.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Mt._Gox"
+    "source": "https://en.wikipedia.org/wiki/Mt._Gox",
+    "topic": "history"
   },
   {
     "id": 113,
@@ -1821,7 +1934,8 @@
     ],
     "why": "Ο καθένας μπορεί να τον διαβάσει, να τον ελέγξει και να τρέξει node.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bitcoin"
+    "source": "https://github.com/bitcoin/bitcoin",
+    "topic": "technical"
   },
   {
     "id": 114,
@@ -1837,7 +1951,8 @@
     ],
     "why": "Unspent Transaction Output. Το Bitcoin δεν έχει «υπόλοιπα λογαριασμών», μόνο ανεξόδευτα outputs.",
     "verified": true,
-    "source": "https://bitcoin.org/en/vocabulary"
+    "source": "https://bitcoin.org/en/vocabulary",
+    "topic": "technical"
   },
   {
     "id": 115,
@@ -1853,7 +1968,8 @@
     ],
     "why": "Περίπου μία ώρα. Είναι σύμβαση, όχι κανόνας του πρωτοκόλλου.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Confirmation"
+    "source": "https://en.bitcoin.it/wiki/Confirmation",
+    "topic": "technical"
   },
   {
     "id": 116,
@@ -1869,7 +1985,8 @@
     ],
     "why": "Από Papa John's. Ο Laszlo πλήρωσε τα BTC σε κάποιον που τις παρήγγειλε για λογαριασμό του.",
     "verified": true,
-    "source": "https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/"
+    "source": "https://www.coindesk.com/learn/what-is-bitcoin-pizza-day/",
+    "topic": "history"
   },
   {
     "id": 117,
@@ -1885,23 +2002,25 @@
     ],
     "why": "Κάνει πανάκριβο το να ξαναγράψεις την ιστορία. Γι' αυτό είναι ασφαλές.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Proof_of_work"
+    "source": "https://en.bitcoin.it/wiki/Proof_of_work",
+    "topic": "mining"
   },
   {
     "id": 118,
     "hex": "0x76",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Ποια hash function χρησιμοποιεί το Proof of Work του Bitcoin;",
-    "answer": "SHA-256 (διπλό)",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποια τεχνική του mining αποκάλυψε ο Greg Maxwell τον Απρίλιο του 2017 ότι χρησιμοποιούνταν κρυφά, και ότι ήταν ασύμβατη με το SegWit;",
+    "answer": "Covert ASICBoost",
     "wrong": [
-      "Scrypt",
-      "Ethash",
-      "Keccak"
+      "Selfish mining",
+      "Merged mining",
+      "Pool hopping"
     ],
-    "why": "Διπλό SHA-256. Το Scrypt είναι του Litecoin 😏",
+    "why": "Εκμεταλλευόταν τη σειρά των συναλλαγών στο block. Το witness commitment του SegWit την εμπόδιζε.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Proof_of_work"
+    "source": "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014021.html",
+    "topic": "mining"
   },
   {
     "id": 119,
@@ -1917,7 +2036,8 @@
     ],
     "why": "Βολικό, αλλά συνήθως με υψηλές χρεώσεις και KYC.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_ATM"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_ATM",
+    "topic": "culture"
   },
   {
     "id": 120,
@@ -1933,7 +2053,8 @@
     ],
     "why": "Έναν ηλικιωμένο μηχανικό που δεν είχε καμία σχέση. Ο πραγματικός Satoshi έγραψε τότε «I am not Dorian Nakamoto».",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Satoshi_Nakamoto"
+    "source": "https://en.wikipedia.org/wiki/Satoshi_Nakamoto",
+    "topic": "history"
   },
   {
     "id": 121,
@@ -1949,7 +2070,8 @@
     ],
     "why": "Ένα περίπου κάθε τέσσερα χρόνια από την έναρξη του δικτύου.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_protocol",
+    "topic": "mining"
   },
   {
     "id": 122,
@@ -1965,7 +2087,8 @@
     ],
     "why": "Η καλύτερη εποχή για να μαζεύεις sats σε χαμηλότερες τιμές.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Market_trend"
+    "source": "https://en.wikipedia.org/wiki/Market_trend",
+    "topic": "culture"
   },
   {
     "id": 123,
@@ -1981,7 +2104,8 @@
     ],
     "why": "Η μονάδα που μετράει το «κόστος» μιας συναλλαγής σε χώρο block.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 124,
@@ -1997,7 +2121,8 @@
     ],
     "why": "User Activated Soft Fork: από την 1η Αυγούστου 2017 οι κόμβοι θα απέρριπταν blocks χωρίς σήμα για SegWit.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/BIP_0148"
+    "source": "https://en.bitcoin.it/wiki/BIP_0148",
+    "topic": "history"
   },
   {
     "id": 125,
@@ -2013,7 +2138,8 @@
     ],
     "why": "Στέλνει στους miners δουλειές (jobs) και παίρνει πίσω τα shares.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Stratum_mining_protocol"
+    "source": "https://en.bitcoin.it/wiki/Stratum_mining_protocol",
+    "topic": "mining"
   },
   {
     "id": 126,
@@ -2029,23 +2155,25 @@
     ],
     "why": "Το χρήμα ως στρώματα: από τον χρυσό στις τράπεζες και στο Bitcoin.",
     "verified": true,
-    "source": "https://bitcoinmagazine.com/culture/review-layered-money-by-nik-bhatia"
+    "source": "https://bitcoinmagazine.com/culture/review-layered-money-by-nik-bhatia",
+    "topic": "people"
   },
   {
     "id": 127,
     "hex": "0x7F",
     "weight": 2,
     "level": "maxi",
-    "question": "Τι είναι ο mempool;",
-    "answer": "Ο «χώρος αναμονής» των ανεπιβεβαίωτων συναλλαγών",
+    "question": "Τι κάνει το Shamir Backup (SLIP-39);",
+    "answer": "Χωρίζει το seed σε μερίδια· αρκεί ένα ελάχιστο πλήθος τους για επαναφορά",
     "wrong": [
-      "Ένα mining pool",
-      "Το συνολικό supply",
-      "Αρχείο με τα παλιά blocks"
+      "Κρυπτογραφεί το seed με κωδικό PIN",
+      "Φτιάχνει multisig wallet με πολλά κλειδιά",
+      "Αποθηκεύει το seed σε cloud"
     ],
-    "why": "Εκεί περιμένουν οι συναλλαγές μέχρι να μπουν σε block. Όσο μεγαλύτερο fee, τόσο πιο γρήγορα.",
+    "why": "Π.χ. 3 από 5 μερίδια. Λιγότερα από το όριο δεν αποκαλύπτουν τίποτα. Δεν είναι multisig: το κλειδί είναι ένα.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Vocabulary"
+    "source": "https://github.com/satoshilabs/slips/blob/master/slip-0039.md",
+    "topic": "self-custody"
   },
   {
     "id": 128,
@@ -2061,7 +2189,8 @@
     ],
     "why": "Αν το fee για να το ξοδέψεις ξεπερνά την αξία του, είναι πρακτικά άχρηστο.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Dust"
+    "source": "https://en.bitcoin.it/wiki/Dust",
+    "topic": "technical"
   },
   {
     "id": 129,
@@ -2077,23 +2206,25 @@
     ],
     "why": "2.048 = 2^11. Κάθε λέξη κωδικοποιεί 11 bits.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 130,
     "hex": "0x82",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Ποιος τίτλος εφημερίδας είναι γραμμένος στο genesis block;",
-    "answer": "Chancellor on brink of second bailout for banks",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο site τεχνολογίας έφερε κύμα νέων χρηστών στο Bitcoin με άρθρο για την έκδοση v0.3, τον Ιούλιο του 2010;",
+    "answer": "Slashdot",
     "wrong": [
-      "Banks collapse as crisis deepens",
-      "Lehman Brothers files for bankruptcy",
-      "Fed cuts rates to zero"
+      "Hacker News",
+      "Digg",
+      "TechCrunch"
     ],
-    "why": "Το έγραψε ο Satoshi στο coinbase του genesis block. Χρονοσφραγίδα και δήλωση μαζί.",
+    "why": "Στις 11 Ιουλίου 2010, με αποτέλεσμα μεγάλη εισροή νέων χρηστών.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Genesis_block"
+    "source": "https://en.bitcoin.it/wiki/History",
+    "topic": "history"
   },
   {
     "id": 131,
@@ -2109,7 +2240,8 @@
     ],
     "why": "Εκτίμηση από το Patoshi pattern. Δεν έχουν κινηθεί ποτέ.",
     "verified": true,
-    "source": "https://cointelegraph.com/news/mysterious-bitcoin-mining-pattern-solved-after-seven-years"
+    "source": "https://cointelegraph.com/news/mysterious-bitcoin-mining-pattern-solved-after-seven-years",
+    "topic": "history"
   },
   {
     "id": 132,
@@ -2125,7 +2257,8 @@
     ],
     "why": "Χρήσιμο όταν η συναλλαγή σου «κόλλησε» στον mempool.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Replace_by_fee"
+    "source": "https://en.bitcoin.it/wiki/Replace_by_fee",
+    "topic": "technical"
   },
   {
     "id": 133,
@@ -2141,7 +2274,8 @@
     ],
     "why": "Ενέργεια μετατρέπεται σε ασφάλεια. Γι' αυτό λέγεται συχνά «digital energy».",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Mining"
+    "source": "https://en.bitcoin.it/wiki/Mining",
+    "topic": "mining"
   },
   {
     "id": 134,
@@ -2157,7 +2291,8 @@
     ],
     "why": "Επιτρέπει σε διαφορετικά wallets και συσκευές να υπογράφουν διαδοχικά την ίδια συναλλαγή.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 135,
@@ -2173,7 +2308,8 @@
     ],
     "why": "Έγραφε κώδικα κοιτάζοντας την οθόνη, ενώ είχε σχεδόν παραλύσει.",
     "verified": true,
-    "source": "https://bitcoinmagazine.com/culture/remembering-hal-finney-a-decade-since-his-passing-his-legacy-in-bitcoin-lives-on"
+    "source": "https://bitcoinmagazine.com/culture/remembering-hal-finney-a-decade-since-his-passing-his-legacy-in-bitcoin-lives-on",
+    "topic": "people"
   },
   {
     "id": 136,
@@ -2189,7 +2325,8 @@
     ],
     "why": "Έτσι ένας μικρός miner έχει σταθερό εισόδημα αντί για λαχείο.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Pooled_mining"
+    "source": "https://en.bitcoin.it/wiki/Pooled_mining",
+    "topic": "mining"
   },
   {
     "id": 137,
@@ -2205,7 +2342,8 @@
     ],
     "why": "Τον Σεπτέμβριο του 2012, για να προωθήσει την ανάπτυξη και την υιοθέτηση του Bitcoin.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_Foundation"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_Foundation",
+    "topic": "history"
   },
   {
     "id": 138,
@@ -2221,7 +2359,8 @@
     ],
     "why": "Μειώνουν το bandwidth και την καθυστέρηση διάδοσης των blocks.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 139,
@@ -2237,7 +2376,8 @@
     ],
     "why": "Ο ενδιάμεσος κόμβος δεν ξέρει ούτε ποιος πληρώνει ούτε ποιος πληρώνεται.",
     "verified": true,
-    "source": "https://github.com/lightning/bolts/blob/master/04-onion-routing.md"
+    "source": "https://github.com/lightning/bolts/blob/master/04-onion-routing.md",
+    "topic": "technical"
   },
   {
     "id": 140,
@@ -2253,7 +2393,8 @@
     ],
     "why": "Δεν υπάρχει CEO, ούτε κουμπί «παύση». Κάθε node ελέγχει μόνος του τους κανόνες.",
     "verified": true,
-    "source": "https://bitcoin.org/en/bitcoin-core/"
+    "source": "https://bitcoin.org/en/bitcoin-core/",
+    "topic": "technical"
   },
   {
     "id": 141,
@@ -2269,7 +2410,8 @@
     ],
     "why": "Η συναλλαγή «κλειδώνει» BTC σε multisig. Από εκεί και πέρα, πληρωμές off-chain.",
     "verified": true,
-    "source": "https://github.com/lightning/bolts"
+    "source": "https://github.com/lightning/bolts",
+    "topic": "technical"
   },
   {
     "id": 142,
@@ -2285,23 +2427,25 @@
     ],
     "why": "Το Ελ Σαλβαδόρ, τον Σεπτέμβριο του 2021. Το 2025 ο νόμος τροποποιήθηκε και η υποχρεωτική αποδοχή από τους εμπόρους καταργήθηκε.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_in_El_Salvador"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_in_El_Salvador",
+    "topic": "history"
   },
   {
     "id": 143,
     "hex": "0x8F",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Ποιος έγραψε το «The Bitcoin Standard»;",
-    "answer": "Ο Saifedean Ammous",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιος είναι από το 2011 ο επικεφαλής διαχειριστής του BitcoinTalk;",
+    "answer": "theymos",
     "wrong": [
-      "Ο Andreas Antonopoulos",
-      "Η Lyn Alden",
-      "Ο Jeff Booth"
+      "Cobra",
+      "Sirius",
+      "MagicalTux"
     ],
-    "why": "Κυκλοφόρησε το 2018 και έστειλε πολύ κόσμο στο rabbit hole.",
+    "why": "Έφτιαξε επίσης το πρώτο block explorer, το blockexplorer.com, και ήταν επικεφαλής moderator του r/Bitcoin.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/The_Bitcoin_Standard"
+    "source": "https://www.bitmex.com/blog/the-bitcoin-forum",
+    "topic": "people"
   },
   {
     "id": 144,
@@ -2317,7 +2461,8 @@
     ],
     "why": "Το testnet χρησιμοποιεί την 18333.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/devguide/p2p_network.html"
+    "source": "https://developer.bitcoin.org/devguide/p2p_network.html",
+    "topic": "technical"
   },
   {
     "id": 145,
@@ -2333,7 +2478,8 @@
     ],
     "why": "Αν χάσεις ή σου κλέψουν ένα κλειδί, τα coins είναι ακόμα ασφαλή.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Multi-signature"
+    "source": "https://en.bitcoin.it/wiki/Multi-signature",
+    "topic": "self-custody"
   },
   {
     "id": 146,
@@ -2349,7 +2495,8 @@
     ],
     "why": "Η Blockstream, με ιδρυτή έναν από τους πρωτοπόρους της κρυπτογραφίας.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Blockstream"
+    "source": "https://en.wikipedia.org/wiki/Blockstream",
+    "topic": "history"
   },
   {
     "id": 147,
@@ -2365,7 +2512,8 @@
     ],
     "why": "Το 2021. Το hashrate έπεσε απότομα και μετά ανέκαμψε, με νέες χώρες να το απορροφούν.",
     "verified": true,
-    "source": "https://www.jbs.cam.ac.uk/2022/bitcoin-mining-new-data-reveal-a-surprising-resurgence/"
+    "source": "https://www.jbs.cam.ac.uk/2022/bitcoin-mining-new-data-reveal-a-surprising-resurgence/",
+    "topic": "mining"
   },
   {
     "id": 148,
@@ -2381,7 +2529,8 @@
     ],
     "why": "Papers για χρονοσφράγιση και Proof of Work, αλλά και ένα βιβλίο πιθανοτήτων.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "history"
   },
   {
     "id": 149,
@@ -2397,7 +2546,8 @@
     ],
     "why": "Ανοδική αγορά = bull market.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Market_trend"
+    "source": "https://en.wikipedia.org/wiki/Market_trend",
+    "topic": "culture"
   },
   {
     "id": 150,
@@ -2413,7 +2563,8 @@
     ],
     "why": "Γρήγορες μεταφορές L-BTC μεταξύ exchanges, με ομοσπονδία μελών.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Blockstream"
+    "source": "https://en.wikipedia.org/wiki/Blockstream",
+    "topic": "technical"
   },
   {
     "id": 151,
@@ -2429,7 +2580,8 @@
     ],
     "why": "Το 2013, αναλύοντας τα extraNonce των πρώτων blocks.",
     "verified": true,
-    "source": "https://cointelegraph.com/news/mysterious-bitcoin-mining-pattern-solved-after-seven-years"
+    "source": "https://cointelegraph.com/news/mysterious-bitcoin-mining-pattern-solved-after-seven-years",
+    "topic": "people"
   },
   {
     "id": 152,
@@ -2445,7 +2597,8 @@
     ],
     "why": "Έξι μέρες μετά το genesis block.",
     "verified": true,
-    "source": "https://www.coindesk.com/learn/the-genesis-block"
+    "source": "https://www.coindesk.com/learn/the-genesis-block",
+    "topic": "history"
   },
   {
     "id": 153,
@@ -2461,7 +2614,8 @@
     ],
     "why": "Πολλά κλειδιά, μία υπογραφή on-chain. Φαίνεται σαν απλό single-sig.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0327.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0327.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 154,
@@ -2477,7 +2631,8 @@
     ],
     "why": "Το 1 είναι για P2PKH (legacy) και το bc1q για SegWit v0.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Address"
+    "source": "https://en.bitcoin.it/wiki/Address",
+    "topic": "technical"
   },
   {
     "id": 155,
@@ -2493,7 +2648,8 @@
     ],
     "why": "Τα κλειδιά δεν αγγίζουν ποτέ υπολογιστή με internet. Η συσκευή απλώς υπογράφει συναλλαγές.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Hardware_wallet"
+    "source": "https://en.bitcoin.it/wiki/Hardware_wallet",
+    "topic": "self-custody"
   },
   {
     "id": 156,
@@ -2509,7 +2665,8 @@
     ],
     "why": "Το ₿ μπήκε επίσημα στο Unicode το 2017.",
     "verified": true,
-    "source": "https://codepoints.net/U+20BF"
+    "source": "https://codepoints.net/U+20BF",
+    "topic": "culture"
   },
   {
     "id": 157,
@@ -2525,7 +2682,8 @@
     ],
     "why": "Ο Satoshi έγραψε το v0.1 σε C++. Το Bitcoin Core παραμένει σε C++.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin_Core"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin_Core",
+    "topic": "history"
   },
   {
     "id": 158,
@@ -2539,9 +2697,10 @@
       "Ο Kevin Kelly",
       "Ο Paul Vigna"
     ],
-    "why": "Με πρωταγωνιστές τους RSA, DES και το Clipper chip.",
+    "why": "Με πρωταγωνιστές τους πρωτοπόρους της κρυπτογραφίας δημόσιου κλειδιού, όπως οι Diffie, Hellman και οι δημιουργοί του RSA.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Crypto_(book)"
+    "source": "https://en.wikipedia.org/wiki/Crypto_(book)",
+    "topic": "people"
   },
   {
     "id": 159,
@@ -2557,7 +2716,8 @@
     ],
     "why": "bc1p: SegWit v1 (Taproot), σε κωδικοποίηση bech32m.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0350.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 160,
@@ -2573,7 +2733,8 @@
     ],
     "why": "Χωρίς άγχος για timing. Το κλασικό «stay humble, stack sats».",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Dollar_cost_averaging"
+    "source": "https://en.wikipedia.org/wiki/Dollar_cost_averaging",
+    "topic": "culture"
   },
   {
     "id": 161,
@@ -2589,13 +2750,14 @@
     ],
     "why": "Δεν υπάρχει chargeback. Μετά από αρκετά confirmations, η αντιστροφή είναι πρακτικά αδύνατη.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Confirmation"
+    "source": "https://en.bitcoin.it/wiki/Confirmation",
+    "topic": "technical"
   },
   {
     "id": 162,
     "hex": "0xA2",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποιος ίδρυσε την DigiCash, πρωτοπόρο του ψηφιακού χρήματος;",
     "answer": "Ο David Chaum",
     "wrong": [
@@ -2605,7 +2767,8 @@
     ],
     "why": "Το ecash του Chaum (1989) είχε ιδιωτικότητα αλλά κεντρικό εκδότη. Χρεοκόπησε το 1998.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/DigiCash"
+    "source": "https://en.wikipedia.org/wiki/DigiCash",
+    "topic": "people"
   },
   {
     "id": 163,
@@ -2621,7 +2784,8 @@
     ],
     "why": "Με version bits και κατώφλι. Το SegWit το χρησιμοποίησε, με «βοήθεια» από το UASF.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 164,
@@ -2637,7 +2801,8 @@
     ],
     "why": "Κωδικοποίηση BOLT11 με bech32.",
     "verified": true,
-    "source": "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md"
+    "source": "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md",
+    "topic": "technical"
   },
   {
     "id": 165,
@@ -2653,7 +2818,8 @@
     ],
     "why": "3 Ιανουαρίου 2009. Το block 0, η αρχή όλων.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Genesis_block"
+    "source": "https://en.bitcoin.it/wiki/Genesis_block",
+    "topic": "history"
   },
   {
     "id": 166,
@@ -2669,7 +2835,8 @@
     ],
     "why": "Κωδικοποιημένο αίτημα πληρωμής, συνήθως σε μορφή QR.",
     "verified": true,
-    "source": "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md"
+    "source": "https://github.com/lightning/bolts/blob/master/11-payment-encoding.md",
+    "topic": "technical"
   },
   {
     "id": 167,
@@ -2685,7 +2852,8 @@
     ],
     "why": "Στις 24 Αυγούστου 2017.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Segregated_Witness"
+    "source": "https://en.bitcoin.it/wiki/Segregated_Witness",
+    "topic": "history"
   },
   {
     "id": 168,
@@ -2701,7 +2869,8 @@
     ],
     "why": "Το reward μειώθηκε στο μισό από τα 6,25 BTC που ίσχυαν από το 2020.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "mining"
   },
   {
     "id": 169,
@@ -2717,7 +2886,8 @@
     ],
     "why": "Έτσι ανοίγει το wallet σου όταν πατάς σε σύνδεσμο ή QR πληρωμής.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 170,
@@ -2733,7 +2903,8 @@
     ],
     "why": "Αρίθμηση των sats που επέτρεψε τα «inscriptions» στο witness.",
     "verified": true,
-    "source": "https://docs.ordinals.com/"
+    "source": "https://docs.ordinals.com/",
+    "topic": "people"
   },
   {
     "id": 171,
@@ -2749,7 +2920,8 @@
     ],
     "why": "Η πληρωμή ξεκλειδώνει με αποκάλυψη ενός preimage, αλλιώς επιστρέφει μετά από timelock.",
     "verified": true,
-    "source": "https://github.com/lightning/bolts/blob/master/03-transactions.md"
+    "source": "https://github.com/lightning/bolts/blob/master/03-transactions.md",
+    "topic": "technical"
   },
   {
     "id": 172,
@@ -2765,7 +2937,8 @@
     ],
     "why": "Τον Ιανουάριο του 2024, μετά από πάνω από δέκα χρόνια απορρίψεων.",
     "verified": true,
-    "source": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023"
+    "source": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023",
+    "topic": "history"
   },
   {
     "id": 173,
@@ -2781,7 +2954,8 @@
     ],
     "why": "Ένα δημόσιο βιβλίο συναλλαγών που κρατούν ταυτόχρονα χιλιάδες nodes.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "technical"
   },
   {
     "id": 174,
@@ -2797,7 +2971,8 @@
     ],
     "why": "Δύο από τα τρία. Το τρίτο είναι backup.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0011.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 175,
@@ -2813,7 +2988,8 @@
     ],
     "why": "Το bitcoin.org, τον Αύγουστο του 2008. Το .com είναι άλλη υπόθεση.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Bitcoin"
+    "source": "https://en.wikipedia.org/wiki/Bitcoin",
+    "topic": "history"
   },
   {
     "id": 176,
@@ -2829,7 +3005,8 @@
     ],
     "why": "1 sat = 0,00000001 BTC. Stay humble, stack sats.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)"
+    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)",
+    "topic": "technical"
   },
   {
     "id": 177,
@@ -2845,7 +3022,8 @@
     ],
     "why": "Με την έκδοση 0.9.0, το 2014.",
     "verified": true,
-    "source": "https://bitcoin.org/en/release/v0.9.0"
+    "source": "https://bitcoin.org/en/release/v0.9.0",
+    "topic": "history"
   },
   {
     "id": 178,
@@ -2861,7 +3039,8 @@
     ],
     "why": "Ιδρύθηκε από μια μικρή ομάδα στην Καλιφόρνια.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Cypherpunk"
+    "source": "https://en.wikipedia.org/wiki/Cypherpunk",
+    "topic": "history"
   },
   {
     "id": 179,
@@ -2877,7 +3056,8 @@
     ],
     "why": "Όποιος δεν αναβαθμίσει μένει σε άλλη αλυσίδα.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Hardfork"
+    "source": "https://en.bitcoin.it/wiki/Hardfork",
+    "topic": "technical"
   },
   {
     "id": 180,
@@ -2893,7 +3073,8 @@
     ],
     "why": "Το BIP101. Δεν πέρασε.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Bitcoin_XT"
+    "source": "https://en.bitcoin.it/wiki/Bitcoin_XT",
+    "topic": "history"
   },
   {
     "id": 181,
@@ -2909,7 +3090,8 @@
     ],
     "why": "Η υψηλότερη τιμή όλων των εποχών.",
     "verified": true,
-    "source": "https://www.investopedia.com/terms/a/all-time-high-ath.asp"
+    "source": "https://www.investopedia.com/terms/a/all-time-high-ath.asp",
+    "topic": "culture"
   },
   {
     "id": 182,
@@ -2925,7 +3107,8 @@
     ],
     "why": "Μαζί με τον Mihai Alisie. Μετά πήρε άλλο δρόμο. Δεν θα πούμε ποιον 😏",
     "verified": true,
-    "source": "https://bitcoinmagazine.com/about"
+    "source": "https://bitcoinmagazine.com/about",
+    "topic": "people"
   },
   {
     "id": 183,
@@ -2941,7 +3124,8 @@
     ],
     "why": "Έξι πεδία σταθερού μεγέθους, ώστε το Proof of Work να ελέγχεται εύκολα.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/reference/block_chain.html#block-headers"
+    "source": "https://developer.bitcoin.org/reference/block_chain.html#block-headers",
+    "topic": "technical"
   },
   {
     "id": 184,
@@ -2957,7 +3141,8 @@
     ],
     "why": "Παράνομο στις παραδοσιακές αγορές, συχνό στα μικρά altcoins.",
     "verified": true,
-    "source": "https://www.investor.gov/introduction-investing/investing-basics/glossary/pump-and-dump-schemes"
+    "source": "https://www.investor.gov/introduction-investing/investing-basics/glossary/pump-and-dump-schemes",
+    "topic": "culture"
   },
   {
     "id": 185,
@@ -2973,7 +3158,8 @@
     ],
     "why": "Αγόρασε, κράτα, ξέχνα τα charts.",
     "verified": true,
-    "source": "https://bitcointalk.org/index.php?topic=375.0"
+    "source": "https://bitcointalk.org/index.php?topic=375.0",
+    "topic": "culture"
   },
   {
     "id": 186,
@@ -2989,7 +3175,8 @@
     ],
     "why": "Γι' αυτό μια συναλλαγή έχει συχνά δύο outputs: παραλήπτης και change.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Change"
+    "source": "https://en.bitcoin.it/wiki/Change",
+    "topic": "self-custody"
   },
   {
     "id": 187,
@@ -3005,7 +3192,8 @@
     ],
     "why": "Οι αλλαγές ξεκινούν ως BIP και περνούν από μακρά δημόσια συζήτηση.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0001.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 188,
@@ -3021,7 +3209,8 @@
     ],
     "why": "Συμβαίνει όταν δύο miners βρίσκουν block σχεδόν ταυτόχρονα.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Orphan_Block"
+    "source": "https://en.bitcoin.it/wiki/Orphan_Block",
+    "topic": "mining"
   },
   {
     "id": 189,
@@ -3037,7 +3226,8 @@
     ],
     "why": "Ηλεκτρονικό μετρητό από χρήστη σε χρήστη, χωρίς μεσάζοντα.",
     "verified": true,
-    "source": ""
+    "source": "",
+    "topic": "history"
   },
   {
     "id": 190,
@@ -3053,7 +3243,8 @@
     ],
     "why": "000000000019d6689c085ae165831e93… Το 00000000839a8e… είναι του block 1.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Genesis_block"
+    "source": "https://en.bitcoin.it/wiki/Genesis_block",
+    "topic": "technical"
   },
   {
     "id": 191,
@@ -3069,7 +3260,8 @@
     ],
     "why": "Χωρίς τα private keys δεν ξοδεύει ξένα coins. Ούτε μπορεί να αλλάξει το supply.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Majority_attack"
+    "source": "https://en.bitcoin.it/wiki/Majority_attack",
+    "topic": "mining"
   },
   {
     "id": 192,
@@ -3085,7 +3277,8 @@
     ],
     "why": "Συνήθως 12 ή 24 λέξεις. Όποιος το έχει, έχει τα bitcoin σου. Ποτέ σε φωτογραφία, ποτέ online.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 193,
@@ -3101,7 +3294,8 @@
     ],
     "why": "Η κλασική απάντηση σε κάθε «το Bitcoin είναι φούσκα». Συνήθως με laser eyes.",
     "verified": true,
-    "source": "https://knowyourmeme.com/memes/have-fun-staying-poor"
+    "source": "https://knowyourmeme.com/memes/have-fun-staying-poor",
+    "topic": "culture"
   },
   {
     "id": 194,
@@ -3117,7 +3311,8 @@
     ],
     "why": "Λόγω της ακέραιας στρογγυλοποίησης στα halvings, λίγο κάτω από 21 εκατ. BTC.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "mining"
   },
   {
     "id": 195,
@@ -3133,7 +3328,8 @@
     ],
     "why": "Βασίζεται στο Bitcoin Core με διαφορετικές προεπιλογές και επιπλέον ρυθμίσεις.",
     "verified": true,
-    "source": "https://bitcoinknots.org/"
+    "source": "https://bitcoinknots.org/",
+    "topic": "technical"
   },
   {
     "id": 196,
@@ -3149,7 +3345,8 @@
     ],
     "why": "Satoshi Nakamoto. Η ταυτότητά του παραμένει άγνωστη. Ο τέταρτος είναι… άλλη ιστορία 😏",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Satoshi_Nakamoto"
+    "source": "https://en.bitcoin.it/wiki/Satoshi_Nakamoto",
+    "topic": "people"
   },
   {
     "id": 197,
@@ -3165,23 +3362,25 @@
     ],
     "why": "Adam Back, το 1997. Proof of Work για την καταπολέμηση του spam, η βάση του mining.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Hashcash"
+    "source": "https://en.bitcoin.it/wiki/Hashcash",
+    "topic": "people"
   },
   {
     "id": 198,
     "hex": "0xC6",
     "weight": 2,
     "level": "maxi",
-    "question": "Τι σημαίνει «Don't trust, verify»;",
-    "answer": "Μην εμπιστεύεσαι, έλεγξε μόνος σου, π.χ. με δικό σου node",
+    "question": "Ποιον αποκαλούσαν «Bitcoin Jesus» για την πρώιμη προώθηση του Bitcoin;",
+    "answer": "Τον Roger Ver",
     "wrong": [
-      "Μην αγοράζεις χωρίς KYC",
-      "Πάντα να χρησιμοποιείς exchange",
-      "Μην μιλάς για Bitcoin"
+      "Τον Erik Voorhees",
+      "Τον Charlie Shrem",
+      "Τον Andreas Antonopoulos"
     ],
-    "why": "Η φιλοσοφία του Bitcoin: ο καθένας μπορεί να επαληθεύσει τα πάντα.",
+    "why": "Μοίραζε bitcoin σε αγνώστους και η εταιρεία του δέχτηκε από τις πρώτες πληρωμές σε BTC. Αργότερα στήριξε το Bitcoin Cash.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Full_node"
+    "source": "https://en.wikipedia.org/wiki/Roger_Ver",
+    "topic": "culture"
   },
   {
     "id": 199,
@@ -3197,7 +3396,8 @@
     ],
     "why": "Το 2015/2016. Το Lightning έγινε πραγματικότητα μετά το SegWit.",
     "verified": true,
-    "source": "https://lightning.network/lightning-network-paper.pdf"
+    "source": "https://lightning.network/lightning-network-paper.pdf",
+    "topic": "people"
   },
   {
     "id": 200,
@@ -3213,7 +3413,8 @@
     ],
     "why": "«Privacy is necessary for an open society in the electronic age…» Cypherpunks write code.",
     "verified": true,
-    "source": "https://www.activism.net/cypherpunk/manifesto.html"
+    "source": "https://www.activism.net/cypherpunk/manifesto.html",
+    "topic": "people"
   },
   {
     "id": 201,
@@ -3229,7 +3430,8 @@
     ],
     "why": "Ιστορία του χρήματος και της τεχνολογίας, μέχρι το Bitcoin.",
     "verified": true,
-    "source": "https://www.lynalden.com/broken-money/"
+    "source": "https://www.lynalden.com/broken-money/",
+    "topic": "people"
   },
   {
     "id": 202,
@@ -3245,7 +3447,8 @@
     ],
     "why": "Πληθωρισμός; Bitcoin fixes this. Ακριβό σπίτι; Bitcoin fixes this. Και ούτω καθεξής.",
     "verified": true,
-    "source": "https://www.coindesk.com/tag/bitcoin-fixes-this"
+    "source": "https://www.coindesk.com/tag/bitcoin-fixes-this",
+    "topic": "culture"
   },
   {
     "id": 203,
@@ -3261,7 +3464,8 @@
     ],
     "why": "Τον Δεκέμβριο του 2024. Τα laser eyes επιτέλους κατέβηκαν.",
     "verified": true,
-    "source": "https://www.reuters.com/markets/currencies/bitcoin-hits-100000-first-time-2024-12-05/"
+    "source": "https://www.reuters.com/markets/currencies/bitcoin-hits-100000-first-time-2024-12-05/",
+    "topic": "history"
   },
   {
     "id": 204,
@@ -3277,7 +3481,8 @@
     ],
     "why": "Προκαλούσε και crash σε nodes. Διορθώθηκε τον Σεπτέμβριο του 2018 και δεν υπάρχουν στοιχεία ότι εκμεταλλεύτηκε.",
     "verified": true,
-    "source": "https://bitcoincore.org/en/2018/09/20/notice/"
+    "source": "https://bitcoincore.org/en/2018/09/20/notice/",
+    "topic": "technical"
   },
   {
     "id": 205,
@@ -3293,13 +3498,14 @@
     ],
     "why": "Από το Matrix: παίρνεις το πορτοκαλί χάπι και πέφτεις στο rabbit hole.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Red_pill_and_blue_pill"
+    "source": "https://en.wikipedia.org/wiki/Red_pill_and_blue_pill",
+    "topic": "culture"
   },
   {
     "id": 206,
     "hex": "0xCE",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Τι κάνει ένας watchtower στο Lightning;",
     "answer": "Σε προστατεύει από παλιά κατάσταση του channel όσο είσαι offline",
     "wrong": [
@@ -3309,7 +3515,8 @@
     ],
     "why": "Παρακολουθεί την αλυσίδα για λογαριασμό σου όσο είσαι offline.",
     "verified": true,
-    "source": "https://bitcoinops.org/en/topics/watchtowers/"
+    "source": "https://bitcoinops.org/en/topics/watchtowers/",
+    "topic": "technical"
   },
   {
     "id": 207,
@@ -3325,7 +3532,8 @@
     ],
     "why": "BTC είναι η συντομογραφία, όπως EUR για το ευρώ.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Units"
+    "source": "https://en.bitcoin.it/wiki/Units",
+    "topic": "culture"
   },
   {
     "id": 208,
@@ -3341,7 +3549,8 @@
     ],
     "why": "«What I've learned from falling down the Bitcoin rabbit hole». Ταιριαστό, έτσι;",
     "verified": true,
-    "source": "https://www.21lessons.com/"
+    "source": "https://www.21lessons.com/",
+    "topic": "people"
   },
   {
     "id": 209,
@@ -3357,7 +3566,8 @@
     ],
     "why": "Στον Gavin Andresen, το 2010.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Gavin_Andresen"
+    "source": "https://en.wikipedia.org/wiki/Gavin_Andresen",
+    "topic": "people"
   },
   {
     "id": 210,
@@ -3373,7 +3583,8 @@
     ],
     "why": "Σκόπιμα όχι Turing-complete.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Script"
+    "source": "https://en.bitcoin.it/wiki/Script",
+    "topic": "technical"
   },
   {
     "id": 211,
@@ -3389,7 +3600,8 @@
     ],
     "why": "Τη διεύθυνση τη δίνεις άφοβα για να πληρωθείς. Τα κλειδιά, ποτέ.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Address"
+    "source": "https://en.bitcoin.it/wiki/Address",
+    "topic": "self-custody"
   },
   {
     "id": 212,
@@ -3405,7 +3617,8 @@
     ],
     "why": "Το 20ό εκατομμύριο εκδόθηκε τον Μάρτιο του 2026, πάνω από το 95% του συνόλου. Τα υπόλοιπα θα βγουν σιγά σιγά για πάνω από έναν αιώνα.",
     "verified": true,
-    "source": "https://www.theblock.co/post/392660/bitcoin-mined-supply-hits-20-million-btc"
+    "source": "https://www.theblock.co/post/392660/bitcoin-mined-supply-hits-20-million-btc",
+    "topic": "mining"
   },
   {
     "id": 213,
@@ -3421,7 +3634,8 @@
     ],
     "why": "Βολικό για μεγάλα ποσά που δεν ξοδεύεις συχνά.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Cold_storage"
+    "source": "https://en.bitcoin.it/wiki/Cold_storage",
+    "topic": "self-custody"
   },
   {
     "id": 214,
@@ -3437,7 +3651,8 @@
     ],
     "why": "Εκεί διαβάζεις τα κείμενα του Satoshi σε πρωτογενή μορφή.",
     "verified": true,
-    "source": "https://nakamotoinstitute.org/"
+    "source": "https://nakamotoinstitute.org/",
+    "topic": "history"
   },
   {
     "id": 215,
@@ -3453,7 +3668,8 @@
     ],
     "why": "Μπορεί να είναι κεντρικοποιημένο (CEX) ή αποκεντρωμένο (DEX).",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Cryptocurrency_exchange"
+    "source": "https://en.wikipedia.org/wiki/Cryptocurrency_exchange",
+    "topic": "culture"
   },
   {
     "id": 216,
@@ -3469,7 +3685,8 @@
     ],
     "why": "Λίγα λίγα, σταθερά, για πάντα. «Stay humble, stack sats».",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)"
+    "source": "https://en.bitcoin.it/wiki/Satoshi_(unit)",
+    "topic": "culture"
   },
   {
     "id": 217,
@@ -3485,7 +3702,8 @@
     ],
     "why": "Η ιστορία της μάχης 2015–2017, από την πλευρά των small blockers.",
     "verified": true,
-    "source": "https://www.wiley.com/en-us/The+Blocksize+War%3A+The+battle+over+who+controls+Bitcoin%27s+protocol+rules-p-9781394209866"
+    "source": "https://www.wiley.com/en-us/The+Blocksize+War%3A+The+battle+over+who+controls+Bitcoin%27s+protocol+rules-p-9781394209866",
+    "topic": "people"
   },
   {
     "id": 218,
@@ -3501,13 +3719,14 @@
     ],
     "why": "Το πληρώνεις στους miners. Όσο πιο γεμάτος ο mempool, τόσο ακριβότερο.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Transaction_fees"
+    "source": "https://en.bitcoin.it/wiki/Transaction_fees",
+    "topic": "technical"
   },
   {
     "id": 219,
     "hex": "0xDB",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Ποια ενότητα του whitepaper περιγράφει πώς επαληθεύεις πληρωμές χωρίς full node;",
     "answer": "Simplified Payment Verification",
     "wrong": [
@@ -3517,7 +3736,8 @@
     ],
     "why": "Η ενότητα 8 του whitepaper.",
     "verified": true,
-    "source": "https://bitcoin.org/bitcoin.pdf"
+    "source": "https://bitcoin.org/bitcoin.pdf",
+    "topic": "technical"
   },
   {
     "id": 220,
@@ -3533,7 +3753,8 @@
     ],
     "why": "Τα non-witness bytes ζυγίζουν 4 WU. Αυτή είναι η «έκπτωση» του SegWit.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 221,
@@ -3549,7 +3770,8 @@
     ],
     "why": "Αλλάζοντάς το, αλλάζει το merkle root και ανοίγει νέος χώρος αναζήτησης.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Nonce"
+    "source": "https://en.bitcoin.it/wiki/Nonce",
+    "topic": "mining"
   },
   {
     "id": 222,
@@ -3565,13 +3787,14 @@
     ],
     "why": "Φόβος, αβεβαιότητα, αμφιβολία. Συνήθως από άρθρα που «σκοτώνουν» το Bitcoin για εκατοστή φορά.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Fear,_uncertainty,_and_doubt"
+    "source": "https://en.wikipedia.org/wiki/Fear,_uncertainty,_and_doubt",
+    "topic": "culture"
   },
   {
     "id": 223,
     "hex": "0xDF",
-    "weight": 3,
-    "level": "cypherpunk",
+    "weight": 2,
+    "level": "maxi",
     "question": "Σε ποια mailing list ανακοίνωσε ο Satoshi το whitepaper;",
     "answer": "Cryptography Mailing List (metzdowd.com)",
     "wrong": [
@@ -3581,7 +3804,8 @@
     ],
     "why": "Στη Cryptography Mailing List, στις 31 Οκτωβρίου 2008. Το BitcoinTalk δεν υπήρχε ακόμα.",
     "verified": true,
-    "source": "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/"
+    "source": "https://satoshi.nakamotoinstitute.org/emails/cryptography/1/",
+    "topic": "history"
   },
   {
     "id": 224,
@@ -3597,7 +3821,8 @@
     ],
     "why": "BIP112. Βασικό για τα Lightning channels.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 225,
@@ -3613,7 +3838,8 @@
     ],
     "why": "Ο client κατεβάζει φίλτρα από full nodes αντί να αποκαλύπτει ποιες διευθύνσεις παρακολουθεί.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 226,
@@ -3629,7 +3855,8 @@
     ],
     "why": "22 Μαΐου 2010. Από τότε η μέρα γιορτάζεται ως Bitcoin Pizza Day.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Laszlo_Hanyecz"
+    "source": "https://en.bitcoin.it/wiki/Laszlo_Hanyecz",
+    "topic": "history"
   },
   {
     "id": 227,
@@ -3645,7 +3872,8 @@
     ],
     "why": "Ένας απλός υπολογισμός από τον μέσο χρόνο του block.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Difficulty"
+    "source": "https://en.bitcoin.it/wiki/Difficulty",
+    "topic": "mining"
   },
   {
     "id": 228,
@@ -3661,23 +3889,25 @@
     ],
     "why": "Η νέα προσφορά πέφτει στο μισό. Το τι κάνει η τιμή είναι άλλη ιστορία.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "mining"
   },
   {
     "id": 229,
     "hex": "0xE5",
-    "weight": 2,
-    "level": "maxi",
-    "question": "Τι κάνει ένας full node;",
-    "answer": "Επαληθεύει ανεξάρτητα κάθε block και κάθε κανόνα",
+    "weight": 3,
+    "level": "cypherpunk",
+    "question": "Ποιο κρυπτογραφικό chip της NSA, με κλειδιά σε «μεσεγγύηση» (key escrow) για την κυβέρνηση, προώθησαν οι ΗΠΑ το 1993;",
+    "answer": "Clipper chip",
     "wrong": [
-      "Βγάζει νέα bitcoin",
-      "Κρατάει τα coins των χρηστών",
-      "Ορίζει την τιμή του BTC"
+      "TEMPEST",
+      "Lucifer",
+      "Echelon"
     ],
-    "why": "Don't trust, verify. Ο full node δεν εμπιστεύεται κανέναν, ούτε τους miners.",
+    "why": "Χρησιμοποιούσε τον αλγόριθμο Skipjack. Η αντίδραση υπερασπιστών της ιδιωτικότητας, όπως η EFF, το έθαψε· ως το 1996 είχε εγκαταλειφθεί.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Full_node"
+    "source": "https://en.wikipedia.org/wiki/Clipper_chip",
+    "topic": "history"
   },
   {
     "id": 230,
@@ -3693,7 +3923,8 @@
     ],
     "why": "Το είπε χαριτολογώντας σε μία από τις πρώτες συναντήσεις της ομάδας.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Cypherpunk"
+    "source": "https://en.wikipedia.org/wiki/Cypherpunk",
+    "topic": "people"
   },
   {
     "id": 231,
@@ -3709,7 +3940,8 @@
     ],
     "why": "Έχουν γραφτεί εκατοντάδες. Το Bitcoin είναι ακόμα εδώ.",
     "verified": true,
-    "source": "https://99bitcoins.com/bitcoin-obituaries/"
+    "source": "https://99bitcoins.com/bitcoin-obituaries/",
+    "topic": "culture"
   },
   {
     "id": 232,
@@ -3725,7 +3957,8 @@
     ],
     "why": "Σταθερή, προβλέψιμη προσφορά. Το επιχείρημα των maxis.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Sound_money"
+    "source": "https://en.wikipedia.org/wiki/Sound_money",
+    "topic": "culture"
   },
   {
     "id": 233,
@@ -3741,7 +3974,8 @@
     ],
     "why": "Η πτώση ως ευκαιρία αγοράς, όχι ως λόγος πανικού.",
     "verified": true,
-    "source": "https://www.investopedia.com/terms/b/buy-the-dip.asp"
+    "source": "https://www.investopedia.com/terms/b/buy-the-dip.asp",
+    "topic": "culture"
   },
   {
     "id": 234,
@@ -3757,7 +3991,8 @@
     ],
     "why": "Κανείς δεν μπορεί να τα ανακτήσει. Ουσιαστικά μειώνουν το supply που κυκλοφορεί.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "self-custody"
   },
   {
     "id": 235,
@@ -3773,7 +4008,8 @@
     ],
     "why": "Το BIP341 ορίζει τους κανόνες του Taproot (SegWit v1).",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki",
+    "topic": "technical"
   },
   {
     "id": 236,
@@ -3789,7 +4025,8 @@
     ],
     "why": "purpose / coin_type / account. Το 0' είναι το Bitcoin.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 237,
@@ -3805,7 +4042,8 @@
     ],
     "why": "Δημοφιλές στους bitcoiners.",
     "verified": true,
-    "source": "https://github.com/nostr-protocol/nips/blob/master/01.md"
+    "source": "https://github.com/nostr-protocol/nips/blob/master/01.md",
+    "topic": "culture"
   },
   {
     "id": 238,
@@ -3821,7 +4059,8 @@
     ],
     "why": "50 BTC ανά block μέχρι το πρώτο halving.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "mining"
   },
   {
     "id": 239,
@@ -3837,7 +4076,8 @@
     ],
     "why": "Ένα πεδίο 32-bit που οι miners αλλάζουν δισεκατομμύρια φορές το δευτερόλεπτο.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/reference/block_chain.html#block-headers"
+    "source": "https://developer.bitcoin.org/reference/block_chain.html#block-headers",
+    "topic": "mining"
   },
   {
     "id": 240,
@@ -3853,7 +4093,8 @@
     ],
     "why": "Λύνουν το πρόβλημα της πρώτης σύνδεσης όταν ξεκινά ένας καινούργιος node.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/devguide/p2p_network.html"
+    "source": "https://developer.bitcoin.org/devguide/p2p_network.html",
+    "topic": "technical"
   },
   {
     "id": 241,
@@ -3869,7 +4110,8 @@
     ],
     "why": "1 confirmation = η συναλλαγή μπήκε σε block. Κάθε επόμενο block την «θάβει» πιο βαθιά.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Confirmation"
+    "source": "https://en.bitcoin.it/wiki/Confirmation",
+    "topic": "technical"
   },
   {
     "id": 242,
@@ -3885,7 +4127,8 @@
     ],
     "why": "Γύρω στο 2140. Μετά δεν θα υπάρχει νέο subsidy.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Controlled_supply"
+    "source": "https://en.bitcoin.it/wiki/Controlled_supply",
+    "topic": "mining"
   },
   {
     "id": 243,
@@ -3901,7 +4144,8 @@
     ],
     "why": "Δυσκολεύει την ανάλυση της αλυσίδας για το ποιος πλήρωσε ποιον.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/CoinJoin"
+    "source": "https://en.bitcoin.it/wiki/CoinJoin",
+    "topic": "self-custody"
   },
   {
     "id": 244,
@@ -3917,7 +4161,8 @@
     ],
     "why": "Χωρίς αυτήν, όποιος βρει το seed βλέπει άλλο (π.χ. άδειο) wallet.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki",
+    "topic": "self-custody"
   },
   {
     "id": 245,
@@ -3933,7 +4178,8 @@
     ],
     "why": "Αν κάνεις λάθος σε έναν χαρακτήρα, το wallet το καταλαβαίνει.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Base58Check_encoding"
+    "source": "https://en.bitcoin.it/wiki/Base58Check_encoding",
+    "topic": "technical"
   },
   {
     "id": 246,
@@ -3949,7 +4195,8 @@
     ],
     "why": "Shitcoins. Ναι, το τρολάρισμα είναι θεσμός.",
     "verified": true,
-    "source": "https://en.wikipedia.org/wiki/Shitcoin"
+    "source": "https://en.wikipedia.org/wiki/Shitcoin",
+    "topic": "culture"
   },
   {
     "id": 247,
@@ -3965,7 +4212,8 @@
     ],
     "why": "Κανένα σοβαρό support δεν ζητάει ποτέ seed phrase. Ποτέ.",
     "verified": true,
-    "source": "https://bitcoin.org/en/scams"
+    "source": "https://bitcoin.org/en/scams",
+    "topic": "self-custody"
   },
   {
     "id": 248,
@@ -3981,7 +4229,8 @@
     ],
     "why": "100 blocks. Αν το block γίνει orphan, τα νέα coins δεν προλαβαίνουν να κυκλοφορήσουν.",
     "verified": true,
-    "source": "https://developer.bitcoin.org/reference/glossary.html"
+    "source": "https://developer.bitcoin.org/reference/glossary.html",
+    "topic": "mining"
   },
   {
     "id": 249,
@@ -3997,7 +4246,8 @@
     ],
     "why": "Λόγω του τρόπου που γράφτηκε ο κώδικας, το output του genesis block δεν μπορεί να ξοδευτεί.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Genesis_block"
+    "source": "https://en.bitcoin.it/wiki/Genesis_block",
+    "topic": "technical"
   },
   {
     "id": 250,
@@ -4013,7 +4263,8 @@
     ],
     "why": "Το αποτέλεσμα είναι το HASH160, 20 bytes.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses"
+    "source": "https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses",
+    "topic": "technical"
   },
   {
     "id": 251,
@@ -4029,7 +4280,8 @@
     ],
     "why": "Οι miners γύρισαν στην v0.7 και η αλυσίδα ενοποιήθηκε μέσα σε ώρες.",
     "verified": true,
-    "source": "https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki"
+    "source": "https://github.com/bitcoin/bips/blob/master/bip-0050.mediawiki",
+    "topic": "history"
   },
   {
     "id": 252,
@@ -4045,7 +4297,8 @@
     ],
     "why": "Το έγραψε τον Ιανουάριο του 2016 και είπε ότι πούλησε όλα του τα BTC.",
     "verified": true,
-    "source": "https://www.pcworld.com/article/419197/bitcoin-is-a-failed-experiment-says-major-bitcoin-developer.html"
+    "source": "https://www.pcworld.com/article/419197/bitcoin-is-a-failed-experiment-says-major-bitcoin-developer.html",
+    "topic": "people"
   },
   {
     "id": 253,
@@ -4061,7 +4314,8 @@
     ],
     "why": "Application-Specific Integrated Circuit: κάνει μία μόνο δουλειά, αλλά ασύγκριτα γρήγορα.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/ASIC"
+    "source": "https://en.bitcoin.it/wiki/ASIC",
+    "topic": "mining"
   },
   {
     "id": 254,
@@ -4077,7 +4331,8 @@
     ],
     "why": "Δευτερόλεπτα, με fees συνήθως ελάχιστα.",
     "verified": true,
-    "source": "https://en.bitcoin.it/wiki/Lightning_Network"
+    "source": "https://en.bitcoin.it/wiki/Lightning_Network",
+    "topic": "technical"
   },
   {
     "id": 255,
@@ -4093,6 +4348,7 @@
     ],
     "why": "Τα καπέλα UASF έγιναν σύμβολο του Blocksize War.",
     "verified": true,
-    "source": "https://dailybitcoiner.substack.com/p/td-the-blocksize-wars-cyber-soldier"
+    "source": "https://dailybitcoiner.substack.com/p/td-the-blocksize-wars-cyber-soldier",
+    "topic": "culture"
   }
 ]
